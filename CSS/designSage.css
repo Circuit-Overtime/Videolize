@@ -1,0 +1,173 @@
+.designSageMask
+{
+  position: absolute;
+  top: 1165%;
+  left: 0;
+  height: 80px;
+  z-index: 10;
+  width: 100%;
+  box-shadow:  0 32px 20px #18181B;
+  background: transparent;
+}
+.designSage
+{
+    position: absolute;
+    top: 1190%;
+    left: 0;
+    height: 100%; 
+    width: 100%;
+    background-color: transparent;
+}
+.designSageText
+{
+    position: relative;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 6em;
+    text-align: center;
+    font-family: 'Salsa', cursive;
+    color: #fff;
+    height: 450px;
+    width: 450px;
+    background-color: transparent;
+    text-shadow: 0 -20px 20px #000,
+    0 -30px 30px #202020,
+    -20px -20px 20px #0a0909,
+    20px -20px 20px #0a0909;
+}
+
+.designSageDesc
+{
+    position: absolute;
+    top: 240px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2em;
+    text-align: center;
+    color: #8d8d8dea;
+    font-family: 'Source Code Pro', monospace;
+}
+.designSageLogo
+{
+    position: absolute;
+    height: 300px;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/designSageLogo.png?alt=media&token=3d007c03-e3b1-4851-b346-b496c89ca1d9);
+    opacity: 0.7;
+    background-size: cover;
+    width: 500px;
+    background-color: transparent;
+    
+}
+.designSageLogo .lightRayOne
+{
+    position: absolute;
+    top: -15px;
+    width: 110px;
+    height: 500px;
+    left: 165px;
+    top: 55px;
+    opacity: 0.4;
+    filter: blur(15px);
+    transform: rotate(-15deg);
+    background: #ffff00;
+    clip-path: polygon(32% 0, 71% 0, 90% 100%, 10% 100%);
+
+}
+
+.designSageLogo .lightRayTwo
+{
+
+    position: relative;
+    width: 60px;
+    opacity: 0.4;
+    z-index: -1;
+    height: 500px;
+    left: 185px;
+    top: 55px;
+    transform: rotate(-15deg);
+    filter: blur(25px);
+    background: #ffff00;
+}
+.inProgressText
+{
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1em;
+    text-align: center;
+    color: #8d8d8dea;
+    font-family: 'Source Code Pro', monospace;
+}
+.redirectSocialdesignSage
+{
+    position: absolute;
+    padding-left: 30px;
+    height: 40px;
+    width: 200px;
+    top: 450px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    backdrop-filter: blur(14px);
+    background-color: rgba(12, 12, 12, 0.705);
+    z-index: 100;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    border: 1px solid #474646;
+    cursor: pointer;
+    z-index: 12;
+    border-radius: 25px;
+
+
+}
+.redirectSocialdesignSage::before {
+    position: absolute;
+    content: '';
+    top: -2px;
+    filter: blur(2px);
+    height: 3px;
+    left: 20.5%;
+    width: 65%;
+    background: linear-gradient(to right, transparent 30%,  #fff , transparent  );
+}
+.redirectSocialdesignSage span
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-family: 'Source Code Pro', monospace;
+    pointer-events: none;   
+}
+.redirectSocialdesignSage span:nth-child(1)
+{
+    height: 20px;
+    width: 20px;
+    background-size: cover;
+    pointer-events: none;
+    left: 30%;
+    top: 40%;
+    font-size: 21px;
+    color: #fff;
+}
+.redirectSocialdesignSage span:nth-child(2)
+{
+    left: 25%;
+    font-weight: bolder;
+}
+.redirectSocialdesignSage .designSageLogoBtnSmall
+{
+    position: absolute;
+    filter: drop-shadow(0 0 5px #000);
+    top: -15px;
+    left: -40px;
+    height: 30px;
+    width: 30px;
+    background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/designSageLogosmall.png?alt=media&token=34ca7589-73c8-4a6f-a379-b663daa01179);
+    background-size: cover;
+}

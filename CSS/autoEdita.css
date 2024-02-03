@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&family=Style+Script&display=swap');
+.autoEdita
+{
+    position: absolute;
+    top: 695%;
+    left: 0;
+    height: 280%; 
+    width: 100%;
+    background-color: transparent;
+}
+.autoEdita .descriptionImage
+{
+  position: absolute;
+  height: 70px;
+  transform: scale(1.2) rotate(-5deg);
+  opacity: 0.4;
+  width: 600px;
+  top: 100px;
+  left: 805px;
+  background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/autoEditaDescriptionImage.png?alt=media&token=8de885e9-0e04-416b-96fc-04375934679b);
+  background-size: contain;
+}
+
+.autoEditaText
+{
+    position: relative;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 6em;
+    text-align: center;
+    font-family: 'Salsa', cursive;
+    color: #fff;
+    height: 450px;
+    width: 450px;
+    background-color: transparent;
+    text-shadow: 0 -20px 20px #000,
+    0 -30px 30px #202020,
+    -20px -20px 20px #0a0909,
+    20px -20px 20px #0a0909;
+}
+.autoEditaLogoBacklit
+{
+    content: '';
+    position: absolute;
+    top: 1.8%;
+    left: 50%;
+    background: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    height: 160px;
+    border-radius: 25px;
+    transform-origin: center;
+    transform: translateX(-50%);
+    width: 160px;
+    z-index: -1;
+    filter: blur(9px) brightness(45%);
+
+}
+.autoEditaLogoMask
+{
+    content: '';
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    background: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    height: 155px;
+    border-radius: 25px;
+    transform-origin: center;
+    width: 155px;
+    transition: 0.5s;
+    transform: translateX(-50%);
+    cursor: pointer;
+    
+}
+.autoEditaLogo
+{
+    position: relative;
+    top: 2.5px;
+    left: 2.5px;
+    background: #110f11;
+  background-size: cover;
+  height: 150px;
+  border-radius: 25px;
+  transform: translateX(0%);
+  width: 150px;
+  
+  overflow: hidden;
+ z-index: 110;
+}
+.autoEditaLogoMask:hover .autoEditaLogoBacklit
+{
+  transform: translateX(-50%) scale(1.1);
+}
+.autoEditaLogo .autoEditaLogoImage
+{
+    position: absolute;
+    height: 130px;
+    top: 10px;
+    width: 150px;
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/AutoEditaLogo.png?alt=media&token=385886f3-9903-4e69-9398-2d8bec95c9c8);
+    background-size: cover;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+}
+
+.autoEdita .autoEditaDesc
+{
+    position: absolute;
+    top: 320px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2em;
+    text-align: center;
+    color: #8d8d8dea;
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+.galleryImagesAutoEditaBtn
+{
+    position: absolute;
+    padding-left: 30px;
+    height: 40px;
+    width: 200px;
+    top: 29%;
+    left: 35%;
+    transform: translateX(-50%);
+    display: flex;
+    backdrop-filter: blur(14px);
+    background-color: rgba(12, 12, 12, 0.705);
+    z-index: 100;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    border: 1px solid #00ff94;
+    cursor: pointer;
+    z-index: 12;
+    border-radius: 25px;
+    transition: 0.5s;
+
+}
+.autoEdita #paper-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 400px;
+  width: 400px;
+}
+
+.galleryImagesAutoEditaBtn:hover
+{
+  box-shadow:  0 0 10px #00ff94;
+}
+.galleryImagesAutoEditaBtn ion-icon
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #00ff94;
+    font-size: 20px;
+    font-family: 'Source Code Pro', monospace;
+    pointer-events: none;   
+}
+.galleryImagesAutoEditaBtn .galleryImagesAutoEditaBtnText
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #00ff94;
+    left: 65px;
+    font-family: 'Source Code Pro', monospace;
+    pointer-events: none;   
+}
+
+.socialSectionAutoEditaBtn
+{
+    position: absolute;
+    padding-left: 30px;
+    height: 40px;
+    width: 200px;
+    top: 29%;
+    left: 65%;
+    transform: translateX(-50%);
+    display: flex;
+    backdrop-filter: blur(14px);
+    background-color: rgba(12, 12, 12, 0.705);
+    z-index: 100;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    border: 1px solid #00e1ff;
+    cursor: pointer;
+    z-index: 12;
+    transition: 0.5s;
+    border-radius: 25px;
+
+}
+.socialSectionAutoEditaBtn:hover
+{
+  box-shadow:  0 0 10px #00e1ff;
+}
+.socialSectionAutoEditaBtn ion-icon
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #00e1ff;
+    font-size: 20px;
+    font-family: 'Source Code Pro', monospace;
+    pointer-events: none;   
+}
+.socialSectionAutoEditaBtn .socialSectionAutoEditaBtnText
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #00e1ff;
+    left: 60px;
+    font-family: 'Source Code Pro', monospace;
+    pointer-events: none;   
+}
+
+
+.redirectSocialautoEdita
+{
+    position: absolute;
+    padding-left: 30px;
+    height: 40px;
+    width: 200px;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    backdrop-filter: blur(14px);
+    background-color: rgba(12, 12, 12, 0.705);
+    z-index: 100;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    border: 1px solid #474646;
+    cursor: pointer;
+    z-index: 12;
+    border-radius: 25px;
+
+}
+.redirectSocialautoEdita span
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-family: 'Source Code Pro', monospace;
+    pointer-events: none;   
+}
+.redirectSocialautoEdita span:nth-child(1)
+{
+    height: 20px;
+    width: 20px;
+    background-size: cover;
+    pointer-events: none;
+    left: 30%;
+    top: 40%;
+    font-size: 21px;
+    color: #fff;
+}
+.redirectSocialautoEdita span:nth-child(2)
+{
+    left: 25%;
+    font-weight: bolder;
+}
+.redirectSocialautoEdita .autoEditaLogoBtnSmall
+{
+    position: absolute;
+    filter: drop-shadow(0 0 5px #000);
+    top: -15px;
+    left: -40px;
+    height: 30px;
+    width: 30px;
+    background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/AutoEditaLogo.png?alt=media&token=385886f3-9903-4e69-9398-2d8bec95c9c8);
+    background-size: cover;
+}
+
+
+
+.autoEdita .image-container {
+    position: absolute;
+    width: 90%;
+    top: 500px;
+    filter: drop-shadow(0 0 20px #000);
+    left: 3%;
+    transform-origin: center;
+    transform: scale(0.8);
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 3;
+	-webkit-column-gap: 24px;
+	-moz-column-gap: 24px;
+	column-gap: 24px;
+	padding: 0 40px;
+}
+.image-container div {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.image-container img,
+.image-container .autoEditaLazyLoading {
+	height: 500px;
+	width: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+.image-container .autoEditaLazyLoading
+{
+  position: absolute;
+  filter: blur(9px);
+  transition: 0.5s;
+}
+.image-container div:first-child img,
+.image-container div:nth-child(9) img,
+.image-container div:nth-child(7) img,
+.image-container div:nth-child(10) img {
+	height: 560px;
+}
+
+.image-container div:nth-child(5) img {
+	height: 360px;
+}
+
+.image-container div:nth-child(8) img {
+	height: 700px;
+	margin-bottom: 0;
+}
+
+.image-container div:nth-child(4) img {
+	height: 560px;
+	margin-bottom: 0;
+}
+
+.image-container div:last-child {
+	margin-bottom: 0;
+}
+
+
+
+.image-container div:first-child .autoEditaLazyLoading,
+.image-container div:nth-child(9) .autoEditaLazyLoading,
+.image-container div:nth-child(7) .autoEditaLazyLoading,
+.image-container div:nth-child(10) .autoEditaLazyLoading {
+	height: 560px;
+}
+
+.image-container div:nth-child(5) .autoEditaLazyLoading {
+	height: 360px;
+}
+
+.image-container div:nth-child(8) .autoEditaLazyLoading {
+	height: 700px;
+	margin-bottom: 0;
+}
+
+.image-container div:nth-child(4) .autoEditaLazyLoading {
+	height: 560px;
+	margin-bottom: 0;
+}
+
+.image-container div:last-child {
+	margin-bottom: 0;
+}
+
+
+
+
+.FirstRowFirstLayoutEdita
+
+{
+   position: absolute;
+   height: 350px;
+   width: 650px;
+   background-color: #1D1C20;
+   margin-left: 45px;
+    top: 2650px;
+   margin-top: 25px;
+   border-radius: 25px;
+   border: 1px solid #413e47;
+  overflow: hidden;  
+  transition: 0.5s;
+  transform-style: preserve-3d;
+
+
+}
+
+.FirstRowFirstLayoutEdita .headingText {
+   position: relative;
+   font-size: 20px;
+   font-family: 'Source Code Pro', monospace;
+   width: inherit;
+   margin-top: 25px ;
+   margin-left: 25px;  /* Top and bottom margins are 45px, left and right margins are 35px */
+   word-wrap: break-word;
+   flex-wrap: wrap;
+   color: #fff;
+}
+
+
+.FirstRowFirstLayoutEdita .descriptionText
+{
+   position: relative;
+   font-size: 13px;
+   font-family: 'Source Code Pro', monospace;
+   width: inherit;
+   padding-right: 15px;
+   margin-top: 7px;
+   padding-left: 25px;
+   box-sizing: border-box;
+   word-wrap: break-word;
+   text-align: left;
+   flex-wrap: wrap;
+   color: #A4A4A4;
+}
+
+
+.FirstRowSecondLayoutEdita
+
+{
+   position: absolute;
+   height: 350px;
+   width: 610px;
+   background-color: #1D1C20;
+   margin-left: 45px;
+   transform: translateX(670px);
+    top: 2650px;
+   margin-top: 25px;
+   border-radius: 25px;
+   border: 1px solid #413e47;
+  overflow: hidden;  
+
+}
+
+.FirstRowSecondLayoutEdita .headingText {
+   position: relative;
+   font-size: 20px;
+   font-family: 'Source Code Pro', monospace;
+   width: inherit;
+   margin-top: 25px ;
+   margin-left: 25px;  /* Top and bottom margins are 45px, left and right margins are 35px */
+   word-wrap: break-word;
+   flex-wrap: wrap;
+   color: #fff;
+   z-index: 5;
+}
+
+
+.FirstRowSecondLayoutEdita .descriptionText
+{
+   position: relative;
+   font-size: 13px;
+   font-family: 'Source Code Pro', monospace;
+   width: inherit;
+   padding-right: 15px;
+   margin-top: 7px;
+   padding-left: 25px;
+   box-sizing: border-box;
+   word-wrap: break-word;
+   text-align: left;
+   flex-wrap: wrap;
+   color: #A4A4A4;
+   z-index: 5;
+}
+
+
+@keyframes rotate {
+    from {
+      rotate: 0deg;
+    }
+    
+    50% {
+      scale: 1 1.5;
+    }
+    
+    to {
+      rotate: 360deg;
+    }
+  }
+ #blob {
+    background-color: white;
+    height: 34vmax;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    transform: scale(0.8);
+    border-radius: 50%;
+    background-color: #FEE140;
+    background-color: #A9C9FF;
+    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+    
+
+    animation: rotate 20s infinite;
+    opacity: 0.5;
+  }
+ #blur {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    backdrop-filter: blur(45px);
+  }
+  .FirstRowSecondLayoutEdita .profileCardContainer
+  {
+    position: absolute;
+    transition: left 250ms ease-in;
+    top: 2%;
+   left: 0;
+  }
+  .FirstRowSecondLayoutEdita #linkedInSocial
+  {
+    position: absolute;
+    height: 230px;
+    width: 230px;
+    background: #121213;
+    box-shadow: -10px 5px 20px #0a0909;
+    border: 2px solid #413e47;
+    margin-left: 25px;
+    border-radius: 25px;
+    top: 100px;
+    z-index: 5;
+    transition : 0.25s;
+  }
+  .FirstRowSecondLayoutEdita #instagramSocial
+  {
+    position: absolute;
+    height: 230px;
+    width: 230px;
+    transform: translateX(250px);
+    background: #121213;
+    box-shadow: -10px 5px 20px #0a0909;
+    border: 2px solid #413e47;
+    margin-left: 25px;
+    border-radius: 25px;
+    top: 100px;
+    z-index: 5;
+    transition : 0.25s;
+  }
+  .FirstRowSecondLayoutEdita #facebookSocial
+  {
+    position: absolute;
+    height: 230px;
+    width: 230px;
+    background: #121213;
+    transform: translateX(500px);
+    box-shadow: -10px 5px 20px #0a0909;
+    border: 2px solid #413e47;
+    margin-left: 25px;
+    border-radius: 25px;
+    top: 100px;
+    z-index: 5; 
+    transition : 0.25s;
+  }
+
+  .FirstRowSecondLayoutEdita .profileCards .profileImage
+  {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #000;
+    background-size: cover;
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/compressImages%2FSolankiProfile.jpeg?alt=media&token=7a1fdc0d-6391-47c3-beee-7299816b3b66);
+  }
+  .FirstRowSecondLayoutEdita .profileCards .profileTag
+  {
+    position: absolute;
+    top: 30px;
+    left: 85px;
+    height: 25px;
+    width: 100px;
+    border-radius: 15px;
+    background: #2c90fc;
+  }
+  #linkedInSocial .profileTag
+  {
+    background: #F34822;
+  }
+  #linkedInSocial:hover
+  {
+    border: 2px solid #F34822;
+  }
+  #instagramSocial .profileTag
+  {
+    background: #8a21f2;
+  }
+  #instagramSocial:hover
+  {
+    border: 2px solid #8a21f2;
+  }
+  #facebookSocial .profileTag
+  {
+    background: #034b66;
+  }
+  #facebookSocial:hover
+  {
+    border: 2px solid #034b66;
+  }
+
+  .FirstRowSecondLayoutEdita .profileCards .profileTag p
+  {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-68%);
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+.FirstRowSecondLayoutEdita .profileCards .profileHeading
+{
+  position: relative;
+  font-size: 25px;
+  top: 50px;
+  left: 15px;
+  font-family: 'Source Code Pro', monospace;
+  width: inherit;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-top: 25px ;
+  margin-left: 25px;  /* Top and bottom margins are 45px, left and right margins are 35px */
+  word-wrap: break-word;
+  flex-wrap: wrap;
+  color: #fff;
+  z-index: 5;
+}
+
+.FirstRowSecondLayoutEdita .profileCards .profileHeadingDesc
+{
+  position: relative;
+  font-size: 12px;
+  flex-wrap: wrap;
+  top: 50px;
+  left: 15px;
+  font-family: 'Source Code Pro', monospace;
+  width: inherit;
+  letter-spacing: 2px;
+  margin-top: 25px ;
+  margin-left: 25px;  /* Top and bottom margins are 45px, left and right margins are 35px */
+  padding-right: 25px;
+   box-sizing: border-box;
+   word-wrap: break-word;
+   text-align: left;
+   flex-wrap: wrap;
+  color: #9b94a8;
+  z-index: 5;
+}

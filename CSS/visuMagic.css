@@ -1,0 +1,1278 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600;800&display=swap');
+:root
+{
+   --other_text_width : 0;
+}
+.visuMagicContainer
+{
+    position: absolute;
+    top: 210%;
+    left: 0;
+    height: 280%; 
+    width: 100%;
+    background-color: transparent;
+}
+.descriptionImage
+{
+  position: absolute;
+  height: 150px;
+  transform: scale(0.8) rotate(-5deg);
+  opacity: 0.4;
+  width: 600px;
+  top: 270px;
+  left: -45px;
+  background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/visumagicDescriptionImage.png?alt=media&token=16e5f5dc-3216-4f41-9671-e40409747876);
+  background-size: contain;
+}
+.visuMagicTextContainerShadow
+{
+    position: absolute;
+    height: 400px;
+    width: 450px;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    z-index: 1;
+    background: linear-gradient(180deg, #000000, #181818);
+    overflow: hidden;
+}
+.visuMagic
+{
+    position: relative;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 6em;
+    text-align: center;
+    font-family: 'Salsa', cursive;
+    color: #fff;
+    height: 450px;
+    width: 450px;
+    background-color: transparent;
+}
+.visuMagicDesc
+{
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2em;
+    text-align: center;
+    color: #8d8d8dea;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.redirectSocial
+{
+    position: absolute;
+    padding-left: 30px;
+    height: 40px;
+    width: 200px;
+    top: 17%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    backdrop-filter: blur(14px);
+    background-color: #18181831;
+    z-index: 100;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    border: 1px solid #474646;
+    cursor: pointer;
+    z-index: 12;
+    border-radius: 25px;
+
+}
+.redirectSocial span
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-family: 'Source Code Pro', monospace;
+    pointer-events: none;   
+}
+.redirectSocial span:nth-child(1)
+{
+    height: 20px;
+    width: 20px;
+    background-size: cover;
+    pointer-events: none;
+    left: 10%;
+    top: 52%;
+    font-size: 21px;
+    color: #7B61FF;
+}
+.redirectSocial span:nth-child(2)
+{
+    left: 30%;
+    font-weight: bolder;
+}
+
+#wand {
+    width: 8vmin;
+    aspect-ratio: 1 / 11;
+    background-image: linear-gradient(90deg,#0c0c0c,#1d1a1f);
+    position: absolute;
+    opacity: 100%;
+    left: 50%;
+    top: 8%;
+    /* translate: -50%; */
+    rotate: 90deg;
+    z-index: 100;
+    border-radius : 10px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 100;
+    
+    
+  }  #wand > .cap
+  {
+   height: 20%;
+   width: 100%;
+   background-color: #fff;
+
+
+ }
+ #wand .wand-streak
+ {
+    position: relative;
+    height: 4px;
+    rotate: 90deg;
+    filter: blur(8px);
+    width: 430px;
+    border-radius: 25px;
+    left: -190px;
+    top: 50%;
+    background-image: linear-gradient(91deg,#000,#fff 31%);
+    z-index: 100;
+ }
+ .wandparticleBackdropCut
+ {
+    position: absolute;
+    height: 400px;
+    background: linear-gradient(180deg, transparent 40%,#7637E9 20% , #18181B 40%);
+    width: 900px;
+    filter: blur(25px);
+    top: 21%;
+    left: 15%;
+    z-index: 3;
+ }
+ .wandparticleBackdrop
+ {
+    position: absolute;
+    height: 800px;
+    background: #18181B;
+    width: 700px;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%) scale(1.2);
+    background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/wandsparkle.png?alt=media&token=af5efc56-407f-4cbd-8992-a38d6db30a73);
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: auto;
+    z-index: 2;
+ }
+ .particlesWand
+ {
+    position: absolute;
+    height: 250px;
+    background: transparent;
+    width: 600px;
+    top: 23%;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: center;
+    z-index: 50;
+ }
+ .magicTiles
+ {
+    position: absolute;
+    height: 650px;
+    width: 100%;
+    background-color: transparent;
+    top: 29%;
+    left: 0;
+    z-index: 51;
+ }
+
+ .FirstRowFirstLayout
+ {
+    position: absolute;
+    height: 350px;
+    box-sizing: border-box;
+    padding-right: 25px;
+    width: 250px;
+    background-color: #1D1C20;
+    margin-left: 45px;
+    margin-top: 25px;
+    border-radius: 25px;
+    border: 1px solid #413e47;
+    box-shadow: 43px 0 100px rgb(21, 21, 22);
+    overflow: hidden;
+ }
+
+ .FirstRowFirstLayout .headingText {
+    position: relative;
+    font-size: 20px;
+    font-family: 'Source Code Pro', monospace;
+    width: 180px;
+    margin-top: 25px ;
+    margin-left: 25px;  /* Top and bottom margins are 45px, left and right margins are 35px */
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+ 
+ .FirstRowFirstLayout .descriptionText
+ {
+    position: relative;
+    font-size: 13px;
+    font-family: 'Source Code Pro', monospace;
+    width: 250px;
+    padding-right: 15px;
+    margin-top: 7px;
+    padding-left: 25px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    text-align: left;
+    flex-wrap: wrap;
+    color: #A4A4A4;
+    overflow: hidden;
+ }
+
+ .FirstRowFirstLayout .Tilestars
+ {
+   position: absolute;
+   height: inherit;
+   width: inherit;
+   left: 10%;
+   top: 40%;
+   background-color: transparent;
+ }
+ .FirstRowFirstLayout .Tilestars .Tilestar1
+ {
+   position: absolute;
+   height: 90px;
+   width: 90px;
+   background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/bigstar.png?alt=media&token=53c5945b-2b37-4c3e-972c-7bd1b0b9e4f1);
+   transition: 0.5s;
+   background-size: cover;
+ }
+
+ .FirstRowFirstLayout .Tilestars .Tilestar2
+ {
+   position: absolute;
+   left: 18%;
+   top: 10%;
+   height: 170px;
+   width: 170px;
+   background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/bigstar.png?alt=media&token=53c5945b-2b37-4c3e-972c-7bd1b0b9e4f1);
+   transition: 0.5s;
+   background-size: cover;
+ }
+ .FirstRowFirstLayout .iconTileSurf
+ {
+   position: absolute;
+   left: 0;
+   top: 0;
+   height: 450px;
+   width: 450px;
+   background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/surfboardCatIcon.png?alt=media&token=4b79f346-2583-4b01-8e0e-ba13e70fe7f5);
+   background-size: cover;
+   z-index: 100;
+   filter: drop-shadow( -5px -5px 10px #481ff8);
+   transform: translateX(-400px);
+   transition: 0.5s;
+ }
+ 
+
+ .FirstRowMiddleLayout
+
+ {
+    position: absolute;
+    height: 350px;
+    width: 650px;
+    background-color: #1D1C20;
+    margin-left: 45px;
+    transform: translateX(300px);
+    margin-top: 25px;
+    border-radius: 25px;
+    border: 1px solid #413e47;
+   overflow: hidden;
+
+ }
+
+ .FirstRowMiddleLayout .headingText {
+    position: relative;
+    font-size: 20px;
+    font-family: 'Source Code Pro', monospace;
+    width: inherit;
+    margin-top: 25px ;
+    margin-left: 25px;  /* Top and bottom margins are 45px, left and right margins are 35px */
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+ 
+ .FirstRowMiddleLayout .descriptionText
+ {
+    position: relative;
+    font-size: 13px;
+    font-family: 'Source Code Pro', monospace;
+    width: inherit;
+    padding-right: 15px;
+    margin-top: 7px;
+    padding-left: 25px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    text-align: left;
+    flex-wrap: wrap;
+    color: #A4A4A4;
+ }
+
+ 
+ .FirstRowMiddleLayout .tileIconSVG
+ {
+   position: absolute;
+   height: 260px;
+   width: 460px; /*variable*/
+   background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/tileIconSVG.jpg?alt=media&token=97d3f47e-d788-49a6-b2ac-ff10f792822f);
+   background-size: cover;
+   transform-origin: center;
+   overflow: hidden;
+   transition: width 0.5s ease;
+   left: -3%;
+   top: 35%;
+ }
+
+ .FirstRowMiddleLayout #wandVisuMagicTwo {
+   width: 7vmin;
+   aspect-ratio: 1 / 10;
+   background: linear-gradient(
+     to right, 
+     rgb(26 24 28) 10%, 
+     rgb(42 40 44) 45% 55%, 
+     rgb(26 24 28) 90%
+   );
+   position: absolute;
+   left: 450px; /*50 450 600*/
+   top: 108px; /*100 120
+   */
+   translate: -50%;
+   rotate: 1deg;
+   z-index: 100;
+   border-radius: 2vmin;
+   box-shadow: 0vmin 1vmin 4vmin rgb(0 0 0 / 80%);
+   box-shadow: -45px 5px 50px #000,
+    -45px 5px 70px #000,
+    -30px 5px 10px #00000083,
+    -25px 5px 10px #00000083;
+   overflow: hidden; 
+ }
+
+.FirstRowMiddleLayout #wandVisuMagicTwo > .capVisuMagicTwo
+   {
+    height: 20%;
+    width: 100%;
+   background: linear-gradient(
+  to right,
+  rgb(212 221 236) 10%,
+  rgb(255 255 255) 45% 55%,
+  rgb(212 221 236) 90%
+);
+
+  }
+
+
+ .FirstRowThirdLayout
+ {
+    position: absolute;
+    height: 350px;
+    width: 250px;
+    background-color: #1D1C20;
+    margin-left: 45px;
+    transform: translateX(1000px);
+    margin-top: 25px;
+    border-radius: 25px;
+    border: 1px solid #413e47;
+    overflow: hidden;
+    box-shadow: -53px 0 100px rgb(21, 21, 22);
+ }
+
+ .FirstRowThirdLayout .headingText {
+    position: relative;
+    font-size: 20px;
+    font-family: 'Source Code Pro', monospace;
+    width: 180px;
+    margin-top: 25px ;
+    margin-left: 25px;  /* Top and bottom margins are 45px, left and right margins are 35px */
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+ 
+ .FirstRowThirdLayout .descriptionText
+ {
+    position: relative;
+    font-size: 13px;
+    font-family: 'Source Code Pro', monospace;
+    width: 250px;
+    padding-right: 15px;
+    margin-top: 7px;
+    padding-left: 25px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    text-align: left;
+    flex-wrap: wrap;
+    color: #A4A4A4;
+ }
+
+ .FirstRowThirdLayout .flip-card {
+   position: relative;
+   height: 270px;
+   width: 270px;
+   top: -7%;
+   left: 7%;
+   transform: scale(0.6) rotate(5deg);
+   aspect-ratio: 1;
+   background-color: transparent;
+   background-size: cover;
+   border-radius: 6vmin;
+   overflow: hidden;
+   transform-style: preserve-3d;
+   box-shadow: 0vmin 3vmin 6vmin rgba(0, 0, 0, 0.678);
+   transition: transform 0.5s; /* Smooth transition for transform */
+}
+.FirstRowThirdLayout .flip-card-inner {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.6s;
+   transform-style: preserve-3d;
+   border-radius: 6vmin;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+ }
+ .FirstRowThirdLayout .flip-card-inner img
+ {
+   height: 100%;
+   width: 100%;
+   border-radius: 2vmin;
+   background-color: rgb(31, 41, 55);
+   object-fit: cover;
+ }
+
+.flip-card:hover .flip-card-inner
+{
+   transform: rotateY(180deg);
+}
+
+.flip-cardSmall:hover .flip-card-innerSmall 
+{
+   transform: rotateY(180deg);
+} 
+
+ .flip-card-front, .flip-card-back {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   -webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
+ }
+
+ .flip-card-front {
+   background-color: #bbb;
+   color: black;
+ }
+
+ .flip-card-back {
+   background-color: #2980b9;
+   color: white;
+   transform: rotateY(180deg);
+ }
+
+.FirstRowThirdLayout .flip-cardSmall
+{
+   position: absolute;
+   width: 15vmin;
+   top: 67%;
+   left: 5%;
+   transform: scale(0.6) rotate(-5deg);
+   aspect-ratio: 1;
+   background-color: rgb(31, 41, 55);
+   background-size: cover;
+   border-radius: 2vmin;
+   box-shadow: 0vmin 3vmin 6vmin rgba(0, 0, 0, 0.678);
+   overflow: hidden;
+   transform-style: preserve-3d;
+}
+
+.FirstRowThirdLayout .flip-card-innerSmall {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.6s;
+   transform-style: preserve-3d;
+
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+ }
+ .FirstRowThirdLayout .flip-card-innerSmall img
+ {
+   height: 100%;
+   width: 100%;
+   border-radius: 1vmin;
+   background-color: rgb(31, 41, 55);
+   object-fit: cover;
+ }
+
+ .flip-card-frontSmall, .flip-card-backSmall {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   -webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
+ }
+
+ .flip-card-frontSmall {
+   background-color: #bbb;
+   color: black;
+ }
+
+ .flip-card-backSmall {
+   background-color: #2980b9;
+   color: white;
+   transform: rotateY(180deg);
+ }
+
+
+
+
+
+/* ========================================================SECOND ROW FIRST LAYOUT ======================================= */
+
+ .SecondRowFirstLayout
+ {
+    position: absolute;
+    height: 350px;
+    width: 610px;
+    background-color: #1D1C20;
+    transform: translateY(380px);
+    margin-left: 45px;
+    margin-top: 25px;
+    overflow: hidden;
+    border-radius: 25px;
+    border: 1px solid #413e47;
+    box-shadow: 43px 0 100px rgb(21, 21, 22);
+ }
+
+
+ .SecondRowFirstLayout .headingText {
+    position: relative;
+    font-size: 20px;
+    font-family: 'Source Code Pro', monospace;
+    width: inherit;
+    margin-top: 25px ;
+    margin-left: 25px;  /* Top and bottom margins are 45px, left and right margins are 35px */
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+ 
+ .SecondRowFirstLayout .descriptionText
+ {
+    position: relative;
+    font-size: 13px;
+    font-family: 'Source Code Pro', monospace;
+    width: inherit;
+    padding-right: 15px;
+    margin-top: 7px;
+    padding-left: 25px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    text-align: left;
+    flex-wrap: wrap;
+    color: #A4A4A4;
+ }
+
+
+ .SecondRowFirstLayout #wandVisuMagicOne {
+   width: 7vmin;
+   aspect-ratio: 1 / 10;
+   background: linear-gradient(
+     to right, 
+     rgb(26 24 28) 10%, 
+     rgb(42 40 44) 45% 55%, 
+     rgb(26 24 28) 90%
+   );
+   position: absolute;
+   left: 300px; /*50 570*/
+   top: 120px; /*100 120
+   */
+   translate: -50%;
+   rotate: -3deg;
+   z-index: 100;
+   border-radius: 2vmin;
+   box-shadow: 0vmin 1vmin 4vmin rgb(0 0 0 / 80%);
+   overflow: hidden; 
+ }
+
+.SecondRowFirstLayout #wandVisuMagicOne > .capVisuMagicOne
+   {
+    height: 20%;
+    width: 100%;
+   background: linear-gradient(
+  to right,
+  rgb(212 221 236) 10%,
+  rgb(255 255 255) 45% 55%,
+  rgb(212 221 236) 90%
+);
+
+  }
+
+  #tiles {
+   display: flex;
+ }
+ 
+ .tile {
+   display: grid;
+   place-items: center;
+   width: 38vmin;
+   transform: scale(0.8);
+   aspect-ratio: 1;
+   background-color: rgb(31, 41, 55);
+   background-image: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/imageTmp.png?alt=media&token=d29473bf-d358-4978-8716-88dcc32243c6);
+   background-size: cover;
+   border-radius: 6vmin;
+   box-shadow: 0vmin 3vmin 6vmin rgba(0, 0, 0, 0.678),
+     inset 0vmin 0.5vmin 1vmin rgba(255, 255, 255, 0.493);
+   position: relative;
+   overflow: hidden;
+ }
+
+ .tile:nth-child(1) {
+   rotate: 3deg;
+   z-index: 3;
+ }
+ .tile:nth-child(1) > img
+ {
+   filter: blur(0px);
+   opacity: 1;
+ }
+ .tile:nth-child(2) {
+   rotate: -2deg;
+   z-index: 2;
+
+ }
+ .tile:nth-child(2) > img
+ {
+   filter: blur(5px);
+   opacity: 0.5;
+ }
+
+ .tile:nth-child(3) {
+   rotate: 5deg;
+   z-index: 1;
+ }
+ 
+ .tile:nth-child(3) > img
+ {
+   filter: blur(9px);
+   opacity: 0;
+ }
+
+ .tile:is(:nth-child(2), :nth-child(3)) {
+   margin-left: -10vmin;
+ }
+ 
+ .tile > i {
+   font-size: 15vmin;
+   color: rgb(255 255 255 / 10%);
+ }
+ 
+ .tile > img {
+   height: 100%;
+   aspect-ratio: 1;
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   object-fit: cover;
+   opacity: var(--opacity);
+   filter: blur(calc(var(--blur) * 10px));
+ }
+
+
+ /* ========================================================SECOND ROW FIRST LAYOUT ======================================= */
+ /* ========================================================SECOND ROW SECOND LAYOUT ======================================= */
+ .SecondRowSecondLayout
+ {
+    position: absolute;
+    height: 350px;
+    width: 600px;
+    background-color: #1D1C20;
+    transform: translateX(650px) translateY(380px);
+    margin-left: 45px;
+    margin-top: 25px;
+    border-radius: 25px;
+    border: 1px solid #413e47;
+    box-shadow: 43px 0 100px rgb(21, 21, 22);
+    overflow: hidden;
+ }
+
+ .SecondRowSecondLayout .headingText {
+    position: relative;
+    font-size: 20px;
+    font-family: 'Source Code Pro', monospace;
+    width: inherit;
+    margin-top: 25px ;
+    margin-left: 25px;  /* Top and bottom margins are 45px, left and right margins are 35px */
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+ .SecondRowSecondLayout .descriptionText
+ {
+    position: relative;
+    font-size: 13px;
+    font-family: 'Source Code Pro', monospace;
+    width: inherit;
+    padding-right: 15px;
+    margin-top: 7px;
+    padding-left: 25px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    text-align: left;
+    flex-wrap: wrap;
+    color: #A4A4A4;
+ }
+ 
+
+ .SecondRowSecondLayout #original{
+  
+   position: absolute;
+   left: 5%;
+   right: 0;
+   top: -40px;
+   white-space: nowrap;
+   overflow: hidden;    
+   font-family: 'Dosis', sans-serif;
+   font-weight: 700;
+   font-size: 9em;
+   z-index: 0;
+   background: linear-gradient(to bottom, #2E2E33 75%, #080808);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   
+   transition: 0.5s;
+ }
+ 
+ .SecondRowSecondLayout #other
+{
+  position: absolute;
+  transition: left 2s ease-in-out;
+  background-position: left top;
+  -webkit-transition: width .2s;
+  transform-origin: left;
+  top: -140px;
+  left: 6px;
+  filter: drop-shadow(0 0 10px #000);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'dosis extrabold', monospace;  
+  font-size: 8em;
+  background: linear-gradient(to bottom, #cacaca 75%, #464545);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 400px;
+  
+}
+
+.SecondRowSecondLayout .mask
+{
+  position: absolute;
+  width: 400px;
+  height: 160px;
+  top: 37%;
+  left: 5%;
+  background: #1D1C20; /*0c0c0e*/
+  border-radius: 50px;
+  z-index: 3;
+
+}
+
+.SecondRowSecondLayout #wandVisuMagic {
+   width: 7vmin;
+   aspect-ratio: 1 / 10;
+   background: linear-gradient(
+     to right, 
+     rgb(26 24 28) 10%, 
+     rgb(42 40 44) 45% 55%, 
+     rgb(26 24 28) 90%
+   );
+   position: absolute;
+   left: 450px; /*50 570*/
+   top: 120px; /*100 120
+   */
+   translate: -50%;
+   rotate: -3deg;
+   z-index: 100;
+   border-radius: 2vmin;
+   box-shadow: 0vmin 1vmin 4vmin rgb(0 0 0 / 80%);
+   overflow: hidden; 
+ }
+
+.SecondRowSecondLayout #wandVisuMagic > .capVisuMagic
+   {
+    height: 20%;
+    width: 100%;
+   background: linear-gradient(
+  to right,
+  rgb(212 221 236) 10%,
+  rgb(255 255 255) 45% 55%,
+  rgb(212 221 236) 90%
+);
+
+  }
+
+  #starshine {
+   position: absolute;
+   top: 45%;
+   left: 5%;
+   width: 90%;
+   height: 100px;
+   z-index: 1;
+   overflow: hidden;
+ 
+   background: transparent;
+ }    
+     
+/* ========================================================SECOND ROW SECOND LAYOUT ======================================= */
+
+ .ThirdRowFirstLayout
+ {
+    position: absolute;
+    height: 350px;
+    width: 250px;
+    background-color: #1D1C20;
+    margin-left: 45px;
+    transform: translateY(770px);
+    margin-top: 25px;
+    border-radius: 25px;
+    transform-style: preserve-3d;
+    border: 1px solid #413e47;
+    overflow: hidden;
+    box-shadow: 43px 0 100px rgb(21, 21, 22);
+ }
+
+
+ .ThirdRowFirstLayout .headingText {
+    position: relative;
+    font-size: 20px;
+    font-family: 'Source Code Pro', monospace;
+    width: 180px;
+    margin-top: 25px ;
+    margin-left: 25px;  /* Top and bottom margins are 45px, left and right margins are 35px */
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+ 
+ .ThirdRowFirstLayout .descriptionText
+ {
+    position: relative;
+    font-size: 13px;
+    font-family: 'Source Code Pro', monospace;
+    width: 250px;
+    padding-right: 15px;
+    margin-top: 7px;
+    padding-left: 25px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    text-align: left;
+    flex-wrap: wrap;
+    color: #A4A4A4;
+ }
+.ThirdRowFirstLayout .book
+{
+   position: relative;
+   width: 177px;
+   left: 50%;
+   height: 260px;
+   transform-origin: center;
+   transform: translateX(-50%) scale(0.8);
+   box-shadow: 20px 20px 20px #111;
+   transform-style: preserve-3d;
+   user-select: none;
+   transition: 0.5s;
+}
+.ThirdRowFirstLayout .book::before
+{
+   content: '';
+   position: absolute;
+   width: 50px;
+   height: 100%;
+   transform-origin: left;
+   background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/side.jpg?alt=media&token=4e396096-5b4e-4802-9907-9a414ad61282);
+   background-position: center;
+   transform: rotateY(90deg);
+}
+
+.ThirdRowFirstLayout .book::after
+{
+   content: '';
+   position: absolute;
+   width: 177px;
+   height: 260px;
+   transform-origin: left;
+   background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/back.jpg?alt=media&token=48cbbdd7-015a-4230-a2e6-8738504657b3);
+   background-position: center;
+   transform: rotateY(180deg) translateZ(50px);
+}
+
+
+
+
+.ThirdRowFirstLayout .book:hover
+{
+   transform: translateX(-50%) scale(0.8) rotateY(35deg);
+}
+.ThirdRowFirstLayout .book:active
+{
+   transform: translateX(-50%) scale(0.6) rotateY(180deg);
+}
+
+
+
+.ThirdRowFirstLayout .book img
+{
+   position: relative;
+   height: 100%;
+   width: 100%;
+   top: 0;
+   left: 0;
+   object-fit: cover;
+   background-size: cover;
+
+}
+ .ThirdRowMiddleLayout
+
+ {
+    position: absolute;
+    height: 350px;
+    width: 650px;
+    background-color: #1D1C20;
+    margin-left: 45px;
+    transform: translateX(300px) translateY(770px);
+    margin-top: 25px;
+    border-radius: 25px;
+    border: 1px solid #413e47;
+    overflow: hidden;
+  cursor: pointer;
+ }
+ 
+ .ThirdRowMiddleLayout .headingText {
+    position: relative;
+    font-size: 20px;
+    font-family: 'Source Code Pro', monospace;
+    width: inherit;
+    margin-top: 25px ;
+    margin-left: 25px;  /* Top and bottom margins are 45px, left and right margins are 35px */
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+ 
+ .ThirdRowMiddleLayout .descriptionText
+ {
+    position: relative;
+    font-size: 13px;
+    font-family: 'Source Code Pro', monospace;
+    width: inherit;
+    padding-right: 15px;
+    margin-top: 7px;
+    padding-left: 25px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    text-align: left;
+    flex-wrap: wrap;
+    color: #A4A4A4;
+ }
+ .ThirdRowMiddleLayout .tileforPSBacklit
+ {
+  position: absolute;
+  height: 290px;
+  filter: blur(45px);
+  width: 100%;
+  background: #5411da;
+  top: 25%;
+  left: 5%;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: 0.5s;
+  opacity: 0;
+ }
+ .ThirdRowMiddleLayout .tileforPSBacklitParticles
+ {
+  position: absolute;
+  height: 290px;
+  width: 100%;
+  background: transparent;
+  top: 25%;
+  left: 5%;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: 0.5s;
+  opacity: 0;
+ }
+ .ThirdRowMiddleLayout .tileforPS
+ {
+  position: absolute;
+  height: 250px;
+  width: 100%;
+  background: #39383B;
+  top: 35%;
+  left: 10%;
+  border-radius: 30px;
+  box-shadow: -20px 0 40px #080808,  
+  inset -5px 3px 7px #6d6c6e;
+  overflow: hidden;
+ }
+ .ThirdRowMiddleLayout .tileforPS::before
+ {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  top: 0;
+  left: 55%;
+  background: #252428;
+  box-shadow:  inset -5px 3px 7px #6d6c6e;
+ 
+
+ }
+
+ .ThirdRowMiddleLayout .tileforPS::after
+ {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  top: 0;
+  left: 55%;
+  background: #0c0b0c;
+  z-index: 10;
+  box-shadow:  inset 0px 2px 2px #6d6c6e;
+ }
+  
+ .ThirdRowMiddleLayout .tileforPS .layer1,
+ .ThirdRowMiddleLayout .tileforPS .layer2,
+ .ThirdRowMiddleLayout .tileforPS .layer3,
+ .ThirdRowMiddleLayout .tileforPS .layer4
+ {
+    position: absolute;
+    padding-left: 10px;
+    height: 40px;
+    left: 5%;
+    top: 8%;
+    width: 50%;
+    transition: 0.25s;
+    background-color: transparent;
+    color: #c9c9c9;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    justify-content: center;
+    vertical-align: middle;
+    cursor: pointer;
+    
+ }
+ .ThirdRowMiddleLayout .tileforPS .layer1:hover,
+ .ThirdRowMiddleLayout .tileforPS .layer2:hover,
+ .ThirdRowMiddleLayout .tileforPS .layer3:hover,
+ .ThirdRowMiddleLayout .tileforPS .layer4:hover
+ {
+  background: #5a5a5a;
+ }
+
+ .ThirdRowMiddleLayout .tileforPS .layer2
+{
+  left: 12%;
+  top: 28%;
+  font-size: 20px;
+  width: 260px;
+}
+.ThirdRowMiddleLayout .tileforPS .layer3
+{
+  left: 12%;
+  top: 48%;
+  font-size: 20px;
+  width: 260px;
+}
+
+.ThirdRowMiddleLayout .tileforPS .layer4
+{
+  left: 5%;
+  top: 70%;
+  font-size: 24px;
+}
+
+
+ .ThirdRowMiddleLayout .tileforPS .layer1 ion-icon,
+ .ThirdRowMiddleLayout .tileforPS .layer2 ion-icon,
+ .ThirdRowMiddleLayout .tileforPS .layer3 ion-icon,
+ .ThirdRowMiddleLayout .tileforPS .layer4 ion-icon
+ {
+  position: relative;
+  top: 45%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  margin-right: 26px;
+
+ }
+ .ThirdRowMiddleLayout .layerTranslate
+ {
+  position: absolute;
+  height: 190px;
+  width: 190px;
+  top: 15%;
+  left: 61%;
+  background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/psMoonTmp.png?alt=media&token=a3a2ca90-61a6-41bc-8780-882ef4fc23b5);
+  background-size: cover;
+ }
+ .ThirdRowMiddleLayout #wandVisuMagicThree {
+  width: 7vmin;
+  aspect-ratio: 1 / 10;
+  background: linear-gradient(
+    to right, 
+    rgb(26 24 28) 10%, 
+    rgb(42 40 44) 45% 55%, 
+    rgb(26 24 28) 90%
+  );
+  position: absolute;
+  left: 330px; /*50 570*/
+  top: 80px; /*100 120
+  */
+  transition: 0.25s;
+  rotate: 3deg;
+  z-index: 100;
+  border-radius: 2vmin;
+  box-shadow: 0vmin 1vmin 4vmin rgb(0 0 0 / 80%);
+  overflow: hidden; 
+}
+.ThirdRowMiddleLayout:hover #wandVisuMagicThree
+{
+  top: 20px;
+}
+.ThirdRowMiddleLayout #wandVisuMagicThree > .capVisuMagicThree
+  {
+   height: 20%;
+   width: 100%;
+  background: linear-gradient(
+ to right,
+ rgb(212 221 236) 10%,
+ rgb(255 255 255) 45% 55%,
+ rgb(212 221 236) 90%
+);
+
+ }
+ .ThirdRowMiddleLayout:focus #wandVisuMagicThree
+ {
+  animation: shake 1s linear forwards;
+ }
+ @keyframes shake {
+  0%
+  {
+    rotate: 0deg;
+  }
+  25%
+  {
+    rotate: 6deg;
+  }
+  50%
+  {
+    rotate:3deg;
+  }
+  100%
+  {
+    rotate:3deg;
+  }
+ }
+ .ThirdRowThirdLayout
+ {
+    position: absolute;
+    height: 350px;
+    width: 250px;
+    background-color: #1D1C20;
+    margin-left: 45px;
+    transform: translateX(1000px) translateY(770px);
+    margin-top: 25px;
+    border-radius: 25px;
+    border: 1px solid #413e47;
+    box-shadow: -53px 0 100px rgb(21, 21, 22);
+    overflow: hidden;
+ }
+
+ .ThirdRowThirdLayout .headingText {
+    position: relative;
+    font-size: 20px;
+    font-family: 'Source Code Pro', monospace;
+    width: 180px;
+    margin-top: 25px ;
+    margin-left: 25px;  /* Top and bottom margins are 45px, left and right margins are 35px */
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+ 
+ .ThirdRowThirdLayout .descriptionText
+ {
+    position: relative;
+    font-size: 13px;
+    font-family: 'Source Code Pro', monospace;
+    width: 250px;
+    padding-right: 15px;
+    margin-top: 7px;
+    padding-left: 25px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    text-align: left;
+    flex-wrap: wrap;
+    color: #A4A4A4;
+ }
+
+ .ThirdRowThirdLayout .tileFotor
+ {
+  position: absolute;
+  top: 65%;
+  transform: translateY(-50%);
+  left: -25%;
+  height: 160px;
+  width: 160px;
+  background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/FotorLogo.png?alt=media&token=24a8de3b-cc3c-4bdd-b5c8-1db804b4d856);
+  filter: drop-shadow(20px 0 10px #080808);
+  background-size: cover;
+  transition: 0.25s;
+ }
+
+ .ThirdRowThirdLayout .tileStar
+ {
+  position: absolute;
+  top: 63%;
+  transform: translateY(-50%);
+  left: 55%;
+  height: 200px;
+  width: 200px;
+  background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/bigstar.png?alt=media&token=53c5945b-2b37-4c3e-972c-7bd1b0b9e4f1);
+  filter: drop-shadow(-20px 0 10px #080808);
+  background-size: cover;
+  transition: 0.25s;
+ }
