@@ -168,7 +168,7 @@ document.getElementById("redirectSocial").addEventListener("click", () => {
   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
   sessionStorage.setItem("redirectDsgn", true);
-  window.location.href = ("userinfo.html")
+  window.location.href = ("userInfo.html")
 }
 )
 
