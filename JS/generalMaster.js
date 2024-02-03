@@ -182,7 +182,7 @@ document.querySelectorAll(".image-container div img:not(.autoEditaLazyLoading)")
 
 
 window.onload = e => {
-  // checkCache();
+  checkCache();
 }
 //1417 visumagic
 //3123 innovista
