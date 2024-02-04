@@ -11,7 +11,7 @@
   overflow-x: hidden;
   overflow-y: auto;
   transition: 0.5s;
-  opacity: 1; /*change to zero*/
+  opacity: 0; /*change to zero*/
 }
 
 

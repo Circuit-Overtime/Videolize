@@ -146,9 +146,11 @@ function checkCache()
   console.log(scrlHtRtr, redirectRtr)
   if((scrlHtRtr != null) || (redirectRtr != null))
   {
-    
+    setTimeout(() => {
+      document.querySelector(".loadingOverlay").style.opacity = "0";
+    }, 500);
+    document.getElementById("mainContainer").style.opacity = "1";
     sessionStorage.setItem("redirectDsgn", false);
-    document.querySelector(".loadingOverlay").style.display = "none";
     document.getElementById("mainContainer").scrollTo({top:  sessionStorage.getItem("scrlHtDsgn"), behavior : "smooth"});
     
   }
@@ -188,7 +190,7 @@ document.querySelectorAll(".image-container div img:not(.autoEditaLazyLoading)")
 
 
 window.onload = e => {
-  checkCache();
+ 
 }
 //1417 visumagic
 //3123 innovista

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora&family=Orbitron:wght@500&family=Protest+Riot&family=Sevillana&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lora&family=Montserrat&family=Orbitron:wght@500&family=Protest+Riot&family=Sevillana&family=Style+Script&display=swap');
 body 
 {
     box-sizing: border-box;
@@ -29,11 +29,23 @@ body
   width: 100%;
   z-index: 1;
   background: transparent;
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: hidden;
+  opacity: 0;
   transition: 0.5s;
-  opacity: 1;
 }
+
+.sectionName
+{
+    position: absolute;
+    top: 13%;
+    left: 43.5%;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+
 
 .blob1
 {
@@ -77,3 +89,431 @@ body
         transform: rotate(0deg);
     }
 }
+
+.redirectWebsite
+{
+    position: absolute;
+    padding-left: 30px;
+    height: 40px;
+    width: 200px;
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    backdrop-filter: blur(14px);
+    background-color: #18181831;
+    z-index: 100;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    border: 1px solid #474646;
+    cursor: pointer;
+    z-index: 12;
+    border-radius: 25px;
+
+}
+.redirectWebsite span
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-family: 'Source Code Pro', monospace;
+    pointer-events: none;   
+}
+.redirectWebsite span:nth-child(1)
+{
+    height: 20px;
+    width: 20px;
+    background-size: cover;
+    pointer-events: none;
+    left: 10%;
+    top: 52%;
+    font-size: 21px;
+    color: #fff;
+}
+.redirectWebsite span:nth-child(2)
+{
+    left: 30%;
+    font-weight: bolder;
+}
+
+
+/* =============================================  PLANET CSS =============================================================== */
+
+
+.planetContainer
+{
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateY(0px);
+}
+
+.centerLogo
+{
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/website%20logo.png?alt=media&token=e3409e2d-d827-430d-b0b8-1345567525d5");
+    top: 530px;
+    left: 50%;
+    transform-origin: center;
+    transform: translateX(-50%) scale(1.2);
+    background-size: cover;
+    filter: drop-shadow(0 2px 10px rgb(5, 5, 5));
+}
+
+.ring1 {
+    position: absolute;
+    border-radius: 50%;
+    top: 530px;
+    width: 210px;
+    height: 210px;
+    transform-origin: center;
+    left: -105px;
+    /* transform: translateX(-50%); */
+    scale:  1.7;
+    border-left:  2px solid #5e5e68ad;
+    border-right:  2px solid #5e5e68ad;
+    border-radius: 50%;
+    background: transparent;
+    animation: rotateHere 8s linear infinite;
+    z-index: 100;
+    transition: 0.5s;  rotate: 300deg;
+  }
+
+
+  .planet1
+  {
+    position: relative;
+    left: 10px;
+    top: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-size: cover;
+    background-color: #009dffbd;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 5px #009dffbd;
+    overflow: hidden;
+    /* animation: rotate 8s linear infinite; */
+    
+  }
+  .planet1::before
+  {
+    position: absolute;
+    content: '';
+    height: 90%;
+    width: 90%;
+    left: 5%;
+    top: 5%;
+    background-color: #3c2381;
+    background-image :url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/softWarelogos%2Fps.png?alt=media&token=a56b3236-7836-4afd-9e76-36e7e7ab8c74); 
+    background-size: 41px;
+    background-position-x: -2px;
+    background-position-y: -2px;
+    border-radius: 50%;
+  }
+
+  .ring2 {
+    position: absolute;
+    border-radius: 50%;
+    top: 530px;
+    width: 210px;
+    height: 210px;
+    transform-origin: center;
+    left: -105px;
+    scale:  2.3;
+    border-left:  2px solid #5e5e68ad;
+    border-right:  2px solid #5e5e68ad;
+    border-radius: 50%;
+    background: transparent;
+    animation: rotateHere 6s linear infinite;
+    z-index: 90;  rotate: 300deg;
+  }
+
+  .planet2
+  {
+    position: relative;
+    left: 17px;
+    top: 17px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-size: cover;
+    background-color: #009dffbd;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 5px #009dffbd;
+    overflow: hidden;
+    
+  }
+  .planet2::before
+  {
+    position: absolute;
+    content: '';
+    height: 90%;
+    width: 90%;
+    left: 5%;
+    top: 5%;
+    background-color: #3c2381;
+    background-image :url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/softWarelogos%2Fda%20vinci.jpeg?alt=media&token=4960ef43-9042-4b19-9a5a-3180efb2e5b5); 
+    background-size: 35px;
+    background-position-x: -6px;
+    background-position-y: -6px;
+    border-radius: 50%;
+  }
+
+
+  .ring3 {
+    position: absolute;
+    border-radius: 50%;
+    top: 530px;
+    width: 210px;
+    height: 210px;
+    transform-origin: center;
+    left: -105px;
+    scale:  3;
+    border-left:  2px solid #5e5e68ad;
+    border-right:  2px solid #5e5e68ad;
+    border-radius: 50%;
+    background: transparent;
+    animation: rotateHere 9s linear infinite;
+    z-index: 80;  rotate: 300deg;
+  }
+
+  .planet3
+  {
+    position: relative;
+    left: 20px;
+    top: 20px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-size: cover;
+    background-color: #002942bd;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 5px #002942bd;
+    overflow: hidden;
+    /* animation: rotate 8s linear infinite; */
+    
+  }
+  .planet3::before
+  {
+    position: absolute;
+    content: '';
+    height: 90%;
+    width: 90%;
+    left: 5%;
+    top: 5%;
+    background-color: #3c2381;
+    background-image :url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/softWarelogos%2Fpr.jpg?alt=media&token=ed55bbfb-d850-4b32-ac11-d5eedcf3f413); 
+    background-size: 22px;
+    background-position-x: -2px;
+    background-position-y: -2px;
+    border-radius: 50%;
+  }
+
+  .ring4 {
+    position: absolute;
+    border-radius: 50%;
+    top: 530px;
+    width: 210px;
+    height: 210px;
+    transform-origin: center;
+    left: -105px;
+    scale:  3.7;
+    border-left:  2px solid #5e5e68ad;
+    border-right:  2px solid #5e5e68ad;
+    border-radius: 50%;
+    background: transparent;
+    animation: rotateHere 12s linear infinite;
+    z-index: 70;  
+    rotate: 300deg;
+  }
+
+  .planet4
+  {
+    position: relative;
+    left : 22px;
+    top : 22px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-size: cover;
+    background-color: #009dffbd;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 5px #009dffbd;
+    overflow: hidden;
+    
+  }
+  .planet4::before
+  {
+    position: absolute;
+    content: '';
+    height: 90%;
+    width: 90%;
+    left: 5%;
+    top: 5%;
+    background-color: #3c2381;
+    background-image :url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/softWarelogos%2Fcamera%20lens.jpeg?alt=media&token=7f094a1a-d375-4023-92a5-cd7a6792a76e); 
+    background-size: 15px;
+    background-position-x: -1px;
+    background-position-y: -0.7px;
+    border-radius: 50%;
+  }
+
+  .ring5 {
+    position: absolute;
+    border-radius: 50%;
+    top: 530px;
+    width: 210px;
+    height: 210px;
+    transform-origin: center;
+    left: -105px;
+    /* transform: translateX(-50%); */
+    scale:  4.6;
+    border-left:  1px solid #5e5e68ad;
+    border-right:  1px solid #5e5e68ad;
+    border-radius: 50%;
+    background: transparent;
+    animation: rotateHere 15s linear infinite;
+    z-index: 60;
+    rotate: 300deg;
+    }
+
+
+    .planet5
+  {
+    position: relative;
+    left: 22px;
+    top: 22px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-size: cover;
+    background-color: #009dffbd;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 5px #009dffbd;
+    overflow: hidden;
+    
+  }
+  .planet5::before
+  {
+    position: absolute;
+    content: '';
+    height: 90%;
+    width: 90%;
+    left: 5%;
+    top: 5%;
+    background-color: #3c2381;
+    background-image :url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/softWarelogos%2Ffilmora.png?alt=media&token=8bf3ea43-94d6-4dfa-8476-e27188c898ff); 
+    background-size: 15px;
+    background-position-x: -1px;
+    background-position-y: -0.7px;
+    border-radius: 50%;
+  }
+
+
+
+  .ring6 {
+    position: absolute;
+    border-radius: 50%;
+    top: 530px;
+    width: 210px;
+    height: 210px;
+    transform-origin: center;
+    left: -105px;
+    /* transform: translateX(-50%); */
+    scale:  5.6;
+    border-left:  1px solid #5e5e68ad;
+    border-right:  1px solid #5e5e68ad;
+    border-radius: 50%;
+    background: transparent;
+    animation: rotateHere 13s linear infinite;
+      rotate: 300deg;
+    z-index: 50;
+  }
+
+  .planet6
+  {
+    position: relative;
+    left: 22px;
+    top: 22px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-size: cover;
+    background-color: #8c66e7;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 5px #8c66e7;
+    overflow: hidden;
+    
+  }
+  .planet6::before
+  {
+    position: absolute;
+    content: '';
+    height: 90%;
+    width: 90%;
+    left: 5%;
+    top: 5%;
+    background-color: #3C2B64;
+    background-image :url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/softWarelogos%2Fae.png?alt=media&token=95cb8a6e-097a-4138-a5a5-15e12e78d0c8); 
+    background-size: 15px;
+    background-position-x: -1px;
+    background-position-y: -1px;
+    border-radius: 50%;
+  }
+
+  @keyframes rotateHere {
+    0% {
+        transform: rotate(0deg);
+    }
+    80% {
+        transform: rotate(200deg);
+    }
+    81%, 90% {
+        transform: rotate(320deg);
+    }
+    91%,100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.FooterSocials
+  {
+    position: absolute;
+    top: 92%;
+    left: 3%;
+    z-index: 10;
+  }
+  .FooterSocials ion-icon
+  {
+    color: #5146A1;
+    font-size: 24px;
+    margin-left: 15px;
+    cursor: pointer;
+
+  }
+  .FooterSocials ion-icon:nth-child(1)
+  {
+    transform: rotate(9deg);
+  }
+
+  .FooterSocials ion-icon:nth-child(2)
+  {
+    transform: rotate(-11deg);
+  }
+
+  .FooterSocials ion-icon:nth-child(3)
+  {
+    transform: rotate(15deg);
+  }
+
+  .FooterSocials ion-icon:nth-child(4)
+  {
+    transform: rotate(-15deg);
+    color: #ffc;
+   
+  }

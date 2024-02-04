@@ -52,7 +52,7 @@ window.onload = (e) => {
   setTimeout(animate);  
   startAnimation("DESIGNER");
   handleOnMoveImageTrack();
-
+  checkCache();
  
 
 };
@@ -61,7 +61,7 @@ window.onload = (e) => {
 window.addEventListener('load', function() {
     // Your code to be executed after all resources are fully loaded
     // console.log('Hello! All resources are loaded, and the document is ready for display.');
-   
+  
     setTimeout(() => {
       document.getElementById("timeLineSeek").style.left = "100px";
     }, 500);
