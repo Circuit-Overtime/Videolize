@@ -169,8 +169,14 @@ document.getElementById("redirectSocial").addEventListener("click", () => {
   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
   sessionStorage.setItem("redirectDsgn", true);
  location.replace("userInfo.html")
-}
-)
+})
+
+document.getElementById("redirectSocialInnoVista").addEventListener("click", () => {
+  const windowHeihgt = document.getElementById("mainContainer").scrollTop;
+  sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
+  sessionStorage.setItem("redirectDsgn", true);
+ location.replace("userSkills.html")
+})
 
 //lazy loading on images!
 

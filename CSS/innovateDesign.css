@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Orbitron:wght@500&family=Protest+Riot&family=Sevillana&family=Style+Script&display=swap');
+body 
+{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+*
+{
+    user-select: none;
+}
+
+.ParticleContainer
+{
+  background: #18181B;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.mainContainer
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: transparent;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.blob1
+{
+    position: absolute;
+    height: 450px;
+    top: -55px;
+    left: -45px;
+    width: 450px;
+    background: #235881;
+    opacity: 0.8;
+    filter: blur(55px);
+    animation: slowRotate 40s linear infinite;
+    border-radius: 40% 20px 75% 10px;
+}
+.blob2
+{
+    position: absolute;
+    height: 450px;
+    top: 60%;
+    left: 70%;
+    width: 450px;
+    background: #3c2381;
+    opacity: 0.8;
+    filter: blur(55px);
+    animation: slowRotate 40s linear infinite;
+    border-radius: 40% 20px 75% 10px;
+}
+
+
+@keyframes slowRotate {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    50%
+    {
+        transform: rotate(360deg);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}

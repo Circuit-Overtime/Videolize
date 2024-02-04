@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Salsa&family=Source+Code+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Salsa&family=Source+Code+Pro&display=swap");
 .mainContainer
 {
   position: absolute;
@@ -11,12 +11,9 @@
   overflow-x: hidden;
   overflow-y: auto;
   transition: 0.5s;
-  opacity: 1;
+  opacity: 1; /*change to zero*/
 }
-.mainContainer::-webkit-scrollbar
-{
-    /* background: transparent; */
-}
+
 
 .mainContainer::-webkit-scrollbar-track
 {
