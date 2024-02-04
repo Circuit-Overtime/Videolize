@@ -141,6 +141,7 @@ document.getElementById("facebookRedirect").addEventListener("click", () => {
 
 function checkCache()
 {
+  document.getElementById("mainContainer").style.opacity = "0";
   const scrlHtRtr = sessionStorage.getItem("scrlHtDsgn");
   const redirectRtr = sessionStorage.getItem("redirectDsgn");
   console.log(scrlHtRtr, redirectRtr)
@@ -148,11 +149,13 @@ function checkCache()
   {
     setTimeout(() => {
       document.querySelector(".loadingOverlay").style.opacity = "0";
-    }, 500);
+    }, 900);
     document.getElementById("mainContainer").style.opacity = "1";
     sessionStorage.setItem("redirectDsgn", false);
     document.getElementById("mainContainer").scrollTo({top:  sessionStorage.getItem("scrlHtDsgn"), behavior : "smooth"});
-    
+    setTimeout(() => {
+      document.querySelector(".loadingOverlay").style.display = "none";
+    }, 200);
   }
   else if(scrlHtRtr == null)
   {
