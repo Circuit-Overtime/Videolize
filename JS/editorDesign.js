@@ -31,6 +31,9 @@ document.getElementById("linkedinRedirect").addEventListener("click", () => {
     location.replace("designer.html");
   }) //feature for website link
 
+  document.getElementById("redirectWebsiteCV").addEventListener("click", () => {
+    location.replace("userCV.html");
+  }) //feature for cv link
 
 
     document.getElementById("profileLogoCont").addEventListener("load", () => {

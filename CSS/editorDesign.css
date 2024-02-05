@@ -142,6 +142,71 @@ body
     filter: blur(9px);
     opacity: 1;
 }
+
+.redirectWebsiteCV
+{
+    position: absolute;
+    padding-left: 30px;
+    height: 40px;
+    width: 200px;
+    top: 10%;
+    left: 4%;
+    display: flex;
+    backdrop-filter: blur(14px);
+    background-color: #18181831;
+    z-index: 100;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    border: 1px solid #474646;
+    cursor: pointer;
+    z-index: 12;
+    border-radius: 25px;
+    overflow: hidden;
+
+}
+.redirectWebsiteCV .maskCVButton
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    transition: 0.25s;
+}
+.redirectWebsiteCV span
+{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-family: 'Source Code Pro', monospace;
+    pointer-events: none;   
+}
+.redirectWebsiteCV span:nth-child(1)
+{
+    height: 20px;
+    width: 20px;
+    background-size: cover;
+    pointer-events: none;
+    left: 10%;
+    top: 45%;
+    font-size: 25px;
+    color: #ffc;
+}
+.redirectWebsiteCV span:nth-child(2)
+{
+    left: 25%;
+    font-weight: bolder;
+    text-shadow: 0 0 10px #000;
+}
+
+.redirectWebsiteCV:hover > .maskCVButton
+{
+    opacity: 0.5;
+}
+
 .nameDesc /*upper name hello i'm*/
 {
     position: absolute;
