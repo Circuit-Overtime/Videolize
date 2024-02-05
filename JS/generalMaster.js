@@ -144,7 +144,7 @@ function checkCache()
   document.getElementById("mainContainer").style.opacity = "0";
   const scrlHtRtr = sessionStorage.getItem("scrlHtDsgn");
   const redirectRtr = sessionStorage.getItem("redirectDsgn");
-  console.log(scrlHtRtr, redirectRtr)
+  // console.log(scrlHtRtr, redirectRtr)
   if((scrlHtRtr != null) || (redirectRtr != null))
   {
     setTimeout(() => {

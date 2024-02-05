@@ -41,7 +41,7 @@ document.getElementById("rightClickVouch").style.opacity = "0.2";
     })
   //((e.code == "F12")) ||
     window.addEventListener("keydown", (e) => {
-      if(((e.ctrlKey == true) && (e.code == "KeyU")) || ((e.ctrlKey == true) && (e.code == "KeyS")) ||  ((e.ctrlKey == true) && (e.code == "KeyP")))
+      if(((e.ctrlKey == true) && (e.code == "KeyU")) || ((e.ctrlKey == true) && (e.code == "KeyS")) || ((e.code == "F12")) || ((e.ctrlKey == true) && (e.code == "KeyP")))
       {
           e.preventDefault();
           clearTimeout(disp_timer);
