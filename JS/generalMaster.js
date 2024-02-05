@@ -159,11 +159,11 @@ function checkCache()
   }
   else if(scrlHtRtr == null)
   {
-    sessionStorage.setItem("scrlHtDsgn", 0);
+    sessionStorage.setItem("scrlHtDsgn", null);
   }
   else if(redirectRtr == null)
   {
-    sessionStorage.setItem("redirectDsgn", false);
+    sessionStorage.setItem("redirectDsgn", null);
   }
 
 }
