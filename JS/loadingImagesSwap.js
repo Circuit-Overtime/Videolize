@@ -115,7 +115,7 @@ window.addEventListener('load', function() {
       document.getElementById("iconsRelay").style.opacity = "0";
       document.getElementById("loadingOverlay").style.opacity = "0";
       document.getElementById("loadingOverlay").style.display = "none";
-      ScrollReveal().reveal('.ParticleContainerSlow', { delay: 200 });
+      // ScrollReveal().reveal('.ParticleContainerSlow', { delay: 200 });
       ScrollReveal().reveal('.navbarSlow', { delay: 500 });
       ScrollReveal().reveal('.mainHeadingSlow', { delay: 700 });
       ScrollReveal().reveal('.subHeadingSlow', { delay: 800 });
