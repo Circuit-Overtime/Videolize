@@ -183,6 +183,14 @@ document.getElementById("redirectSocialInnoVista").addEventListener("click", () 
  location.replace("userSkills.html")
 })
 
+document.getElementById("redirectSocialautoEdita").addEventListener("click", () => {
+  const windowHeihgt = document.getElementById("mainContainer").scrollTop;
+  sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
+  sessionStorage.setItem("redirectDsgn", true);
+ location.replace("userDisplay.html")
+})
+
+
 //lazy loading on images!
 
 document.querySelectorAll(".image-container div img:not(.autoEditaLazyLoading)").forEach((elm, index) => {
