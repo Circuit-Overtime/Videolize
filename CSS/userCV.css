@@ -230,7 +230,7 @@ body
     height: 45%;
     top: 50%;
     width: 600px;
-    background-color: #0505f0;
+    background-color: transparent;
     left: 25%;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
@@ -253,7 +253,7 @@ body
     height: 75%;
     top: 50%;
     width: 600px;
-    background-color: #0505f0;
+    background-color: transparent;
     left: 73%;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -272,7 +272,7 @@ body
     height: 45%;
     top: 50%;
     width: 600px;
-    background-color: #0505f0;
+    background-color: transparent;
     left: 25%;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
@@ -293,7 +293,7 @@ body
     height: 75%;
     top: 50%;
     width: 600px;
-    background-color: #0505f0;
+    background-color: transparent;
     left: 73%;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
