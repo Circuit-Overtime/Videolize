@@ -15,8 +15,9 @@
   transform: scale(1.2) rotate(-5deg);
   opacity: 0.4;
   width: 600px;
-  top: 100px;
-  left: 805px;
+  top: 5%;
+  left: 60%;
+  transform: translateX(-5%) translateY(-25%);
   background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/autoEditaDescriptionImage.png?alt=media&token=8de885e9-0e04-416b-96fc-04375934679b);
   background-size: contain;
 }
@@ -107,9 +108,9 @@
 .autoEdita .autoEditaDesc
 {
     position: absolute;
-    top: 320px;
+    top: 19%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(-81%);
     font-size: 2em;
     text-align: center;
     color: #8d8d8dea;
