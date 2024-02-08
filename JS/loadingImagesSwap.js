@@ -116,5 +116,6 @@ window.addEventListener('load', function() {
       document.getElementById("loadingOverlay").style.opacity = "0";
       document.getElementById("loadingOverlay").style.display = "none";
       // ScrollReveal().reveal('.ParticleContainerSlow', { delay: 200 });
+      
     }, 5000);
 });

@@ -19,9 +19,15 @@ document.getElementById("mainContainer").style.opacity = 0;
   window.onload = e => {
     
     setTimeout(() => {
-      document.getElementById("mainContainer").style.opacity = 1;
-       
-        
+      document.getElementById("mainContainer").style.opacity = 1;        
+      document.querySelectorAll(".slow").forEach((elm, index) => {
+        document.querySelectorAll(".slow")[index].style.opacity = "0";
+        setTimeout(() => {
+          document.querySelectorAll(".slow")[index].style.transition = (1*index)+"s";
+          document.querySelectorAll(".slow")[index].style.opacity = "1";
+        }, 500);
+
+      })
     }, 500);
 
   }
