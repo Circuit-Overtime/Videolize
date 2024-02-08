@@ -20,18 +20,23 @@ body
   z-index: -1;
 }
 
+
 .mainContainer
 {
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+  top: 50%;
+  left: 50%;
+  height: 641px;
+  width: 1349px;
   z-index: 1;
+  /* box-shadow: 0 0 40px #D62929; */
   background: transparent;
-  overflow: hidden;
-  opacity: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
   transition: 0.5s;
+  transform-origin: center;
+  opacity: 1; /*change to zero*/
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .sectionName
@@ -173,8 +178,7 @@ body
     left: -105px;
     /* transform: translateX(-50%); */
     scale:  1.7;
-    border-left:  2px solid #5e5e68ad;
-    border-right:  2px solid #5e5e68ad;
+    border:  2px solid #5e5e68ad;
     border-radius: 50%;
     background: transparent;
     animation: rotateHere 8s linear infinite;
@@ -224,8 +228,7 @@ body
     transform-origin: center;
     left: -105px;
     scale:  2.3;
-    border-left:  2px solid #5e5e68ad;
-    border-right:  2px solid #5e5e68ad;
+    border:  2px solid #5e5e68ad;
     border-radius: 50%;
     background: transparent;
     animation: rotateHere 6s linear infinite;
@@ -273,8 +276,7 @@ body
     transform-origin: center;
     left: -105px;
     scale:  3;
-    border-left:  2px solid #5e5e68ad;
-    border-right:  2px solid #5e5e68ad;
+    border:  2px solid #5e5e68ad;
     border-radius: 50%;
     background: transparent;
     animation: rotateHere 9s linear infinite;
@@ -322,8 +324,7 @@ body
     transform-origin: center;
     left: -105px;
     scale:  3.7;
-    border-left:  2px solid #5e5e68ad;
-    border-right:  2px solid #5e5e68ad;
+    border:  2px solid #5e5e68ad;
     border-radius: 50%;
     background: transparent;
     animation: rotateHere 12s linear infinite;
@@ -370,10 +371,8 @@ body
     height: 210px;
     transform-origin: center;
     left: -105px;
-    /* transform: translateX(-50%); */
     scale:  4.6;
-    border-left:  1px solid #5e5e68ad;
-    border-right:  1px solid #5e5e68ad;
+    border:  1px solid #5e5e68ad;
     border-radius: 50%;
     background: transparent;
     animation: rotateHere 15s linear infinite;
@@ -425,8 +424,7 @@ body
     left: -105px;
     /* transform: translateX(-50%); */
     scale:  5.6;
-    border-left:  1px solid #5e5e68ad;
-    border-right:  1px solid #5e5e68ad;
+    border:  1px solid #5e5e68ad;
     border-radius: 50%;
     background: transparent;
     animation: rotateHere 13s linear infinite;

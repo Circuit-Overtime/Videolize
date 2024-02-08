@@ -25,7 +25,7 @@
 .autoEditaText
 {
     position: relative;
-    top: 8%;
+    top: 6.5%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 6em;
@@ -529,6 +529,8 @@
     top: 100px;
     z-index: 5;
     transition : 0.25s;
+    user-select: none;
+    cursor: pointer;
   }
   .FirstRowSecondLayoutEdita #instagramSocial
   {
@@ -544,6 +546,8 @@
     top: 100px;
     z-index: 5;
     transition : 0.25s;
+    user-select: none;
+    cursor: pointer;
   }
   .FirstRowSecondLayoutEdita #facebookSocial
   {
@@ -559,6 +563,8 @@
     top: 100px;
     z-index: 5; 
     transition : 0.25s;
+    user-select: none;
+    cursor: pointer;
   }
 
   .FirstRowSecondLayoutEdita .profileCards .profileImage

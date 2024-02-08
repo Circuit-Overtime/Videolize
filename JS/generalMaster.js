@@ -27,9 +27,9 @@ function typeWriterEffectHTML(idOfTextHolder, textToType, speed) {
     
 }
 
-// document.getElementById("mainContainer").scrollTo({
-//   top: 6393,
-// });
+document.getElementById("mainContainer").scrollTo({
+  top: 0,
+});
 
 document.getElementById("mainContainer").addEventListener("scroll", (e) => {
   const Scrollamount = document.getElementById("mainContainer").scrollTop;
@@ -139,6 +139,24 @@ document.getElementById("facebookRedirect").addEventListener("click", () => {
   window.location.href = "https://www.facebook.com/solankighosh65?mibextid=ZbWKwL"
 })
 
+
+
+document.getElementById("linkedInSocial").addEventListener("click", () => {
+  window.location.href = "https://www.linkedin.com/in/solankighoshvideoeditor/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+})
+
+document.getElementById("instagramSocial").addEventListener("click", () => {
+  window.location.href = "https://www.instagram.com/a.creative_mess?igsh=MXkxdTU1ZDUxaG8wYQ%3D%3D"
+})
+
+
+document.getElementById("facebookSocial").addEventListener("click", () => {
+  window.location.href = "https://www.facebook.com/solankighosh65?mibextid=ZbWKwL"
+})
+
+
+
+
 function checkCache()
 {
   document.getElementById("mainContainer").style.opacity = "0";
@@ -176,6 +194,16 @@ document.getElementById("redirectSocial").addEventListener("click", () => {
  location.replace("userInfo.html")
 })
 
+
+document.getElementById("iconforvisumagic").addEventListener("click", () => {
+  const windowHeihgt = document.getElementById("mainContainer").scrollTop;
+  sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
+  sessionStorage.setItem("redirectDsgn", true);
+ location.replace("userInfo.html")
+})
+
+
+
 document.getElementById("redirectSocialInnoVista").addEventListener("click", () => {
   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
@@ -183,12 +211,29 @@ document.getElementById("redirectSocialInnoVista").addEventListener("click", () 
  location.replace("userSkills.html")
 })
 
+
+document.getElementById("iconforInnovista").addEventListener("click", () => {
+  const windowHeihgt = document.getElementById("mainContainer").scrollTop;
+  sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
+  sessionStorage.setItem("redirectDsgn", true);
+ location.replace("userSkills.html")
+})
+
+
 document.getElementById("redirectSocialautoEdita").addEventListener("click", () => {
   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
   sessionStorage.setItem("redirectDsgn", true);
  location.replace("userDisplay.html")
 })
+
+document.getElementById("iconforautoEdita").addEventListener("click", () => {
+  const windowHeihgt = document.getElementById("mainContainer").scrollTop;
+  sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
+  sessionStorage.setItem("redirectDsgn", true);
+ location.replace("userDisplay.html")
+})
+
 
 
 //lazy loading on images!
@@ -201,7 +246,7 @@ document.querySelectorAll(".image-container div img:not(.autoEditaLazyLoading)")
 
 
 window.onload = e => {
- 
+  
 }
 //1417 visumagic
 //3123 innovista

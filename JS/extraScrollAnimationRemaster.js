@@ -1,11 +1,14 @@
 const blocks_to_be_animated = [".wandOne", "#particleWandEffect", ".wandparticleBackdropCut", ".wandparticleBackdrop", ".visuMagicContainer .FirstRowFirstLayout", 
-                        ".visuMagicContainer .FirstRowMiddleLayout", ".visuMagicContainer .FirstRowThirdLayout", ".visuMagicContainer .SecondRowFirstLayout",
-                        ".visuMagicContainer .SecondRowSecondLayout",".visuMagicContainer .ThirdRowFirstLayout", ".visuMagicContainer .ThirdRowMiddleLayout", 
-                        ".visuMagicContainer .ThirdRowThirdLayout","#innoVistaLogo","#innoVista", "#innoVistaDesc", "#redirectSocialInnoVista", 
+                        ".visuMagicContainer .FirstRowMiddleLayout", ".visuMagicContainer .SecondRowFirstLayout",
+                        ".visuMagicContainer .SecondRowSecondLayout",".visuMagicContainer .ThirdRowFirstLayout", ".visuMagicContainer .ThirdRowMiddleLayout"
+                        ,"#innoVistaLogo","#innoVista", "#innoVistaDesc", "#redirectSocialInnoVista", 
                         "#FirstRowFirstLayoutInnovate", "#FirstRowSecondLayoutInnovate","#SecondRowSecondLayoutInnovate",".autoEditaLogoMask",
                          ".autoEditaText", ".galleryImagesAutoEditaBtn", ".socialSectionAutoEditaBtn", ".autoEditaDesc", ".redirectSocialautoEdita", 
                          "#FirstRowFirstLayoutEdita", "#FirstRowSecondLayoutEdita", ".designSageLogo", ".designSageText",
                          ".designSageDesc", ".redirectSocialdesignSage"]
+
+//".visuMagicContainer .FirstRowThirdLayout"
+//".visuMagicContainer .ThirdRowThirdLayout"
 
 function AnimateOnScroll(parentElement, targetElement, animationParameters,elm_trig_thresh)
 {  
@@ -266,7 +269,7 @@ document.getElementById("mainContainer").addEventListener("scroll", () => {
                 transition : "0.5s",
                 initial_opacity : "0 1",
                 scale_value : "",
-                delay : "700",
+                delay : "400",
             },elm_trig_thresh = 110
             )
         }
@@ -279,7 +282,7 @@ document.getElementById("mainContainer").addEventListener("scroll", () => {
                 transition : "1s",
                 initial_opacity : "0 1",
                 scale_value : "",
-                delay : "800",
+                delay : "450",
             },elm_trig_thresh = 110
             )
         }
@@ -305,7 +308,7 @@ document.getElementById("mainContainer").addEventListener("scroll", () => {
                 transition : "1s",
                 initial_opacity : "0 1",
                 scale_value : "",
-                delay : "800",
+                delay : "550",
             },elm_trig_thresh = 10
             )
         }

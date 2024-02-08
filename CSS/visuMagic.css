@@ -110,14 +110,13 @@
 }
 
 #wand {
-    width: 8vmin;
-    aspect-ratio: 1 / 11;
-    background-image: linear-gradient(90deg,#0c0c0c,#1d1a1f);
     position: absolute;
+    width: 55px;
+    height: 600px;
+    background-image: linear-gradient(90deg,#0c0c0c,#1d1a1f);
     opacity: 100%;
     left: 50%;
-    top: 8%;
-    /* translate: -50%; */
+    top: 140px;
     rotate: 90deg;
     z-index: 100;
     border-radius : 10px;
@@ -152,7 +151,7 @@
     position: absolute;
     height: 400px;
     background: linear-gradient(180deg, transparent 40%,#7637E9 20% , #18181B 40%);
-    width: 900px;
+    width: 800px;
     filter: blur(25px);
     top: 21%;
     left: 15%;
@@ -163,8 +162,8 @@
     position: absolute;
     height: 800px;
     background: #18181B;
-    width: 700px;
-    top: 15%;
+    width: 580px;
+    top: 18%;
     left: 50%;
     transform: translateX(-50%) scale(1.2);
     background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/wandsparkle.png?alt=media&token=af5efc56-407f-4cbd-8992-a38d6db30a73);
@@ -178,7 +177,7 @@
     position: absolute;
     height: 250px;
     background: transparent;
-    width: 600px;
+    width: 500px;
     top: 23%;
     left: 50%;
     transform: translateX(-50%);
@@ -196,7 +195,7 @@
     z-index: 51;
  }
 
- .FirstRowFirstLayout
+ .FirstRowFirstLayout /*This has been shifted downwards near third row third layout*/
  {
     position: absolute;
     height: 350px;
@@ -207,6 +206,8 @@
     margin-left: 45px;
     margin-top: 25px;
     border-radius: 25px;
+    left: 74%;
+    top: 119%;
     border: 1px solid #413e47;
     box-shadow: 43px 0 100px rgb(21, 21, 22);
     overflow: hidden;
@@ -293,10 +294,10 @@
  {
     position: absolute;
     height: 350px;
-    width: 650px;
+    width: 710px;
     background-color: #1D1C20;
     margin-left: 45px;
-    transform: translateX(300px);
+    left: 20%;
     margin-top: 25px;
     border-radius: 25px;
     border: 1px solid #413e47;
@@ -906,11 +907,11 @@
    left: 50%;
    height: 260px;
    transform-origin: center;
-   transform: translateX(-50%) scale(0.8);
    box-shadow: 20px 20px 20px #111;
    transform-style: preserve-3d;
    user-select: none;
    transition: 0.5s;
+   transform: translateX(-50%) scale(0.8) rotateY(35deg);
 }
 .ThirdRowFirstLayout .book::before
 {
@@ -941,12 +942,9 @@
 
 .ThirdRowFirstLayout .book:hover
 {
-   transform: translateX(-50%) scale(0.8) rotateY(35deg);
+  transform: translateX(-50%) scale(0.6) rotateY(180deg);
 }
-.ThirdRowFirstLayout .book:active
-{
-   transform: translateX(-50%) scale(0.6) rotateY(180deg);
-}
+
 
 
 

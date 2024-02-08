@@ -2,17 +2,21 @@
 .mainContainer
 {
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+  top: 50%;
+  left: 50%;
+  height: 641px;
+  width: 1349px;
   z-index: 1;
+  /* box-shadow: 0 0 40px #D62929; */
   background: transparent;
   overflow-x: hidden;
   overflow-y: auto;
   transition: 0.5s;
+  transform-origin: center;
   opacity: 0; /*change to zero*/
+  transform: translateX(-50%) translateY(-50%);
 }
+
 
 
 .mainContainer::-webkit-scrollbar-track
@@ -20,12 +24,14 @@
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	border-radius: 10px;
 	background-color: #F5F5F5;
+    
 }
 
 .mainContainer::-webkit-scrollbar
 {
 	width: 12px;
 	background-color: #F5F5F5;
+    display: none;
 }
 
 .mainContainer::-webkit-scrollbar-thumb
@@ -144,15 +150,15 @@
 }
 .navbar span:nth-child(2)
 {
-    left: 29%;
+    left: 31%;
 }
 .navbar span:nth-child(3)
 {
-    left: 51%;
+    left: 55%;
 }
 .navbar span:nth-child(4)
 {
-    left: 73%;
+    left: 78%;
 }
 
 .mainHeading
@@ -185,6 +191,125 @@
     text-align: center;
     font-family: 'Salsa', cursive;
     z-index: 11;
+}
+
+
+.iconforvisumagic
+{
+    position: absolute;
+    top: 27%;
+    left: 21.5%;
+    height: 40px;
+    width: 40px;
+    opacity: 0.8;
+    transform: rotate(20deg);
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px rgba(111, 52, 212, 0.781));
+    animation: slowRotate 2s linear infinite;
+    background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/bigstar.png?alt=media&token=53c5945b-2b37-4c3e-972c-7bd1b0b9e4f1);
+    background-size: cover;
+}
+
+.iconforInnovista
+{
+    position: absolute;
+    top: 23%;
+    left: 68%;
+    height: 20px;
+    width: 40px;
+    transform: rotate(5deg);
+    opacity: 0.8;
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px rgba(212, 143, 52, 0.781));
+    background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/innoVistaEye.png?alt=media&token=7437b492-c8e3-4ade-81f6-39c9135a733a);
+    background-size: 40px 20px;
+    z-index: 100;
+
+}
+
+
+.iconforautoEdita
+{
+    position: absolute;
+    top: 54%;
+    left: 71%;
+    height: 30px;
+    width: 40px;
+    opacity: 0.8;
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.781));
+    background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/AutoEditaLogo.png?alt=media&token=385886f3-9903-4e69-9398-2d8bec95c9c8);
+    background-size: 40px 40px;
+
+}
+
+
+
+
+@keyframes slowRotate {
+    0%{
+        transform: rotate(20deg);
+    }
+    25%{
+        transform: rotate(15deg)
+    }
+    50%
+    {
+        transform: rotate(25deg);
+    }
+    100% 
+    {
+        transform: rotate(20deg);
+    }
+}
+
+.curlyNavArrowOne
+{
+    position: absolute;
+    top: 26%;
+    left: 2%;
+    background: url(curlyArrow.png);
+    height: 150px;
+    width: 320px;
+    transform-origin: center;
+    transform: scale(0.6) rotate(125deg);
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+}
+
+
+.curlyNavArrowTwo
+{
+    position: absolute;
+    top: 10%;
+    left: 68%;
+    background: url(curlyArrow.png);
+    height: 150px;
+    width: 320px;
+    transform-origin: center;
+    transform: scale(0.6) rotateY(180deg) rotateZ(160deg);
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+}
+
+.curlyNavArrowThree
+{
+    position: absolute;
+    top: 60%;
+    left: 66%;
+    background: url(curlyArrow.png);
+    height: 150px;
+    width: 320px;
+    transform-origin: center;
+    transform: scale(0.6) rotateY(180deg) rotateZ(160deg) rotateX(-180deg);
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    opacity: 0.4;
 }
 
 

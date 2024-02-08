@@ -23,16 +23,19 @@ body
 .mainContainer
 {
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+  top: 50%;
+  left: 50%;
+  height: 641px;
+  width: 1349px;
   z-index: 1;
+  /* box-shadow: 0 0 40px #D62929; */
   background: transparent;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
   transition: 0.5s;
-  opacity: 1;
+  transform-origin: center;
+  opacity: 1; /*change to zero*/
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .blob1
