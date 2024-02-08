@@ -8,7 +8,7 @@
     width: 100%;
     z-index: 100;
     opacity: 1;
-    /* display: none; */
+    display: none;
     background-color: #18181B;
 }
 
