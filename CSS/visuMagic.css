@@ -785,7 +785,7 @@
   filter: drop-shadow(0 0 10px #000);
   white-space: nowrap;
   overflow: hidden;    
-  font-family: 'dosis extrabold', monospace;  
+  font-family: 'Dosis', monospace;  
   font-size: 8em;
   background: linear-gradient(to bottom, #cacaca 75%, #464545);
   -webkit-background-clip: text;
