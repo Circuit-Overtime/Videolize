@@ -1,4 +1,4 @@
-# Personal Portfolio Site
+# Advanced Personal Portfolio Site
 
 A stunning, modern, and interactive personal portfolio website inspired by [Diagram.com](https://www.diagram.com/), designed to showcase the user's skills, projects, and experiences in a dynamic and visually captivating way.
 
