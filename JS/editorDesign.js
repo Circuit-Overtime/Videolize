@@ -28,11 +28,11 @@ document.getElementById("linkedinRedirect").addEventListener("click", () => {
   
 
   document.getElementById("redirectWebsite").addEventListener("click", () => {
-    location.replace("designer.html");
+    location.replace("../designer");
   }) //feature for website link
 
   document.getElementById("redirectWebsiteCV").addEventListener("click", () => {
-    location.replace("userCV.html");
+    location.replace("../userCV");
   }) //feature for cv link
 
 

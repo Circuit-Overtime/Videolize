@@ -191,7 +191,7 @@ document.getElementById("redirectSocial").addEventListener("click", () => {
   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
   sessionStorage.setItem("redirectDsgn", true);
- location.replace("userInfo.html")
+ location.replace("../userinfo")
 })
 
 
@@ -199,7 +199,7 @@ document.getElementById("iconforvisumagic").addEventListener("click", () => {
   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
   sessionStorage.setItem("redirectDsgn", true);
- location.replace("userInfo.html")
+ location.replace("../userinfo")
 })
 
 
@@ -208,7 +208,7 @@ document.getElementById("redirectSocialInnoVista").addEventListener("click", () 
   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
   sessionStorage.setItem("redirectDsgn", true);
- location.replace("userSkills.html")
+ location.replace("../userskills")
 })
 
 
@@ -216,7 +216,7 @@ document.getElementById("iconforInnovista").addEventListener("click", () => {
   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
   sessionStorage.setItem("redirectDsgn", true);
- location.replace("userSkills.html")
+ location.replace("../userSkills")
 })
 
 
@@ -224,14 +224,14 @@ document.getElementById("redirectSocialautoEdita").addEventListener("click", () 
   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
   sessionStorage.setItem("redirectDsgn", true);
- location.replace("userDisplay.html")
+ location.replace("../userDisplay")
 })
 
 document.getElementById("iconforautoEdita").addEventListener("click", () => {
   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
   sessionStorage.setItem("redirectDsgn", true);
- location.replace("userDisplay.html")
+ location.replace("../userDisplay")
 })
 
 

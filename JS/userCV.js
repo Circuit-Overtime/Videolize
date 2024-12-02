@@ -1,9 +1,9 @@
 document.getElementById("redirectWebsite").addEventListener("click", () => {
-    location.replace("designer.html");
+    location.replace("../designer");
   }) //feature for website link
 
   document.getElementById("redirectSocial").addEventListener("click", () => {
-    location.replace("userInfo.html");
+    location.replace("../userInfo");
   }) //feature for cv link
 
 

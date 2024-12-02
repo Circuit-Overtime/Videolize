@@ -14,7 +14,7 @@ document.getElementById("linkedinRedirect").addEventListener("click", () => {
   
 
   document.getElementById("redirectWebsite").addEventListener("click", () => {
-    location.replace("designer.html");
+    location.replace("../designer");
   }) //feature for website link
 
   document.getElementById("mainContainer").addEventListener("scroll", (e) => {
@@ -96,7 +96,7 @@ function animate() {
 
 animate();
 
-console.log(document.querySelectorAll(".grid-wrapper > .big"))
+// console.log(document.querySelectorAll(".grid-wrapper > .big"))
 const allChildrenImages = document.querySelectorAll(".grid-wrapper > div");
 
 document.getElementById("svg").addEventListener("click", () => {
