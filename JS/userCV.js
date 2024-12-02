@@ -1,9 +1,9 @@
 document.getElementById("redirectWebsite").addEventListener("click", () => {
-    location.replace("../");
+    location.replace("../Videolize");
   }) //feature for website link
 
   document.getElementById("redirectSocial").addEventListener("click", () => {
-    location.replace("../userInfo");
+    location.replace("../Videolize/userInfo");
   }) //feature for cv link
 
 

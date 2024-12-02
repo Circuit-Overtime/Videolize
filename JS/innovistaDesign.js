@@ -13,7 +13,7 @@ document.getElementById("linkedinRedirect").addEventListener("click", () => {
   
 
   document.getElementById("redirectWebsite").addEventListener("click", () => {
-    location.replace("../");
+    location.replace("../Videolize");
   }) //feature for website link
 document.getElementById("mainContainer").style.opacity = 0;
   window.onload = e => {
