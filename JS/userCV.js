@@ -1,5 +1,5 @@
 document.getElementById("redirectWebsite").addEventListener("click", () => {
-    location.replace("../designer");
+    location.replace("../");
   }) //feature for website link
 
   document.getElementById("redirectSocial").addEventListener("click", () => {

@@ -14,7 +14,7 @@ document.getElementById("linkedinRedirect").addEventListener("click", () => {
   
 
   document.getElementById("redirectWebsite").addEventListener("click", () => {
-    location.replace("../designer");
+    location.replace("../");
   }) //feature for website link
 
   document.getElementById("mainContainer").addEventListener("scroll", (e) => {
