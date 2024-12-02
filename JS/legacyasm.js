@@ -1,3 +1,17 @@
+function getBasePath() {
+  // Determine the base path dynamically
+  return window.location.hostname === "127.0.0.1" || window.location.hostname === "localhost"
+    ? "" // Development environment
+    : "/Videolize"; // Production (GitHub Pages)
+}
+
+function redirectTo(path) {
+  // Redirect to the given path, prepended with the base path
+  const basePath = getBasePath();
+  location.replace(`${basePath}/${path}`);
+}
+
+
 globalThis.imageChooseCounter = -1;
 document.getElementById("linkedinRedirect").addEventListener("click", () => {
     window.open("https://www.linkedin.com/in/solankighoshvideoeditor/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", "_blank")
@@ -14,7 +28,7 @@ document.getElementById("linkedinRedirect").addEventListener("click", () => {
   
 
   document.getElementById("redirectWebsite").addEventListener("click", () => {
-    location.replace("/Videolize");
+    redirectTo("")
   }) //feature for website link
 
   document.getElementById("mainContainer").addEventListener("scroll", (e) => {

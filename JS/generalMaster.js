@@ -9,7 +9,19 @@ const firebaseConfig = {
 
 // Initialize Firebase
 
-// document.getElementById("mainContainer").scrollTo(0, 4593)
+function getBasePath() {
+  // Determine the base path dynamically
+  return window.location.hostname === "127.0.0.1" || window.location.hostname === "localhost"
+    ? "" // Development environment
+    : "/Videolize"; // Production (GitHub Pages)
+}
+
+function redirectTo(path) {
+  // Redirect to the given path, prepended with the base path
+  const basePath = getBasePath();
+  location.replace(`${basePath}/${path}`);
+}
+
 const app = firebase.initializeApp(firebaseConfig);
 
 function typeWriterEffectHTML(idOfTextHolder, textToType, speed) {
@@ -191,7 +203,7 @@ document.getElementById("redirectSocial").addEventListener("click", () => {
   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
   sessionStorage.setItem("redirectDsgn", true);
- location.replace("/Videolize/userinfo")
+ redirectTo("userinfo");
 })
 
 
@@ -199,7 +211,7 @@ document.getElementById("iconforvisumagic").addEventListener("click", () => {
   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
   sessionStorage.setItem("redirectDsgn", true);
- location.replace("/Videolize/userinfo")
+ redirectTo("userinfo");
 })
 
 
@@ -208,7 +220,7 @@ document.getElementById("redirectSocialInnoVista").addEventListener("click", () 
   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
   sessionStorage.setItem("redirectDsgn", true);
- location.replace("/Videolize/userskills")
+ redirectTo("userskills");
 })
 
 
@@ -216,7 +228,8 @@ document.getElementById("iconforInnovista").addEventListener("click", () => {
   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
   sessionStorage.setItem("redirectDsgn", true);
- location.replace("/Videolize/userSkills")
+  redirectTo("userskills");
+ 
 })
 
 
@@ -224,14 +237,14 @@ document.getElementById("redirectSocialautoEdita").addEventListener("click", () 
   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
   sessionStorage.setItem("redirectDsgn", true);
- location.replace("/Videolize/userDisplay")
+ redirectTo("userDisplay");
 })
 
 document.getElementById("iconforautoEdita").addEventListener("click", () => {
   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
   sessionStorage.setItem("redirectDsgn", true);
- location.replace("/Videolize/userDisplay")
+  redirectTo("userDisplay");
 })
 
 
