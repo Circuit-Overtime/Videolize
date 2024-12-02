@@ -191,7 +191,7 @@ document.getElementById("redirectSocial").addEventListener("click", () => {
   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
   sessionStorage.setItem("redirectDsgn", true);
- location.replace("../Videolize/userinfo")
+ location.replace("/Videolize/userinfo")
 })
 
 
@@ -199,7 +199,7 @@ document.getElementById("iconforvisumagic").addEventListener("click", () => {
   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
   sessionStorage.setItem("redirectDsgn", true);
- location.replace("../Videolize/userinfo")
+ location.replace("/Videolize/userinfo")
 })
 
 
@@ -208,7 +208,7 @@ document.getElementById("redirectSocialInnoVista").addEventListener("click", () 
   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
   sessionStorage.setItem("redirectDsgn", true);
- location.replace("../Videolize/userskills")
+ location.replace("/Videolize/userskills")
 })
 
 
@@ -216,7 +216,7 @@ document.getElementById("iconforInnovista").addEventListener("click", () => {
   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
   sessionStorage.setItem("redirectDsgn", true);
- location.replace("../Videolize/userSkills")
+ location.replace("/Videolize/userSkills")
 })
 
 
@@ -224,14 +224,14 @@ document.getElementById("redirectSocialautoEdita").addEventListener("click", () 
   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
   sessionStorage.setItem("redirectDsgn", true);
- location.replace("../Videolize/userDisplay")
+ location.replace("/Videolize/userDisplay")
 })
 
 document.getElementById("iconforautoEdita").addEventListener("click", () => {
   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
   sessionStorage.setItem("redirectDsgn", true);
- location.replace("../Videolize/userDisplay")
+ location.replace("/Videolize/userDisplay")
 })
 
 

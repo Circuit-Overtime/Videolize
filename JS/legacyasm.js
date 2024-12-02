@@ -14,7 +14,7 @@ document.getElementById("linkedinRedirect").addEventListener("click", () => {
   
 
   document.getElementById("redirectWebsite").addEventListener("click", () => {
-    location.replace("../Videolize");
+    location.replace("/Videolize");
   }) //feature for website link
 
   document.getElementById("mainContainer").addEventListener("scroll", (e) => {
