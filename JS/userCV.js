@@ -17,7 +17,7 @@ document.getElementById("redirectWebsite").addEventListener("click", () => {
   }) //feature for website link
 
   document.getElementById("redirectSocial").addEventListener("click", () => {
-    redirectTo("userInfo");
+    redirectTo("me");
   }) //feature for cv link
 
 
