@@ -45,8 +45,8 @@ document.getElementById("linkedinRedirect").addEventListener("click", () => {
   }) //feature for website link
 
   document.getElementById("redirectWebsiteCV").addEventListener("click", () => {
-    redirectTo("userCV")
-  }) //feature for cv link
+    redirectTo("about")
+  }) 
 
 
     document.getElementById("profileLogoCont").addEventListener("load", () => {

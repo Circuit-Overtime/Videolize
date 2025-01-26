@@ -203,7 +203,7 @@ document.getElementById("redirectSocial").addEventListener("click", () => {
   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
   sessionStorage.setItem("redirectDsgn", true);
- redirectTo("userinfo");
+ redirectTo("me");
 })
 
 
@@ -211,7 +211,7 @@ document.getElementById("iconforvisumagic").addEventListener("click", () => {
   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
   sessionStorage.setItem("redirectDsgn", true);
- redirectTo("userinfo");
+ redirectTo("me");
 })
 
 
@@ -220,7 +220,7 @@ document.getElementById("redirectSocialInnoVista").addEventListener("click", () 
   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
   sessionStorage.setItem("redirectDsgn", true);
- redirectTo("userskills");
+ redirectTo("skills");
 })
 
 
@@ -228,7 +228,7 @@ document.getElementById("iconforInnovista").addEventListener("click", () => {
   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
   sessionStorage.setItem("redirectDsgn", true);
-  redirectTo("userskills");
+  redirectTo("skills");
  
 })
 
@@ -237,14 +237,14 @@ document.getElementById("redirectSocialautoEdita").addEventListener("click", () 
   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
   sessionStorage.setItem("redirectDsgn", true);
- redirectTo("userDisplay");
+ redirectTo("gallery");
 })
 
 document.getElementById("iconforautoEdita").addEventListener("click", () => {
   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
   sessionStorage.setItem("redirectDsgn", true);
-  redirectTo("userDisplay");
+  redirectTo("gallery");
 })
 
 
