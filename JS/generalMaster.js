@@ -7,20 +7,6 @@ const firebaseConfig = {
   appId: "1:957189119127:web:1ff96b13ff010a53131dd2"
 };
 
-// Initialize Firebase
-
-function getBasePath() {
-  // Determine the base path dynamically
-  return window.location.hostname === "127.0.0.1" || window.location.hostname === "localhost"
-    ? "" // Development environment
-    : "/Videolize"; // Production (GitHub Pages)
-}
-
-function redirectTo(path) {
-  // Redirect to the given path, prepended with the base path
-  const basePath = getBasePath();
-  location.replace(`${basePath}/${path}`);
-}
 
 const app = firebase.initializeApp(firebaseConfig);
 
