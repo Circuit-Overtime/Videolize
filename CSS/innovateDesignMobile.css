@@ -1,0 +1,42 @@
+@media only screen and (max-width: 600px) {
+    .mainContainer 
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }   
+    .centerLogo
+    {
+        height: 150px;
+        width: 150px;
+    }
+    .ring1
+    {
+        scale: 1.5;
+    }
+    .ring2 
+    {
+        scale: 2;
+    }
+    .ring3
+     {
+        scale: 2.5;
+     }
+     .ring4 
+     {
+        scale: 3;
+     }
+     .ring5 
+     {
+        scale: 3.5;
+     }
+     .ring6 
+    {
+        scale: 4;
+    }
+    .planet1,
+    {
+        display: none;
+    }
+}

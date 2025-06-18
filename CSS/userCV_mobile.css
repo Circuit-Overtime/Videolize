@@ -1,0 +1,21 @@
+@media (max-width: 480px) {
+    body {
+        overflow-x: hidden; /* Important for preventing horizontal scroll on mobile */
+    }
+
+    .mainContainer {
+        width: 90vw; /* Use viewport width for responsiveness */
+        height: auto; /* Let height adjust based on content */
+        top: 0; /* Start at top */
+        left: 50%;
+        transform: translateX(-50%);
+        overflow-y: auto; /* Enable vertical scrolling if content overflows */
+        padding: 20px; /* Add some padding */
+    }
+
+    .blob1, .blob2 {
+        display: none; /* Hide blobs on smaller screens */
+    }
+
+    
+}

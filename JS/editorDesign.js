@@ -1,16 +1,26 @@
 function typeWriterEffectHTML(idOfTextHolder, textToType, speed) {
   var i = 0;
   var speed = speed || 55; // Default speed if not provided
-  document.getElementById(idOfTextHolder).innerHTML = "";
+  var el = document.getElementById(idOfTextHolder);
+  el.innerHTML = "";
+  el.style.opacity = 0;
   function type() {
       if (i < textToType.length) {
-          document.getElementById(idOfTextHolder).innerHTML += textToType.charAt(i);
+          el.innerHTML += textToType.charAt(i);
           i++;
           setTimeout(type, speed);
+      } else {
+          // Fade in after typing is complete
+          el.style.transition = "opacity 0.8s";
+          el.style.opacity = 1;
       }
   }
-  type(); // Call the function to start the typing effect
-  
+  type();
+  // Start fade-in as soon as typing starts
+  setTimeout(() => {
+      el.style.transition = "opacity 0.8s";
+      el.style.opacity = 1;
+  }, 100);
 }
 
 
@@ -45,4 +55,4 @@ document.getElementById("linkedinRedirect").addEventListener("click", () => {
         document.getElementById("LazyLoadprofileLogoCont").style.opacity = 0;
     }
 
-    typeWriterEffectHTML("classDesc","With almost 2 years of video editing mastery, I've melded pixels into mesmerizing tales. My expertise spans dynamic cuts, cinematic color grading, and seamless soundscapes, ensuring each video is a captivating visual journey.", 32)
+    typeWriterEffectHTML("classDesc","With almost 3 years of video editing mastery, I've melded pixels into mesmerizing tales. My expertise spans dynamic cuts, cinematic color grading, and seamless soundscapes, ensuring each video is a captivating visual journey.", 5)
