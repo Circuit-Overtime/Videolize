@@ -6,10 +6,13 @@ body
 }
 .planetContainer
 {
-  position: absolute;
+  position: relative;
   left: 50%;
   top: 0;
-  transform: translateY(210px);
+  overflow: hidden;
+  height: 800px;
+  width: 100%;
+  
 }
 
 .centerLogo
