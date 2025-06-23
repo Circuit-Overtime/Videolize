@@ -1,18 +1,35 @@
+.designSageSection
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    top: 150px;
+    height: 100%;
+    position: relative;
+    background: transparent; 
+    box-sizing: border-box;
+    overflow-x: hidden;
+    padding-bottom: 10px;
+}
+.designSageSection::-webkit-scrollbar
+{
+    display: none;
+}
+
 .designSageMask
 {
-  position: absolute;
-  top: 1165%;
-  left: 0;
-  height: 80px;
-  z-index: 10;
-  width: 100%;
-  box-shadow:  0 32px 20px #18181B;
-  background: transparent;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    height: 100%; 
+    width: 100%;
+    background-color: transparent;
 }
 .designSage
 {
     position: absolute;
-    top: 1190%;
+    top: 10%;
     left: 0;
     height: 100%; 
     width: 100%;

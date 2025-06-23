@@ -18,17 +18,27 @@
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.38/build/spline-viewer.js"></script>
     
-    <link rel="stylesheet" type="text/css" href="CSS/loadingAnimation.css">
+    <!-- <link rel="stylesheet" type="text/css" href="CSS/loadingAnimation.css"> -->
     <link rel="stylesheet" type="text/css" href="CSS/homePage.css">
     <link rel="stylesheet" type="text/css" href="CSS/heroSection.css">
     <link rel="stylesheet" type="text/css" href="CSS/homePageMobile.css">
     <link rel="stylesheet" type="text/css" href="CSS/visuMagic.css">
-    <link rel="stylesheet" type="text/css" href="CSS/visuMagicMobile.css">
+    <!-- <link rel="stylesheet" type="text/css" href="CSS/visuMagicMobile.css"> -->
+    <link rel="stylesheet" type="text/css" href="CSS/innovista.css">
+    <link rel="stylesheet" type="text/css" href="CSS/innovistaMobile.css">
+    <link rel="stylesheet" type="text/css" href="CSS/autoEdita.css">
+    <link rel="stylesheet" type="text/css" href="CSS/autoEditaMobile.css">
+    <link rel="stylesheet" type="text/css" href="CSS/designSage.css">
+    <link rel="stylesheet" type="text/css" href="CSS/designSageMobile.css">
+    <link rel="stylesheet" type="text/css" href="CSS/footer.css">
     <link rel="icon" type="image/x-icon" href="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/website%20logo.png?alt=media&token=e3409e2d-d827-430d-b0b8-1345567525d5">
 
 </head>
 <body>
     <div class="ParticleContainer ParticleContainerSlow" id="bg">  </div>
+
+<div class="mainContainer">
+
 
     <section id="hero" class="hero">
         <div class="navbar" id="navbar">
@@ -58,7 +68,7 @@
       
           <p class="mainHeading mainHeadingSlow"> Revolutionize Your <br> Visual Storytelling. </p>
           <p class="subHeading"> AI-Infused Editing, <br> Unleash Your Creativity! </p>
-          
+
           <div class="planetContainer">
             <div class="solarSystem">
                 <div class="centerLogo"></div>
@@ -102,22 +112,26 @@
 
     </section>
 
-    <section id="spotlightSection">
+     </section>
+
+    <section class="spotlightSection" id="spotlightSection">
+
         <div class="visuMagicContainer">
           <div class="descriptionImage"></div>
-            <p class="visuMagic visuMagicMainSlow">Spotlight</p>
-            <p class="visuMagicDesc visuMagicDescSlow">Enchant Your Edits</p>
-            <div class="redirectSocial redirectSocialSlow" id="redirectSocial">
+           <p class="visuMagicText">Spotlight</p>
+           <p class="visuMagicDesc visuMagicDescSlow">Enchant Your Edits</p>
+             <div class="redirectSocial" id="redirectSocial">
                 <span class="sparkleLogoBtn"><ion-icon name="sparkles"></ion-icon></span>
                 <span class="sparkleLogoTxt"> editor.design </span>
-                </div>
-                <div id="wand" class="wandOne">
+             </div>
+               <div id="wand" class="wandOne">
                     <div class="wand-streak"></div>
                     <div class="cap"></div>
                   </div>
-                  <div class="wandparticleBackdropCut" id="wandparticleBackdropCut"></div>
-                  <div class="wandparticleBackdrop" id="wandparticleBackdrop"></div>
-                  <div class="particlesWand" id="particleWandEffect"></div>
+                  <div class="wandparticleBackdrop" id="wandparticleBackdrop">
+                        <div class="particlesWand" id="particleWandEffect"></div> 
+                  </div>
+                  
                   
                   <div class="magicTiles">
         
@@ -211,17 +225,323 @@
         
                     </div>
         
-                    <!-- <div class="ThirdRowThirdLayout" id="ThirdRowThirdLayout">
-                        <div class="headingText">Editor's New AI Bestie</div>
-                        <div class="descriptionText">Magician works right inside your favorite design tool.</div>
-        
-                        <div class="tileFotor" id="tileFotor"></div>
-                        <div class="tileStar" id="tileStar"></div>
-                    </div> -->
+                   
                   </div>
         </div>
+
+
+    </section>
+
+
+    <section class="innovistaSection" id="innovistaSection">
+      <div class="innoVistaContainer">
+      <div class="descriptionImage"></div>
+      <div class="innoVistaLogo" id="innoVistaLogo"></div>
+      <p class="innoVista" id="innoVista">Softwares</p>
+    <p class="innoVistaDesc" id="innoVistaDesc">Welcome to my Favourite Software Archive</p>
+    <div class="redirectSocialInnoVista" id="redirectSocialInnoVista">
+        <span class="sparkleLogoBtn"><div class="innoVistaLogoSmall"></div></span>
+        <span class="sparkleLogoTxt"> innovate.design </span>
+        </div>
+
+        
+        <div class="innovateTiles">
+
+            <div class="FirstRowFirstLayoutInnovate" id="FirstRowFirstLayoutInnovate">
+              <div class="cursor" id="cursor"></div>
+
+
+              <div class="ring1Innovate">
+                <div class="planet1Innovate"></div>
+              </div>
+              <div class="ring2Innovate">
+                <div class="planet2Innovate"></div>
+              </div>
+              <div class="ring3Innovate">
+                <div class="planet3Innovate"></div>
+              </div>
+
+             <div class="maskGrayscale" id="buttonGrayScaleMask"></div><button class="buttonGrayScale"> Grayscale </button>
+              <div class="maskInvert" id="buttonInvertMask"></div><button class="buttonInvert"> Invert </button>
+              <div class="maskSaturate" id="buttonSaturateMask"></div><button class="buttonSaturate"> Saturate </button>
+
+
+              <div class="imageContainer" id="imageContainer"></div>
+                <div class="headingText"> Editing via Photoshop helps a lot</div>
+                <div class="descriptionText">Photoshop: Where Imagination Takes Shape.</div>
+            </div>
+
+            <div class="FirstRowSecondLayoutInnovate" id="FirstRowSecondLayoutInnovate">
+              <span class="prBackground"></span>
+              <div class="moveTool"></div>
+              <div class="textTool"></div>
+              <div class="Colorgrade" id="Colorgrade"><span class="colorGradeOrb"></span><p class="ColorgradeText" id="ColorgradeText">Analogous</p><ion-icon name="shuffle" id="ColorgradeShuffle"></ion-icon></div>
+
+              <div class="cutBtn" id="cutBtn"><p class="cutBtnTxt">Cut</p></div>
+              <div class="litBtn" id="litBtn"><p class="litBtnTxt">Lit</p></div>
+              <div class="setBtn" id="setBtn"><p class="setBtnTxt">Set</p></div>
+              <div class="imageTilePremiere">
+                <div class="imageTilePremiereImage"></div>
+                <p class="textPronounce"id="textPronounce">Cut <b>/kʌt/</b></p>
+                <p class="textMeaning" id="textMeaning">divide into pieces</p>
+              </div>
+
+              <div class="exportTile"><span></span></div>
+              <div class="exportTileSteps"><span></span></div>
+                <div class="headingText"> Editing with Premiere Pro is really helpful</div>
+                <div class="descriptionText">In Process of Making Magical Edits to transform videos to vibe!</div>
+            </div>
+
+            <div class="SecondRowFirstLayoutInnovate" id="SecondRowFirstLayoutInnovate">
+                <div class="headingText">And now with the magic of 3D!</div>
+                <div class="descriptionText">With Blender and CAD technology, reforming editing using 3D models also looks like an attractive option</div>
+                <div id="Three_container"></div>
+            </div>
+
+            <div class="SecondRowSecondLayoutInnovate" id="SecondRowSecondLayoutInnovate">
+              <div class="card-track">
+                <div class="card-wrapper">
+                  <div class="card">
+                    <div class="card-gradient"></div>
+                    <div class="card-letters"></div>
+                  </div>
+                </div>
+              </div>
+                
+                 <div class="upperTileImageAI" id="upperTileImageAI"></div>
+                 <div class="lowerTileImageAI" id="lowerTileImageAI"></div>
+                 <i class="fa-solid fa-rotate-right" id="reloadAnimation"></i>
+                <div class="headingText" id="headingText">Using Generative AI to make prompts</div>
+                <div class="descriptionText" id="descriptionText">With proper Promts, we have almost the perfect creations with AI</div>
+                <div class="searchBar" id="searchBar"><ion-icon name="aperture" id="iconSearchText"></ion-icon><p class="searchText" id="searchText">  a cute crystal dog fakemon</p></div>  
+                <div class="searchButton" id="searchButton"><p class="searchButtonText">Generate</p></div> 
+            </div>
+            </div>
+
+      </div>
         </section>
+
+    <section class="autoEditaSection" id="autoEditaSection">
+        
+
+    <div class="autoEdita" id="autoEdita">
+      <div id="connectorOne"></div>
+      <div class="autoEditaLogoMask"><div class="autoEditaLogo"><span class="autoEditaLogoImage"></span></div></div>
+      <div class="autoEditaLogoBacklit"></div>
+
+      <div class="descriptionImage"></div>
+      <p class="autoEditaText">Projects</p>
+      <p class="autoEditaDesc">Introducing -- My Creations</p>      
+
+      <div class="redirectSocialautoEdita" id="redirectSocialautoEdita">
+        <span class="autoEditaLogoBtnTxt"> legacy.asm </span>
+        <span class="autoEditaLogoBtn"><div class="autoEditaLogoBtnSmall"></div></span>
+      </div>
+      <div class="redirectBtnHolder">
+        <div class="galleryImagesAutoEditaBtn" id="galleryImagesAutoEditaBtn">
+        <ion-icon name="images"></ion-icon>
+        <div class="galleryImagesAutoEditaBtnText">Photo Archive</div>
+      </div>
+      <div class="socialSectionAutoEditaBtn" id="socialSectionAutoEditaBtn">
+        <ion-icon name="git-network"></ion-icon>
+        <div class="socialSectionAutoEditaBtnText">Connect with Me</div>
+      </div>
+      </div>
+
+      <div class="image-container" id="image-container">
+        <div>
+          <img class="autoEditaLazyLoading" src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/compressImages%2FDisplayPicture1.jpg?alt=media&token=ba26dccc-bade-4d23-b2fc-356ebb155da4"><img loading = "lazy" src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/displayImages%2FDisplayPicture1.jpg?alt=media&token=25f4d7c0-1a36-4cdb-9e85-531dc244a5e9" />
+        </div>
+      
+        <div>
+          <img class="autoEditaLazyLoading" src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/compressImages%2FDisplayPicture2.jpg?alt=media&token=6034c3c8-0297-47d6-9d0c-f7f008767a7c"><img loading = "lazy" src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/displayImages%2FDisplayPicture2.jpg?alt=media&token=edc27757-e028-4e37-9fb3-32d77c76b91a" />
+      
+        </div>
+      
+        <div>
+          <img class="autoEditaLazyLoading" src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/compressImages%2FDisplayPicture3.jpeg?alt=media&token=56f539c6-4f11-4b15-8dbd-0767573c7de8"><img loading = "lazy" src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/displayImages%2FDisplayPicture3.jpeg?alt=media&token=8f47d6f5-44d9-4dca-b992-3335d531400c" />
+      
+        </div>
+      
+        <div>
+          <img class="autoEditaLazyLoading" src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/compressImages%2FDisplayPicture4.jpeg?alt=media&token=18fcf49e-2a86-4549-be97-3b05a4216d56"><img loading = "lazy" src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/displayImages%2FDisplayPicture4.jpeg?alt=media&token=27ae507b-9237-45ca-a2bc-14c8b0aba419" />
+      
+        </div>
+      
+        <div>
+          <img class="autoEditaLazyLoading" src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/compressImages%2FDisplayPicture5.jpg?alt=media&token=c714203a-621c-43cd-ac78-00b3568fbbde"><img loading = "lazy" src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/displayImages%2FDisplayPicture5.jpg?alt=media&token=9d9ae3d6-1518-4699-8716-b575cf94bec5" />
+        </div>
+      
+        <div>
+          <img class="autoEditaLazyLoading" src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/compressImages%2FDisplayPicture6.jpg?alt=media&token=0d4911c6-1e1a-4372-884c-55a8778da095"><img loading = "lazy" src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/displayImages%2FDisplayPicture6.jpg?alt=media&token=11f8c81c-7031-4757-855b-4c6e0dd389aa" />
+      
+        </div>
+      
+        <div>
+          <img class="autoEditaLazyLoading" src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/compressImages%2FDisplayPicture6.jpg?alt=media&token=0d4911c6-1e1a-4372-884c-55a8778da095"><img loading = "lazy" src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/displayImages%2FDisplayPicture7.jpg?alt=media&token=16f14510-e279-43d6-a3b8-98a1d2349cb5" />
+        </div>
+      
+        <div>
+          <img class="autoEditaLazyLoading" src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/compressImages%2FDisplayPicture8.jpg?alt=media&token=5040e87a-2f34-4173-a6d8-9a9e0f985ebd"><img loading = "lazy" src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/displayImages%2FDisplayPicture8.jpg?alt=media&token=6918efcf-8aa7-4571-9cb6-c5cff92e0468" />
+        </div>
+      
+        <div>
+          <img class="autoEditaLazyLoading" src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/compressImages%2FDisplayPicture9.jpg?alt=media&token=1a2ec6f4-c29b-42e0-a973-7b056da3d233"><img loading = "lazy" src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/displayImages%2FDisplayPicture9.jpg?alt=media&token=ecc84e77-a373-45b5-a5ca-a15a465f3866" />
+      
+        </div>
+      
+        <div>
+          <img class="autoEditaLazyLoading" src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/compressImages%2FDisplayPicture10.jpg?alt=media&token=41b47168-d576-4d33-ac9d-dab4512a8ddc"><img loading = "lazy" src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/displayImages%2FDisplayPicture10.jpg?alt=media&token=1110302d-fdce-4298-bdfb-82c76be6978d" />
+      
+        </div>
+      
+        <div>
+          <img class="autoEditaLazyLoading" src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/compressImages%2FDisplayPicture11.jpg?alt=media&token=403f2f28-d60e-44e8-a4f6-e23b41d22941"><img loading = "lazy" src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/displayImages%2FDisplayPicture11.jpg?alt=media&token=3856fc2f-7e6a-4fd8-8a64-2ab9aa9122a2" />
+        </div>
+      
+        <div>
+          <img class="autoEditaLazyLoading" src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/compressImages%2FDisplayPicture12.jpg?alt=media&token=01286bc2-448b-4b4d-9179-b8be660b05dd"><img loading = "lazy" src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/displayImages%2FDisplayPicture12.jpg?alt=media&token=ee2cbbf1-d8ff-4c46-8720-ccc31f195a20" />
+        </div>
+      
+      </div>
+
+  
+    <div class="FirstRowSecondLayoutEdita" id="FirstRowSecondLayoutEdita">
+      <div class="headingText">Welcome Designers....</div>
+      <div class="descriptionText">Warm welcome to all the designers at the Social Handles! Wanna Discover the hidden aztec? Let's Redirect</div>
+      <div id="blob"></div>
+      <div id="blur"></div>
+    <div class="profileCardContainer">
+      <div class="profileCards" id="linkedInSocial">
+        <div class="profileImage"></div>
+        <div class="profileTag"><p>Azetc</p></div>
+        <div class="profileHeading">LinkedIn</div>
+        <div class="profileHeadingDesc">Ideas, but hidden totally in plain vision</div>
+        <div class="profileVisit"></div>
+      </div>
+
+      <div class="profileCards" id="instagramSocial">
+        <div class="profileImage"></div>
+        <div class="profileTag"><p>Survivor</p></div>
+        <div class="profileHeading">Instagram</div>
+        <div class="profileHeadingDesc">In the MetaVerse -- there's only one winner!</div>
+        <div class="profileVisit"></div>
+      </div>
+
+
+      <div class="profileCards" id="facebookSocial">
+        <div class="profileImage"></div>
+        <div class="profileTag"><p>Premiere</p></div>
+        <div class="profileHeading">Facebook</div>
+        <div class="profileHeadingDesc">Counting Endless Victories... What about you join my game?</div>
+        <div class="profileVisit"></div>
+      </div>
+    </div>
+  </div> 
+
+      
+      
+    </div>
+      </section>
+
+
+      <section class="designSageSection" id="designSageSection">
+        <div class="designSageMask"></div>
+
+    <div class="designSage" id="designSage">
+      <div class="designSageLogo">
+        <div class="lightRayOne"></div>
+        <div class="lightRayTwo"></div>
+      </div>
+      
+      <p class="designSageText">Contact</p>
+      <p class="designSageDesc">Artists are the main characters!</p>
+    
+  
+      <div class="redirectSocialdesignSage">
+        <span class="designSageLogoBtnTxt"> design.mcu </span>
+        <span class="designSageLogoBtn"><div class="designSageLogoBtnSmall"></div></span>
+      </div>
+      <p class="inProgressText">Coming Soon!</p>
+    </div>
+      </section>
+
+      <footer id="footer" class="footer">
+          <div class="footerBackdrop" aria-hidden="true"></div>
+            <div class="footer-container">
+              <div class="footer-grid">
+                <div class="footer-col span-2">
+                  <!-- Changed h2 to h3 for better heading hierarchy (h1 page title -> h2 sections -> h3 footer) -->
+                  <h3 class="footer-title">Videolize</h3>
+                  <p class="footer-description">An open source innovation from Berlin</p>
+                  <div class="footer-socials">
+                    <!-- Added href, title, and aria-label for social links -->
+                    <a href="https://www.linkedin.com/company/pollinations-ai" target="_blank" rel="noopener noreferrer" class="footer-social" title="Visit Pollinations on LinkedIn" aria-label="LinkedIn Profile">
+                      <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
+                    </a>
+                    <a href="https://discord.com/invite/k9F7SyTgqn" target="_blank" rel="noopener noreferrer" class="footer-social" title="Join Pollinations on Discord" aria-label="Discord Server Invite">
+                      <ion-icon name="logo-discord" aria-hidden="true"></ion-icon>
+                    </a>
+                    <a href="https://github.com/pollinations/pollinations" target="_blank" rel="noopener noreferrer" class="footer-social" title="Visit Pollinations on GitHub" aria-label="GitHub Repository">
+                      <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
+                    </a>
+                    <a href="https://www.youtube.com/@Pollinations" target="_blank" rel="noopener noreferrer" class="footer-social" title="Visit Pollinations on YouTube" aria-label="YouTube Channel">
+                      <ion-icon name="logo-youtube" aria-hidden="true"></ion-icon>
+                    </a>
+                    <a href="https://www.instagram.com/pollinations.ai" target="_blank" rel="noopener noreferrer" class="footer-social" title="Visit Pollinations on Instagram" aria-label="Instagram Profile">
+                      <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                    </a>
+                    <a href="https://www.tiktok.com/@pollinations" target="_blank" rel="noopener noreferrer" class="footer-social" title="Visit Pollinations on TikTok" aria-label="TikTok Profile">
+                      <ion-icon name="logo-tiktok" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+                  <div class="footer-badge">
+                    <a target="_blank" href="https://github.com/Pollinations/Pollinations" rel="noopener noreferrer" title="Star Pollinations on GitHub">
+                      <img src="https://img.shields.io/github/stars/Pollinations/Pollinations?style=plastic"
+                           alt="GitHub stars count for Pollinations/Pollinations repository" width="130" height="30" />
+                    </a>
+                  </div>
+                </div>
+                <div class="footer-col">
+                  <h3 class="footer-heading">About</h3>
+                  <ul>
+                    <li><a href="#realtimeFeed">Feed</a></li>
+                    <li><a href="#projects">Integrations</a></li>
+                    <li><a href="#integrate">Snippets</a></li>
+                    <li><a href="#contribute">Contribute</a></li>
+                    <li><a href="#supporters">Supporters</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h3 class="footer-heading">Startup</h3>
+                  <ul>
+                    <li><a href="https://github.com/pollinations/pollinations" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="https://discord.com/invite/k9F7SyTgqn" target="_blank" rel="noopener noreferrer">Discord</a></li>
+                    <li><a href="https://github.com/pollinations/pollinations/blob/master/README.md" target="_blank" rel="noopener noreferrer">Readme</a></li>
+                    <li><a href="https://github.com/pollinations/pollinations/blob/master/APIDOCS.md" target="_blank" rel="noopener noreferrer">API Docs</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h3 class="footer-heading">Legal</h3>
+                  <ul>
+                    <!-- Assuming terms link exists -->
+                    <li><a href="#">Terms & Conditions</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="footer-bottom">
+                <p>© 2025 pollinations.ai</p>
+                <span>Made with ❤️ in Berlin BE</span>
+              </div>
+            </div>
+          </footer>
+    
+  </div>
     <script src="JS/particles.min.js"></script>
     <script src="JS/particleEffect.js"></script>
+    <script src="JS/particleEffectMagicWand.js"></script>
+
 </body>
 </html>

@@ -14,52 +14,44 @@
   --logo-size: calc(var(--card-size) * 0.3);
 }
 
-.innoVistaContainer .descriptionImage
+
+
+.innovistaSection 
 {
-  position: absolute;
-  height: 150px;
-  transform: scale(0.8) rotate(-5deg);
-  opacity: 0.4;
-  width: 600px;
-  top: 10px;
-  left: 850px;
-  background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/innovistaDescriptionImage.png?alt=media&token=b4293e3c-d3b6-4dd1-ade9-6f3f49a3be6f);
-  background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    top: 10%;
+    height: 100%;
+    position: relative;
+    background: transparent; 
+    box-sizing: border-box;
+    overflow-x: hidden;
+    padding-bottom: 10px;
 }
+.innovistaSection::-webkit-scrollbar
+{
+  display: none;
+}
+
 
 
 .innoVistaContainer
 {
     position: absolute;
-    top: 500%;
-    left: 0;
-    height: 280%; 
-    width: 100%;
-    background-color: transparent;
-}
-.innoVista
-{
-    position: relative;
     top: 0%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 6em;
-    text-align: center;
-    font-family: 'Salsa', cursive;
-    color: #fff;
-    height: 450px;
-    width: 450px;
+    left: 0;
+    height: 100%; 
+    width: 100%;
+    
     background-color: transparent;
-    text-shadow: 0 -20px 20px #000,
-    0 -30px 30px #202020,
-    -20px -20px 20px #0a0909,
-    20px -20px 20px #0a0909;
-
 }
+
 .innoVistaLogo
 {
   position: absolute;
-  top: -70px;
+  top: 70px;
   left: 50%;
   transform-origin: center;
   transform: translateX(-50%);
@@ -94,10 +86,44 @@
   box-shadow: -20px -20px 30px #101010;
   background: linear-gradient(#100f11, transparent);
 }
+
+.innoVistaContainer .descriptionImage
+{
+  position: absolute;
+  height: 150px;
+  transform: scale(0.8) rotate(-5deg);
+  opacity: 0.4;
+  width: 600px;
+  top: 10%;
+  left: 0%;
+  background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/innovistaDescriptionImage.png?alt=media&token=b4293e3c-d3b6-4dd1-ade9-6f3f49a3be6f);
+  background-size: contain;
+}
+
+.innoVista
+{
+    position: relative;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 6em;
+    text-align: center;
+    font-family: 'Salsa', cursive;
+    color: #fff;
+    width: 450px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    text-shadow: 0 -20px 20px #000,
+    0 -30px 30px #202020,
+    -20px -20px 20px #0a0909,
+    20px -20px 20px #0a0909;
+
+}
+
+
 .innoVistaDesc
 {
-    position: absolute;
-    top: 200px;
+    position: relative;
     width: 450px;
     left: 50%;
     transform: translateX(-50%);
@@ -109,11 +135,11 @@
 
 .redirectSocialInnoVista
 {
-    position: absolute;
+    position: relative;
     padding-left: 30px;
     height: 40px;
     width: 200px;
-    top: 18%;
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -158,14 +184,15 @@
 
 .innovateTiles
 {
-   position: absolute;
-   height: 650px;
-   width: 100%;
-   background-color: transparent;
-   top: 24%;
-   left: 0;
-   z-index: 51;
+  position: relative;
+    height: 650px;
+    width: 100%;
+    background-color: transparent;
+    top: 20px;
+    left: 0;
+    z-index: 51;
 }
+
 
 
 .FirstRowFirstLayoutInnovate

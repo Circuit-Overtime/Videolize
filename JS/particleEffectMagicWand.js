@@ -1,4 +1,3 @@
-//particleWandEffect
 particlesJS("particleWandEffect", {
     particles: {
       number: { value: 1150, density: { enable: true, value_area: 600 } },

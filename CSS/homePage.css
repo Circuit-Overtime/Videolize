@@ -1,20 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Salsa&family=Source+Code+Pro&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lora&family=Montserrat&family=Orbitron:wght@500&family=Protest+Riot&family=Reenie+Beanie&family=Sevillana&family=Style+Script&display=swap");
+body {
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Salsa', cursive, sans-serif;
+}
+
 .mainContainer
 {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 641px;
-  width: 1349px;
+  height: 100%;
+  width: 100%;
   z-index: 1;
-  /* box-shadow: 0 0 40px #D62929; */
   background: transparent;
   overflow-x: hidden;
   overflow-y: auto;
   transition: 0.5s;
   transform-origin: center;
-  opacity: 1; /*change to zero*/
+  opacity: 1;
   transform: translateX(-50%) translateY(-50%);
 }
 
@@ -40,122 +45,4 @@
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #D62929;
-}
-
-.ParticleContainer
-{
-  background: #18181B;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-}
-.logo
-{
-    position: absolute;
-    top: 3%;
-    left: 2%;
-    height: 40px;
-    width: 40px;
-    background-image: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/website%20logo.png?alt=media&token=e3409e2d-d827-430d-b0b8-1345567525d5);
-    background-size: cover;
-}
-.appName
-{
-    position: absolute;
-    top: 1%;
-    left: 5%;
-    font-family: 'Source Code Pro', monospace;
-    color: #fff;
-    margin-left: 10px;
-    font-size: 20px;
-}
-.navbarStatic {
-    position: absolute;
-    padding-left: 30px;
-    height: 40px;
-    width: 440px;
-    top: 2%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: space-between; /* Distributes spans across the navbar */
-    align-items: center; /* Vertical centering */
-    background: transparent;
-    z-index: 12;
-    border-radius: 25px;
-    transition: 0.5s;
-}
-
-.navbarStatic > span > ion-icon 
-{
-    display: none;
-}
-
-.navbarStatic span {
-    color: rgb(182, 182, 182);
-    font-family: 'Source Code Pro', monospace;
-    font-size: 15px;
-    text-shadow: 0 0 3px #161616;
-    cursor: pointer;
-}
-
-
-
-.navbar
-{
-    position: absolute;
-    padding-left: 30px;
-    height: 40px;
-    width: 440px;
-    top: 2%;
-    left: 50%; 
-    transform: translateX(-50%) translateY(-250px);
-    display: flex;
-    background: rgba(49, 49, 49, 0.25);
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    border: 1px solid #fff;
-    z-index: 12;
-    border-radius: 25px;
-    transition: 0.5s;
-
-
-}
-.navbar span
-{
-    position: absolute;
-    margin-right: 30px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #fff;
-    font-family: 'Source Code Pro', monospace;
-    font-size: 15px;
-    text-shadow: 0 0 3px #fff;
-    cursor: pointer;
-    display: flex;
-}
-
-.navbar span:nth-child(2)
-{
-    left: 31%;
-}
-.navbar span:nth-child(3)
-{
-    left: 55%;
-}
-.navbar span:nth-child(4)
-{
-    left: 78%;
-}
-
-section
-{
-    position: relative;
-    min-height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
 }
