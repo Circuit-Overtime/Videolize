@@ -4,16 +4,15 @@
    --other_text_width : 0;
 }
 
-.spotlightSection 
-{
+.spotlightSection {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    top: 5%;
-    height: 100%;
+    min-height: 100vh;
+    height: auto;
     position: relative;
-    background: transparent; 
+    background: transparent;
     box-sizing: border-box;
     overflow-x: hidden;
     padding-bottom: 10px;
@@ -23,12 +22,9 @@
 {
   display: none;
 }
+
 .visuMagicContainer
 {
-    position: absolute;
-    top: 0%;
-    left: 0;
-    height: 100%; 
     width: 100%;
     background-color: transparent;
 }
@@ -171,9 +167,9 @@
 
  .wandparticleBackdrop
  {
-    position: absolute;
+    position: relative;
     overflow: hidden;
-    top: 40%;
+    top:  -20px;
     height: 250px;
     width: 100%;
     margin: auto 0;
@@ -651,6 +647,37 @@
 
   }
 
+
+ /* Magic Tiles Grid Layout */
+.magicTilesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-auto-rows: minmax(320px, auto);
+  gap: 32px;
+  position: relative;
+  top: 10px;
+  width: 100%;
+  margin: -30px 0;
+  padding: 0 24px;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.magicTile {
+  background: #1D1C20;
+  border-radius: 25px;
+  border: 1px solid #413e47;
+  box-shadow: 0 4px 32px rgba(21,21,22,0.3);
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  min-height: 320px;
+  overflow: hidden;
+}
+
+
   #tiles {
    display: flex;
  }
@@ -723,569 +750,134 @@
  }
 
 
- /* ========================================================SECOND ROW FIRST LAYOUT ======================================= */
- /* ========================================================SECOND ROW SECOND LAYOUT ======================================= */
- .SecondRowSecondLayout
- {
-    position: absolute;
-    height: 350px;
-    width: 600px;
-    background-color: #1D1C20;
-    transform: translateX(650px) translateY(380px);
-    margin-left: 45px;
-    margin-top: 25px;
-    border-radius: 25px;
-    border: 1px solid #413e47;
-    box-shadow: 43px 0 100px rgb(21, 21, 22);
-    overflow: hidden;
- }
 
- .SecondRowSecondLayout .headingText {
-    position: relative;
-    font-size: 20px;
-    font-family: 'Source Code Pro', monospace;
-    width: inherit;
-    margin-top: 25px ;
-    margin-left: 25px;  /* Top and bottom margins are 45px, left and right margins are 35px */
-    word-wrap: break-word;
-    flex-wrap: wrap;
-    color: #fff;
+.magicTile.wide {
+  grid-column: span 2;
 }
 
- .SecondRowSecondLayout .descriptionText
- {
-    position: relative;
-    font-size: 13px;
-    font-family: 'Source Code Pro', monospace;
-    width: inherit;
-    padding-right: 15px;
-    margin-top: 7px;
-    padding-left: 25px;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    text-align: left;
-    flex-wrap: wrap;
-    color: #A4A4A4;
- }
- 
-
- .SecondRowSecondLayout #original{
-  
-   position: absolute;
-   left: 5%;
-   right: 0;
-   top: -40px;
-   white-space: nowrap;
-   overflow: hidden;    
-   font-family: 'Dosis', sans-serif;
-   font-weight: 700;
-   font-size: 9em;
-   z-index: 0;
-   background: linear-gradient(to bottom, #2E2E33 75%, #080808);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   
-   transition: 0.5s;
- }
- 
- .SecondRowSecondLayout #other
-{
-  position: absolute;
-  transition: left 2s ease-in-out;
-  background-position: left top;
-  -webkit-transition: width .2s;
-  transform-origin: left;
-  top: -140px;
-  left: 6px;
-  filter: drop-shadow(0 0 10px #000);
-  white-space: nowrap;
-  overflow: hidden;    
-  font-family: 'Dosis', monospace;  
-  font-size: 8em;
-  background: linear-gradient(to bottom, #cacaca 75%, #464545);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  width: 400px;
-  
+.magicTile.tall {
+  grid-row: span 2;
 }
 
-.SecondRowSecondLayout .mask
-{
-  position: absolute;
-  width: 400px;
-  height: 160px;
-  top: 37%;
-  left: 5%;
-  background: #1D1C20; /*0c0c0e*/
-  border-radius: 50px;
-  z-index: 3;
-
+.magicTile .headingText {
+  font-size: 1.5em;
+  font-family: 'Source Code Pro', monospace;
+  color: #fff;
+  margin-bottom: 12px;
+  font-weight: 700;
 }
 
-.SecondRowSecondLayout #wandVisuMagic {
-   width: 7vmin;
-   aspect-ratio: 1 / 10;
-   background: linear-gradient(
-     to right, 
-     rgb(26 24 28) 10%, 
-     rgb(42 40 44) 45% 55%, 
-     rgb(26 24 28) 90%
-   );
-   position: absolute;
-   left: 450px; /*50 570*/
-   top: 120px; /*100 120
-   */
-   translate: -50%;
-   rotate: -3deg;
-   z-index: 100;
-   border-radius: 2vmin;
-   box-shadow: 0vmin 1vmin 4vmin rgb(0 0 0 / 80%);
-   overflow: hidden; 
- }
-
-.SecondRowSecondLayout #wandVisuMagic > .capVisuMagic
-   {
-    height: 20%;
-    width: 100%;
-   background: linear-gradient(
-  to right,
-  rgb(212 221 236) 10%,
-  rgb(255 255 255) 45% 55%,
-  rgb(212 221 236) 90%
-);
-
-  }
-
-  #starshine {
-   position: absolute;
-   top: 45%;
-   left: 5%;
-   width: 90%;
-   height: 100px;
-   z-index: 1;
-   overflow: hidden;
- 
-   background: transparent;
- }    
-     
-/* ========================================================SECOND ROW SECOND LAYOUT ======================================= */
-
- .ThirdRowFirstLayout
- {
-    position: absolute;
-    height: 350px;
-    width: 250px;
-    background-color: #1D1C20;
-    margin-left: 45px;
-    transform: translateY(770px);
-    margin-top: 25px;
-    border-radius: 25px;
-    transform-style: preserve-3d;
-    border: 1px solid #413e47;
-    overflow: hidden;
-    box-shadow: 43px 0 100px rgb(21, 21, 22);
- }
-
-
- .ThirdRowFirstLayout .headingText {
-    position: relative;
-    font-size: 20px;
-    font-family: 'Source Code Pro', monospace;
-    width: 180px;
-    margin-top: 25px ;
-    margin-left: 25px;  /* Top and bottom margins are 45px, left and right margins are 35px */
-    word-wrap: break-word;
-    flex-wrap: wrap;
-    color: #fff;
+.magicTile .descriptionText {
+  font-size: 1em;
+  color: #A4A4A4;
+  font-family: 'Source Code Pro', monospace;
+  margin-bottom: 18px;
 }
 
- 
- .ThirdRowFirstLayout .descriptionText
- {
-    position: relative;
-    font-size: 13px;
-    font-family: 'Source Code Pro', monospace;
-    width: 250px;
-    padding-right: 15px;
-    margin-top: 7px;
-    padding-left: 25px;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    text-align: left;
-    flex-wrap: wrap;
-    color: #A4A4A4;
- }
-.ThirdRowFirstLayout .book
-{
-   position: relative;
-   width: 177px;
-   left: 50%;
+.magicTile .Tilestars {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.magicTile .Tilestar1,
+.magicTile .Tilestar2 {
+  width: 48px;
+  height: 48px;
+  background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/bigstar.png?alt=media&token=53c5945b-2b37-4c3e-972c-7bd1b0b9e4f1) no-repeat center/cover;
+}
+
+.magicTile .iconTileSurf {
+  width: 80px;
+  height: 80px;
+  background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/surfboardCatIcon.png?alt=media&token=4b79f346-2583-4b01-8e0e-ba13e70fe7f5) no-repeat center/cover;
+  margin-top: auto;
+}
+
+.magicTile .tileIconSVG {
+ position: absolute;
    height: 260px;
-   transform-origin: center;
-   box-shadow: 20px 20px 20px #111;
-   transform-style: preserve-3d;
-   user-select: none;
-   transition: 0.5s;
-   transform: translateX(-50%) scale(0.8) rotateY(35deg);
-}
-.ThirdRowFirstLayout .book::before
-{
-   content: '';
-   position: absolute;
-   width: 50px;
-   height: 100%;
-   transform-origin: left;
-   background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/side.jpg?alt=media&token=4e396096-5b4e-4802-9907-9a414ad61282);
-   background-position: center;
-   transform: rotateY(90deg);
-}
-
-.ThirdRowFirstLayout .book::after
-{
-   content: '';
-   position: absolute;
-   width: 177px;
-   height: 260px;
-   transform-origin: left;
-   background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/back.jpg?alt=media&token=48cbbdd7-015a-4230-a2e6-8738504657b3);
-   background-position: center;
-   transform: rotateY(180deg) translateZ(50px);
-}
-
-
-
-
-.ThirdRowFirstLayout .book:hover
-{
-  transform: translateX(-50%) scale(0.6) rotateY(180deg);
-}
-
-
-
-
-.ThirdRowFirstLayout .book img
-{
-   position: relative;
-   height: 100%;
-   width: 100%;
-   top: 0;
-   left: 0;
-   object-fit: cover;
+   width: 460px; /*variable*/
+   background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/tileIconSVG.jpg?alt=media&token=97d3f47e-d788-49a6-b2ac-ff10f792822f);
    background-size: cover;
-
-}
- .ThirdRowMiddleLayout
-
- {
-    position: absolute;
-    height: 350px;
-    width: 650px;
-    background-color: #1D1C20;
-    margin-left: 45px;
-    transform: translateX(300px) translateY(770px);
-    margin-top: 25px;
-    border-radius: 25px;
-    border: 1px solid #413e47;
-    overflow: hidden;
-  cursor: pointer;
- }
- 
- .ThirdRowMiddleLayout .headingText {
-    position: relative;
-    font-size: 20px;
-    font-family: 'Source Code Pro', monospace;
-    width: inherit;
-    margin-top: 25px ;
-    margin-left: 25px;  /* Top and bottom margins are 45px, left and right margins are 35px */
-    word-wrap: break-word;
-    flex-wrap: wrap;
-    color: #fff;
+   transform-origin: center;
+   overflow: hidden;
+   transition: width 0.5s ease;
+   left: -3%;
+   top: 35%;
 }
 
- 
- .ThirdRowMiddleLayout .descriptionText
- {
-    position: relative;
-    font-size: 13px;
-    font-family: 'Source Code Pro', monospace;
-    width: inherit;
-    padding-right: 15px;
-    margin-top: 7px;
-    padding-left: 25px;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    text-align: left;
-    flex-wrap: wrap;
-    color: #A4A4A4;
- }
- .ThirdRowMiddleLayout .tileforPSBacklit
- {
-  position: absolute;
-  height: 290px;
-  filter: blur(45px);
-  width: 100%;
-  background: #5411da;
-  top: 25%;
-  left: 5%;
-  border-radius: 30px;
+.magicTile .tilesImages {
+  display: flex;
+  gap: 12px;
+}
+.magicTile .tilesImages .tile {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
   overflow: hidden;
-  transition: 0.5s;
-  opacity: 0;
- }
- .ThirdRowMiddleLayout .tileforPSBacklitParticles
- {
-  position: absolute;
-  height: 290px;
+  background: #222;
+  box-shadow: 0 2px 8px #0003;
+}
+.magicTile .tilesImages .tile img {
   width: 100%;
-  background: transparent;
-  top: 25%;
-  left: 5%;
-  border-radius: 30px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.magicTile .starshine {
+  width: 100px;
+  height: 24px;
+  background: radial-gradient(circle, #fff3 60%, transparent 100%);
+  margin: 12px 0;
+}
+
+.magicTile .original,
+.magicTile .other {
+  font-family: 'Dosis', sans-serif;
+  font-size: 2em;
+  color: #cacaca;
+  margin: 0;
+}
+
+.magicTile .mask {
+  background: #1D1C20;
+  border-radius: 12px;
+  padding: 8px 16px;
+  margin-top: 8px;
+}
+
+.magicTile .book {
+  width: 120px;
+  height: 180px;
+  margin: 0 auto;
+  border-radius: 12px;
   overflow: hidden;
-  transition: 0.5s;
-  opacity: 0;
- }
- .ThirdRowMiddleLayout .tileforPS
- {
-  position: absolute;
-  height: 250px;
+  box-shadow: 0 2px 12px #0005;
+}
+.magicTile .book img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.magicTile .tileforPS {
+  width: 100%;
+  height: 120px;
   background: #39383B;
-  top: 35%;
-  left: 10%;
-  border-radius: 30px;
-  box-shadow: -20px 0 40px #080808,  
-  inset -5px 3px 7px #6d6c6e;
-  overflow: hidden;
- }
- .ThirdRowMiddleLayout .tileforPS::before
- {
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 50%;
-  top: 0;
-  left: 55%;
-  background: #252428;
-  box-shadow:  inset -5px 3px 7px #6d6c6e;
- 
-
- }
-
- .ThirdRowMiddleLayout .tileforPS::after
- {
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 5px;
-  top: 0;
-  left: 55%;
-  background: #0c0b0c;
-  z-index: 10;
-  box-shadow:  inset 0px 2px 2px #6d6c6e;
- }
-  
- .ThirdRowMiddleLayout .tileforPS .layer1,
- .ThirdRowMiddleLayout .tileforPS .layer2,
- .ThirdRowMiddleLayout .tileforPS .layer3,
- .ThirdRowMiddleLayout .tileforPS .layer4
- {
-    position: absolute;
-    padding-left: 10px;
-    height: 40px;
-    left: 5%;
-    top: 8%;
-    width: 50%;
-    transition: 0.25s;
-    background-color: transparent;
-    color: #c9c9c9;
-    font-family: 'Source Code Pro', monospace;
-    font-size: 24px;
-    font-weight: 700;
-    justify-content: center;
-    vertical-align: middle;
-    cursor: pointer;
-    
- }
- .ThirdRowMiddleLayout .tileforPS .layer1:hover,
- .ThirdRowMiddleLayout .tileforPS .layer2:hover,
- .ThirdRowMiddleLayout .tileforPS .layer3:hover,
- .ThirdRowMiddleLayout .tileforPS .layer4:hover
- {
-  background: #5a5a5a;
- }
-
- .ThirdRowMiddleLayout .tileforPS .layer2
-{
-  left: 12%;
-  top: 28%;
-  font-size: 20px;
-  width: 260px;
-}
-.ThirdRowMiddleLayout .tileforPS .layer3
-{
-  left: 12%;
-  top: 48%;
-  font-size: 20px;
-  width: 260px;
+  border-radius: 16px;
+  margin-top: 16px;
+  box-shadow: 0 2px 12px #0005;
 }
 
-.ThirdRowMiddleLayout .tileforPS .layer4
-{
-  left: 5%;
-  top: 70%;
-  font-size: 24px;
-}
-
-
- .ThirdRowMiddleLayout .tileforPS .layer1 ion-icon,
- .ThirdRowMiddleLayout .tileforPS .layer2 ion-icon,
- .ThirdRowMiddleLayout .tileforPS .layer3 ion-icon,
- .ThirdRowMiddleLayout .tileforPS .layer4 ion-icon
- {
-  position: relative;
-  top: 45%;
-  transform: translateY(-50%);
-  font-size: 25px;
-  margin-right: 26px;
-
- }
- .ThirdRowMiddleLayout .layerTranslate
- {
-  position: absolute;
-  height: 190px;
-  width: 190px;
-  top: 15%;
-  left: 61%;
-  background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/psMoonTmp.png?alt=media&token=a3a2ca90-61a6-41bc-8780-882ef4fc23b5);
-  background-size: cover;
- }
- .ThirdRowMiddleLayout #wandVisuMagicThree {
-  width: 7vmin;
-  aspect-ratio: 1 / 10;
-  background: linear-gradient(
-    to right, 
-    rgb(26 24 28) 10%, 
-    rgb(42 40 44) 45% 55%, 
-    rgb(26 24 28) 90%
-  );
-  position: absolute;
-  left: 330px; /*50 570*/
-  top: 80px; /*100 120
-  */
-  transition: 0.25s;
-  rotate: 3deg;
-  z-index: 100;
-  border-radius: 2vmin;
-  box-shadow: 0vmin 1vmin 4vmin rgb(0 0 0 / 80%);
-  overflow: hidden; 
-}
-.ThirdRowMiddleLayout:hover #wandVisuMagicThree
-{
-  top: 20px;
-}
-.ThirdRowMiddleLayout #wandVisuMagicThree > .capVisuMagicThree
-  {
-   height: 20%;
-   width: 100%;
-  background: linear-gradient(
- to right,
- rgb(212 221 236) 10%,
- rgb(255 255 255) 45% 55%,
- rgb(212 221 236) 90%
-);
-
- }
- .ThirdRowMiddleLayout:focus #wandVisuMagicThree
- {
-  animation: shake 1s linear forwards;
- }
- @keyframes shake {
-  0%
-  {
-    rotate: 0deg;
+/* Responsive tweaks */
+@media (max-width: 900px) {
+  .magicTilesGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 8px;
   }
-  25%
-  {
-    rotate: 6deg;
+  .magicTile.wide, .magicTile.tall {
+    grid-column: span 1;
+    grid-row: span 1;
   }
-  50%
-  {
-    rotate:3deg;
-  }
-  100%
-  {
-    rotate:3deg;
-  }
- }
- .ThirdRowThirdLayout
- {
-    position: absolute;
-    height: 350px;
-    width: 250px;
-    background-color: #1D1C20;
-    margin-left: 45px;
-    transform: translateX(1000px) translateY(770px);
-    margin-top: 25px;
-    border-radius: 25px;
-    border: 1px solid #413e47;
-    box-shadow: -53px 0 100px rgb(21, 21, 22);
-    overflow: hidden;
- }
-
- .ThirdRowThirdLayout .headingText {
-    position: relative;
-    font-size: 20px;
-    font-family: 'Source Code Pro', monospace;
-    width: 180px;
-    margin-top: 25px ;
-    margin-left: 25px;  /* Top and bottom margins are 45px, left and right margins are 35px */
-    word-wrap: break-word;
-    flex-wrap: wrap;
-    color: #fff;
 }
-
- 
- .ThirdRowThirdLayout .descriptionText
- {
-    position: relative;
-    font-size: 13px;
-    font-family: 'Source Code Pro', monospace;
-    width: 250px;
-    padding-right: 15px;
-    margin-top: 7px;
-    padding-left: 25px;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    text-align: left;
-    flex-wrap: wrap;
-    color: #A4A4A4;
- }
-
- .ThirdRowThirdLayout .tileFotor
- {
-  position: absolute;
-  top: 65%;
-  transform: translateY(-50%);
-  left: -25%;
-  height: 160px;
-  width: 160px;
-  background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/FotorLogo.png?alt=media&token=24a8de3b-cc3c-4bdd-b5c8-1db804b4d856);
-  filter: drop-shadow(20px 0 10px #080808);
-  background-size: cover;
-  transition: 0.25s;
- }
-
- .ThirdRowThirdLayout .tileStar
- {
-  position: absolute;
-  top: 63%;
-  transform: translateY(-50%);
-  left: 55%;
-  height: 200px;
-  width: 200px;
-  background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/bigstar.png?alt=media&token=53c5945b-2b37-4c3e-972c-7bd1b0b9e4f1);
-  filter: drop-shadow(-20px 0 10px #080808);
-  background-size: cover;
-  transition: 0.25s;
- }
