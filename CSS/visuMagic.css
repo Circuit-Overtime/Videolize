@@ -206,199 +206,6 @@
     z-index: 51;
  }
 
- .FirstRowFirstLayout /*This has been shifted downwards near third row third layout*/
- {
-    position: absolute;
-    height: 350px;
-    box-sizing: border-box;
-    padding-right: 25px;
-    width: 250px;
-    background-color: #1D1C20;
-    margin-left: 45px;
-    margin-top: 25px;
-    border-radius: 25px;
-    left: 74%;
-    top: 119%;
-    border: 1px solid #413e47;
-    box-shadow: 43px 0 100px rgb(21, 21, 22);
-    overflow: hidden;
- }
-
- .FirstRowFirstLayout .headingText {
-    position: relative;
-    font-size: 20px;
-    font-family: 'Source Code Pro', monospace;
-    width: 180px;
-    margin-top: 25px ;
-    margin-left: 25px;  /* Top and bottom margins are 45px, left and right margins are 35px */
-    word-wrap: break-word;
-    flex-wrap: wrap;
-    color: #fff;
-}
-
- 
- .FirstRowFirstLayout .descriptionText
- {
-    position: relative;
-    font-size: 13px;
-    font-family: 'Source Code Pro', monospace;
-    width: 250px;
-    padding-right: 15px;
-    margin-top: 7px;
-    padding-left: 25px;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    text-align: left;
-    flex-wrap: wrap;
-    color: #A4A4A4;
-    overflow: hidden;
- }
-
- .FirstRowFirstLayout .Tilestars
- {
-   position: absolute;
-   height: inherit;
-   width: inherit;
-   left: 10%;
-   top: 40%;
-   background-color: transparent;
- }
- .FirstRowFirstLayout .Tilestars .Tilestar1
- {
-   position: absolute;
-   height: 90px;
-   width: 90px;
-   background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/bigstar.png?alt=media&token=53c5945b-2b37-4c3e-972c-7bd1b0b9e4f1);
-   transition: 0.5s;
-   background-size: cover;
- }
-
- .FirstRowFirstLayout .Tilestars .Tilestar2
- {
-   position: absolute;
-   left: 18%;
-   top: 10%;
-   height: 170px;
-   width: 170px;
-   background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/bigstar.png?alt=media&token=53c5945b-2b37-4c3e-972c-7bd1b0b9e4f1);
-   transition: 0.5s;
-   background-size: cover;
- }
- .FirstRowFirstLayout .iconTileSurf
- {
-   position: absolute;
-   left: 0;
-   top: 0;
-   height: 450px;
-   width: 450px;
-   background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/surfboardCatIcon.png?alt=media&token=4b79f346-2583-4b01-8e0e-ba13e70fe7f5);
-   background-size: cover;
-   z-index: 100;
-   filter: drop-shadow( -5px -5px 10px #481ff8);
-   transform: translateX(-400px);
-   transition: 0.5s;
- }
- 
-
- .FirstRowMiddleLayout
-
- {
-    position: absolute;
-    height: 350px;
-    width: 710px;
-    background-color: #1D1C20;
-    margin-left: 45px;
-    left: 20%;
-    margin-top: 25px;
-    border-radius: 25px;
-    border: 1px solid #413e47;
-   overflow: hidden;
-
- }
-
- .FirstRowMiddleLayout .headingText {
-    position: relative;
-    font-size: 20px;
-    font-family: 'Source Code Pro', monospace;
-    width: inherit;
-    margin-top: 25px ;
-    margin-left: 25px;  /* Top and bottom margins are 45px, left and right margins are 35px */
-    word-wrap: break-word;
-    flex-wrap: wrap;
-    color: #fff;
-}
-
- 
- .FirstRowMiddleLayout .descriptionText
- {
-    position: relative;
-    font-size: 13px;
-    font-family: 'Source Code Pro', monospace;
-    width: inherit;
-    padding-right: 15px;
-    margin-top: 7px;
-    padding-left: 25px;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    text-align: left;
-    flex-wrap: wrap;
-    color: #A4A4A4;
- }
-
- 
- .FirstRowMiddleLayout .tileIconSVG
- {
-   position: absolute;
-   height: 260px;
-   width: 460px; /*variable*/
-   background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/tileIconSVG.jpg?alt=media&token=97d3f47e-d788-49a6-b2ac-ff10f792822f);
-   background-size: cover;
-   transform-origin: center;
-   overflow: hidden;
-   transition: width 0.5s ease;
-   left: -3%;
-   top: 35%;
- }
-
- .FirstRowMiddleLayout #wandVisuMagicTwo {
-   width: 7vmin;
-   aspect-ratio: 1 / 10;
-   background: linear-gradient(
-     to right, 
-     rgb(26 24 28) 10%, 
-     rgb(42 40 44) 45% 55%, 
-     rgb(26 24 28) 90%
-   );
-   position: absolute;
-   left: 450px; /*50 450 600*/
-   top: 108px; /*100 120
-   */
-   translate: -50%;
-   rotate: 1deg;
-   z-index: 100;
-   border-radius: 2vmin;
-   box-shadow: 0vmin 1vmin 4vmin rgb(0 0 0 / 80%);
-   box-shadow: -45px 5px 50px #000,
-    -45px 5px 70px #000,
-    -30px 5px 10px #00000083,
-    -25px 5px 10px #00000083;
-   overflow: hidden; 
- }
-
-.FirstRowMiddleLayout #wandVisuMagicTwo > .capVisuMagicTwo
-   {
-    height: 20%;
-    width: 100%;
-   background: linear-gradient(
-  to right,
-  rgb(212 221 236) 10%,
-  rgb(255 255 255) 45% 55%,
-  rgb(212 221 236) 90%
-);
-
-  }
-
-
  .FirstRowThirdLayout
  {
     position: absolute;
@@ -682,73 +489,6 @@
    display: flex;
  }
  
- .tile {
-   display: grid;
-   place-items: center;
-   width: 38vmin;
-   transform: scale(0.8);
-   aspect-ratio: 1;
-   background-color: rgb(31, 41, 55);
-   background-image: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/imageTmp.png?alt=media&token=d29473bf-d358-4978-8716-88dcc32243c6);
-   background-size: cover;
-   border-radius: 6vmin;
-   box-shadow: 0vmin 3vmin 6vmin rgba(0, 0, 0, 0.678),
-     inset 0vmin 0.5vmin 1vmin rgba(255, 255, 255, 0.493);
-   position: relative;
-   overflow: hidden;
- }
-
- .tile:nth-child(1) {
-   rotate: 3deg;
-   z-index: 3;
- }
- .tile:nth-child(1) > img
- {
-   filter: blur(0px);
-   opacity: 1;
- }
- .tile:nth-child(2) {
-   rotate: -2deg;
-   z-index: 2;
-
- }
- .tile:nth-child(2) > img
- {
-   filter: blur(5px);
-   opacity: 0.5;
- }
-
- .tile:nth-child(3) {
-   rotate: 5deg;
-   z-index: 1;
- }
- 
- .tile:nth-child(3) > img
- {
-   filter: blur(9px);
-   opacity: 0;
- }
-
- .tile:is(:nth-child(2), :nth-child(3)) {
-   margin-left: -10vmin;
- }
- 
- .tile > i {
-   font-size: 15vmin;
-   color: rgb(255 255 255 / 10%);
- }
- 
- .tile > img {
-   height: 100%;
-   aspect-ratio: 1;
-   position: absolute;
-   left: 0px;
-   top: 0px;
-   object-fit: cover;
-   opacity: var(--opacity);
-   filter: blur(calc(var(--blur) * 10px));
- }
-
 
 
 .magicTile.wide {
@@ -765,6 +505,7 @@
   color: #fff;
   margin-bottom: 12px;
   font-weight: 700;
+  z-index: 10;
 }
 
 .magicTile .descriptionText {
@@ -772,6 +513,7 @@
   color: #A4A4A4;
   font-family: 'Source Code Pro', monospace;
   margin-bottom: 18px;
+  z-index: 10;
 }
 
 .magicTile .Tilestars {
@@ -786,14 +528,53 @@
   background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/bigstar.png?alt=media&token=53c5945b-2b37-4c3e-972c-7bd1b0b9e4f1) no-repeat center/cover;
 }
 
-.magicTile .iconTileSurf {
-  width: 80px;
-  height: 80px;
-  background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/surfboardCatIcon.png?alt=media&token=4b79f346-2583-4b01-8e0e-ba13e70fe7f5) no-repeat center/cover;
-  margin-top: auto;
-}
+.Tilestars
+ {
+   position: relative;
+   height: 100%;
+   width: 100%;
+   background-color: transparent;
+   z-index: 10;
+ }
+.Tilestars .Tilestar1
+ {
+   position: absolute;
+   top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(15deg);
+   text-outline: 0 0 #000;
+   height: 170px;
+   width: 170px;
+   background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/bigstar.png?alt=media&token=53c5945b-2b37-4c3e-972c-7bd1b0b9e4f1);
+   transition: 0.5s;
+  animation: hueRotate 2.5s linear infinite;
+   background-size: cover;
+ }
 
-.magicTile .tileIconSVG {
+ @keyframes hueRotate {
+    0%,100% {
+      filter: hue-rotate(0deg);
+    }
+    50% {
+      filter: hue-rotate(180deg);
+    }
+  }
+.iconTileSurf
+ {
+   position: absolute;
+   left: 0;
+   top: 0;
+   height: 100%;
+   width: 100%;
+   background: url(./preTimeline.png);
+   background-size: cover;
+   z-index: 1;
+   filter: blur(20px) brightness(0.3);
+   transition: 0.5s;
+ }
+
+ 
+.tileIconSVG {
  position: absolute;
    height: 260px;
    width: 460px; /*variable*/
@@ -802,72 +583,435 @@
    transform-origin: center;
    overflow: hidden;
    transition: width 0.5s ease;
-   left: -3%;
+   left: 1%;
    top: 35%;
 }
+
+#wandVisuMagicTwo {
+   width: 7vmin;
+   aspect-ratio: 1 / 10;
+   background: linear-gradient(
+     to right, 
+     rgb(26 24 28) 10%, 
+     rgb(42 40 44) 45% 55%, 
+     rgb(26 24 28) 90%
+   );
+   position: absolute;
+   left: 450px; /*50 450 600*/
+   top: 108px; /*100 120
+   */
+   translate: -50%;
+   rotate: 1deg;
+   z-index: 100;
+   border-radius: 2vmin;
+   box-shadow: 0vmin 1vmin 4vmin rgb(0 0 0 / 80%);
+   box-shadow: -45px 5px 50px #000,
+    -45px 5px 70px #000,
+    -30px 5px 10px #00000083,
+    -25px 5px 10px #00000083;
+   overflow: hidden; 
+ }
+
+#wandVisuMagicTwo > .capVisuMagicTwo
+   {
+    height: 20%;
+    width: 100%;
+   background: linear-gradient(
+  to right,
+  rgb(212 221 236) 10%,
+  rgb(255 255 255) 45% 55%,
+  rgb(212 221 236) 90%
+);
+
+  }
+
 
 .magicTile .tilesImages {
   display: flex;
   gap: 12px;
 }
+
+.magicTile .tilesImages {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+}
+
 .magicTile .tilesImages .tile {
-  width: 80px;
-  height: 80px;
+  width: 250px;
+  height: 250px;
   border-radius: 12px;
   overflow: hidden;
   background: #222;
   box-shadow: 0 2px 8px #0003;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .magicTile .tilesImages .tile img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.magicTile .starshine {
-  width: 100px;
-  height: 24px;
-  background: radial-gradient(circle, #fff3 60%, transparent 100%);
-  margin: 12px 0;
+  #original{
+  
+   position: absolute;
+   left: 5%;
+   right: 0;
+   top: -40px;
+   white-space: nowrap;
+   overflow: hidden;    
+   font-family: 'Dosis', sans-serif;
+   font-weight: 700;
+   font-size: 9em;
+   z-index: 0;
+   background: linear-gradient(to bottom, #2E2E33 75%, #080808);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   
+   transition: 0.5s;
+ }
+ 
+  #other
+{
+  position: absolute;
+  transition: left 2s ease-in-out;
+  background-position: left top;
+  -webkit-transition: width .2s;
+  transform-origin: left;
+  top: -140px;
+  left: 6px;
+  filter: drop-shadow(0 0 10px #000);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Dosis', monospace;  
+  font-size: 8em;
+  background: linear-gradient(to bottom, #cacaca 75%, #464545);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 400px;
+  
 }
 
-.magicTile .original,
-.magicTile .other {
-  font-family: 'Dosis', sans-serif;
-  font-size: 2em;
-  color: #cacaca;
-  margin: 0;
+ .mask
+{
+  position: absolute;
+  width: 400px;
+  height: 160px;
+  top: 37%;
+  left: 5%;
+  background: #1D1C20; /*0c0c0e*/
+  border-radius: 50px;
+  z-index: 3;
+
 }
 
-.magicTile .mask {
-  background: #1D1C20;
-  border-radius: 12px;
-  padding: 8px 16px;
-  margin-top: 8px;
+ #wandVisuMagic {
+   width: 7vmin;
+   aspect-ratio: 1 / 10;
+   background: linear-gradient(
+     to right, 
+     rgb(26 24 28) 10%, 
+     rgb(42 40 44) 45% 55%, 
+     rgb(26 24 28) 90%
+   );
+   position: absolute;
+   left: 450px; /*50 570*/
+   top: 120px; /*100 120
+   */
+   translate: -50%;
+   rotate: -3deg;
+   z-index: 100;
+   border-radius: 2vmin;
+   box-shadow: 0vmin 1vmin 4vmin rgb(0 0 0 / 80%);
+   overflow: hidden; 
+ }
+
+#wandVisuMagic > .capVisuMagic
+   {
+    height: 20%;
+    width: 100%;
+   background: linear-gradient(
+  to right,
+  rgb(212 221 236) 10%,
+  rgb(255 255 255) 45% 55%,
+  rgb(212 221 236) 90%
+);
+
+  }
+
+  #starshine {
+   position: absolute;
+   top: 45%;
+   left: 5%;
+   width: 90%;
+   height: 100px;
+   z-index: 1;
+   overflow: hidden;
+ 
+   background: transparent;
+ }    
+.book
+{
+   position: relative;
+   width: 177px;
+   top: 60px;
+   left: 50%;
+   height: 260px;
+   transform-origin: center;
+   box-shadow: 20px 20px 20px #111;
+   transform-style: preserve-3d;
+   user-select: none;
+   transition: 0.5s;
+   transform: translateX(-50%) scale(0.8) rotateY(35deg);
 }
 
-.magicTile .book {
-  width: 120px;
-  height: 180px;
-  margin: 0 auto;
-  border-radius: 12px;
+.book::before
+{
+   content: '';
+   position: absolute;
+   width: 50px;
+   height: 100%;
+   transform-origin: left;
+   background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/side.jpg?alt=media&token=4e396096-5b4e-4802-9907-9a414ad61282);
+   background-position: center;
+   transform: rotateY(90deg);
+}
+
+.book::after
+{
+   content: '';
+   position: absolute;
+   width: 177px;
+   height: 260px;
+   transform-origin: left;
+   background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/back.jpg?alt=media&token=48cbbdd7-015a-4230-a2e6-8738504657b3);
+   background-position: center;
+   transform: rotateY(180deg) translateZ(50px);
+}
+
+ .book:hover
+{
+  transform: translateX(-50%) scale(1) rotateY(180deg);
+}
+.book img
+{
+   position: relative;
+   height: 100%;
+   width: 100%;
+   top: 0;
+   left: 0;
+   object-fit: cover;
+   background-size: cover;
+
+}
+
+  .tileforPSBacklit
+ {
+  position: absolute;
+  height: 290px;
+  filter: blur(45px);
+  width: 100%;
+  background: #5411da;
+  top: 25%;
+  left: 5%;
+  border-radius: 30px;
   overflow: hidden;
-  box-shadow: 0 2px 12px #0005;
-}
-.magicTile .book img {
+  transition: 0.5s;
+  opacity: 0;
+ }
+  .tileforPSBacklitParticles
+ {
+  position: absolute;
+  height: 290px;
   width: 100%;
+  background: transparent;
+  top: 25%;
+  left: 5%;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: 0.5s;
+  opacity: 0;
+ }
+  .tileforPS
+ {
+  position: absolute;
+  height: 250px;
+  width: 100%;
+  background: #39383B;
+  top: 35%;
+  left: 10%;
+  border-radius: 30px;
+  box-shadow: -20px 0 40px #080808,  
+  inset -5px 3px 7px #6d6c6e;
+  overflow: hidden;
+ }
+  .tileforPS::before
+ {
+  content: '';
+  position: absolute;
   height: 100%;
-  object-fit: cover;
+  width: 50%;
+  top: 0;
+  left: 55%;
+  background: #252428;
+  box-shadow:  inset -5px 3px 7px #6d6c6e;
+ 
+
+ }
+
+  .tileforPS::after
+ {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  top: 0;
+  left: 55%;
+  background: #0c0b0c;
+  z-index: 10;
+  box-shadow:  inset 0px 2px 2px #6d6c6e;
+ }
+  
+  .tileforPS .layer1,
+  .tileforPS .layer2,
+  .tileforPS .layer3,
+  .tileforPS .layer4
+ {
+    position: absolute;
+    padding-left: 10px;
+    height: 40px;
+    left: 5%;
+    top: 8%;
+    width: 50%;
+    transition: 0.25s;
+    background-color: transparent;
+    color: #c9c9c9;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    justify-content: center;
+    vertical-align: middle;
+    cursor: pointer;
+    
+ }
+  .tileforPS .layer1:hover,
+  .tileforPS .layer2:hover,
+  .tileforPS .layer3:hover,
+  .tileforPS .layer4:hover
+ {
+  background: #5a5a5a;
+ }
+
+  .tileforPS .layer2
+{
+  left: 12%;
+  top: 28%;
+  font-size: 20px;
+  width: 260px;
+}
+ .tileforPS .layer3
+{
+  left: 12%;
+  top: 48%;
+  font-size: 20px;
+  width: 260px;
 }
 
-.magicTile .tileforPS {
-  width: 100%;
-  height: 120px;
-  background: #39383B;
-  border-radius: 16px;
-  margin-top: 16px;
-  box-shadow: 0 2px 12px #0005;
+ .tileforPS .layer4
+{
+  left: 5%;
+  top: 70%;
+  font-size: 24px;
 }
+
+
+  .tileforPS .layer1 ion-icon,
+  .tileforPS .layer2 ion-icon,
+  .tileforPS .layer3 ion-icon,
+  .tileforPS .layer4 ion-icon
+ {
+  position: relative;
+  top: 45%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  margin-right: 26px;
+
+ }
+  .layerTranslate
+ {
+  position: absolute;
+  height: 190px;
+  width: 190px;
+  top: 15%;
+  left: 61%;
+  background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/psMoonTmp.png?alt=media&token=a3a2ca90-61a6-41bc-8780-882ef4fc23b5);
+  background-size: cover;
+ }
+  #wandVisuMagicThree {
+  width: 7vmin;
+  aspect-ratio: 1 / 10;
+  background: linear-gradient(
+    to right, 
+    rgb(26 24 28) 10%, 
+    rgb(42 40 44) 45% 55%, 
+    rgb(26 24 28) 90%
+  );
+  position: absolute;
+  left: 330px; /*50 570*/
+  top: 80px; /*100 120
+  */
+  transition: 0.25s;
+  rotate: 3deg;
+  z-index: 100;
+  border-radius: 2vmin;
+  box-shadow: 0vmin 1vmin 4vmin rgb(0 0 0 / 80%);
+  overflow: hidden; 
+}
+:hover #wandVisuMagicThree
+{
+  top: 20px;
+}
+ #wandVisuMagicThree > .capVisuMagicThree
+  {
+   height: 20%;
+   width: 100%;
+  background: linear-gradient(
+ to right,
+ rgb(212 221 236) 10%,
+ rgb(255 255 255) 45% 55%,
+ rgb(212 221 236) 90%
+);
+
+ }
+ :focus #wandVisuMagicThree
+ {
+  animation: shake 1s linear forwards;
+ }
+ @keyframes shake {
+  0%
+  {
+    rotate: 0deg;
+  }
+  25%
+  {
+    rotate: 6deg;
+  }
+  50%
+  {
+    rotate:3deg;
+  }
+  100%
+  {
+    rotate:3deg;
+  }
+ }
+
+
 
 /* Responsive tweaks */
 @media (max-width: 900px) {
