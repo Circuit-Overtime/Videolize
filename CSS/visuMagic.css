@@ -195,265 +195,6 @@
  }
 
 
- .magicTiles
- {
-    position: relative;
-    height: 650px;
-    width: 100%;
-    background-color: transparent;
-    top: 29%;
-    left: 0;
-    z-index: 51;
- }
-
- .FirstRowThirdLayout
- {
-    position: absolute;
-    height: 350px;
-    width: 250px;
-    background-color: #1D1C20;
-    margin-left: 45px;
-    transform: translateX(1000px);
-    margin-top: 25px;
-    border-radius: 25px;
-    border: 1px solid #413e47;
-    overflow: hidden;
-    box-shadow: -53px 0 100px rgb(21, 21, 22);
- }
-
- .FirstRowThirdLayout .headingText {
-    position: relative;
-    font-size: 20px;
-    font-family: 'Source Code Pro', monospace;
-    width: 180px;
-    margin-top: 25px ;
-    margin-left: 25px;  /* Top and bottom margins are 45px, left and right margins are 35px */
-    word-wrap: break-word;
-    flex-wrap: wrap;
-    color: #fff;
-}
-
- 
- .FirstRowThirdLayout .descriptionText
- {
-    position: relative;
-    font-size: 13px;
-    font-family: 'Source Code Pro', monospace;
-    width: 250px;
-    padding-right: 15px;
-    margin-top: 7px;
-    padding-left: 25px;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    text-align: left;
-    flex-wrap: wrap;
-    color: #A4A4A4;
- }
-
- .FirstRowThirdLayout .flip-card {
-   position: relative;
-   height: 270px;
-   width: 270px;
-   top: -7%;
-   left: 7%;
-   transform: scale(0.6) rotate(5deg);
-   aspect-ratio: 1;
-   background-color: transparent;
-   background-size: cover;
-   border-radius: 6vmin;
-   overflow: hidden;
-   transform-style: preserve-3d;
-   box-shadow: 0vmin 3vmin 6vmin rgba(0, 0, 0, 0.678);
-   transition: transform 0.5s; /* Smooth transition for transform */
-}
-.FirstRowThirdLayout .flip-card-inner {
-   position: relative;
-   width: 100%;
-   height: 100%;
-   text-align: center;
-   transition: transform 0.6s;
-   transform-style: preserve-3d;
-   border-radius: 6vmin;
-   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
- }
- .FirstRowThirdLayout .flip-card-inner img
- {
-   height: 100%;
-   width: 100%;
-   border-radius: 2vmin;
-   background-color: rgb(31, 41, 55);
-   object-fit: cover;
- }
-
-.flip-card:hover .flip-card-inner
-{
-   transform: rotateY(180deg);
-}
-
-.flip-cardSmall:hover .flip-card-innerSmall 
-{
-   transform: rotateY(180deg);
-} 
-
- .flip-card-front, .flip-card-back {
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   -webkit-backface-visibility: hidden;
-   backface-visibility: hidden;
- }
-
- .flip-card-front {
-   background-color: #bbb;
-   color: black;
- }
-
- .flip-card-back {
-   background-color: #2980b9;
-   color: white;
-   transform: rotateY(180deg);
- }
-
-.FirstRowThirdLayout .flip-cardSmall
-{
-   position: absolute;
-   width: 15vmin;
-   top: 67%;
-   left: 5%;
-   transform: scale(0.6) rotate(-5deg);
-   aspect-ratio: 1;
-   background-color: rgb(31, 41, 55);
-   background-size: cover;
-   border-radius: 2vmin;
-   box-shadow: 0vmin 3vmin 6vmin rgba(0, 0, 0, 0.678);
-   overflow: hidden;
-   transform-style: preserve-3d;
-}
-
-.FirstRowThirdLayout .flip-card-innerSmall {
-   position: relative;
-   width: 100%;
-   height: 100%;
-   text-align: center;
-   transition: transform 0.6s;
-   transform-style: preserve-3d;
-
-   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
- }
- .FirstRowThirdLayout .flip-card-innerSmall img
- {
-   height: 100%;
-   width: 100%;
-   border-radius: 1vmin;
-   background-color: rgb(31, 41, 55);
-   object-fit: cover;
- }
-
- .flip-card-frontSmall, .flip-card-backSmall {
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   -webkit-backface-visibility: hidden;
-   backface-visibility: hidden;
- }
-
- .flip-card-frontSmall {
-   background-color: #bbb;
-   color: black;
- }
-
- .flip-card-backSmall {
-   background-color: #2980b9;
-   color: white;
-   transform: rotateY(180deg);
- }
-
-
-
-
-
-/* ========================================================SECOND ROW FIRST LAYOUT ======================================= */
-
- .SecondRowFirstLayout
- {
-    position: absolute;
-    height: 350px;
-    width: 610px;
-    background-color: #1D1C20;
-    transform: translateY(380px);
-    margin-left: 45px;
-    margin-top: 25px;
-    overflow: hidden;
-    border-radius: 25px;
-    border: 1px solid #413e47;
-    box-shadow: 43px 0 100px rgb(21, 21, 22);
- }
-
-
- .SecondRowFirstLayout .headingText {
-    position: relative;
-    font-size: 20px;
-    font-family: 'Source Code Pro', monospace;
-    width: inherit;
-    margin-top: 25px ;
-    margin-left: 25px;  /* Top and bottom margins are 45px, left and right margins are 35px */
-    word-wrap: break-word;
-    flex-wrap: wrap;
-    color: #fff;
-}
-
- 
- .SecondRowFirstLayout .descriptionText
- {
-    position: relative;
-    font-size: 13px;
-    font-family: 'Source Code Pro', monospace;
-    width: inherit;
-    padding-right: 15px;
-    margin-top: 7px;
-    padding-left: 25px;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    text-align: left;
-    flex-wrap: wrap;
-    color: #A4A4A4;
- }
-
-
- .SecondRowFirstLayout #wandVisuMagicOne {
-   width: 7vmin;
-   aspect-ratio: 1 / 10;
-   background: linear-gradient(
-     to right, 
-     rgb(26 24 28) 10%, 
-     rgb(42 40 44) 45% 55%, 
-     rgb(26 24 28) 90%
-   );
-   position: absolute;
-   left: 300px; /*50 570*/
-   top: 120px; /*100 120
-   */
-   translate: -50%;
-   rotate: -3deg;
-   z-index: 100;
-   border-radius: 2vmin;
-   box-shadow: 0vmin 1vmin 4vmin rgb(0 0 0 / 80%);
-   overflow: hidden; 
- }
-
-.SecondRowFirstLayout #wandVisuMagicOne > .capVisuMagicOne
-   {
-    height: 20%;
-    width: 100%;
-   background: linear-gradient(
-  to right,
-  rgb(212 221 236) 10%,
-  rgb(255 255 255) 45% 55%,
-  rgb(212 221 236) 90%
-);
-
-  }
-
 
  /* Magic Tiles Grid Layout */
 .magicTilesGrid {
@@ -626,6 +367,7 @@
   }
 
 
+
 .magicTile .tilesImages {
   display: flex;
   gap: 12px;
@@ -657,12 +399,48 @@
   object-fit: cover;
 }
 
+
+ #wandVisuMagic {
+   width: 7vmin;
+   aspect-ratio: 1 / 10;
+   background: linear-gradient(
+     to right, 
+     rgb(26 24 28) 10%, 
+     rgb(42 40 44) 45% 55%, 
+     rgb(26 24 28) 90%
+   );
+   position: absolute;
+   left: 450px; /*50 570*/
+   top: 120px; /*100 120
+   */
+   translate: -50%;
+   rotate: -3deg;
+   z-index: 100;
+   border-radius: 2vmin;
+   box-shadow: 0vmin 1vmin 4vmin rgb(0 0 0 / 80%);
+   overflow: hidden; 
+ }
+
+#wandVisuMagic > .capVisuMagic
+   {
+    height: 20%;
+    width: 100%;
+   background: linear-gradient(
+  to right,
+  rgb(212 221 236) 10%,
+  rgb(255 255 255) 45% 55%,
+  rgb(212 221 236) 90%
+);
+
+  }
+
+
   #original{
   
    position: absolute;
    left: 5%;
    right: 0;
-   top: -40px;
+   top: 0px;
    white-space: nowrap;
    overflow: hidden;    
    font-family: 'Dosis', sans-serif;
@@ -885,14 +663,14 @@
     position: absolute;
     padding-left: 10px;
     height: 40px;
-    left: 5%;
+    left: 3%;
     top: 8%;
     width: 50%;
     transition: 0.25s;
     background-color: transparent;
     color: #c9c9c9;
     font-family: 'Source Code Pro', monospace;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     justify-content: center;
     vertical-align: middle;
@@ -909,14 +687,14 @@
 
   .tileforPS .layer2
 {
-  left: 12%;
+  left: 5%;
   top: 28%;
   font-size: 20px;
   width: 260px;
 }
  .tileforPS .layer3
 {
-  left: 12%;
+  left: 5%;
   top: 48%;
   font-size: 20px;
   width: 260px;
@@ -924,9 +702,9 @@
 
  .tileforPS .layer4
 {
-  left: 5%;
+  left: 3%;
   top: 70%;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 
@@ -939,16 +717,16 @@
   top: 45%;
   transform: translateY(-50%);
   font-size: 25px;
-  margin-right: 26px;
+  margin-right: 5px;
 
  }
   .layerTranslate
  {
   position: absolute;
-  height: 190px;
-  width: 190px;
-  top: 15%;
-  left: 61%;
+  height: 170px;
+  width: 170px;
+  top: 20%;
+  left: 55%;
   background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/psMoonTmp.png?alt=media&token=a3a2ca90-61a6-41bc-8780-882ef4fc23b5);
   background-size: cover;
  }
@@ -962,9 +740,8 @@
     rgb(26 24 28) 90%
   );
   position: absolute;
-  left: 330px; /*50 570*/
-  top: 80px; /*100 120
-  */
+  left: 200px; 
+  top: 40px; 
   transition: 0.25s;
   rotate: 3deg;
   z-index: 100;
@@ -972,7 +749,7 @@
   box-shadow: 0vmin 1vmin 4vmin rgb(0 0 0 / 80%);
   overflow: hidden; 
 }
-:hover #wandVisuMagicThree
+#wandVisuMagicThree:hover
 {
   top: 20px;
 }
