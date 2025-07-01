@@ -9,7 +9,7 @@
     }
     .visuMagicDesc 
     {
-        top: 150px;
+        top: 15px;
         width: 100%;
         font-size: 1.2em;
     }
@@ -18,64 +18,164 @@
         display: flex;
         flex-direction: column;
     }
-    .FirstRowMiddleLayout,
-    .SecondRowFirstLayout
+    #wand
     {
-        width: 95%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        left: 1%;
-        margin-left: 5px;
+        height: 250px;
+        left: 45%;
+        transform: translateX(-50%);
+        top: 10%;
     }
-    .FirstRowMiddleLayout > .headingText,
-    .SecondRowFirstLayout > .headingText 
+    #wand > .cap
     {
-        margin-left: 5px;
+        height: 30%;
     }
-    .FirstRowMiddleLayout > .descriptionText,
-    .SecondRowFirstLayout > .descriptionText
+    .magicTile .headingText
     {
-        padding-left: 5px;
+        font-size: 1.1em;
     }
-    .FirstRowMiddleLayout .tileIconSVG
+    .magicTile .descriptionText 
     {
-        width: 150px;
-        overflow: hidden;
+        font-size: 0.8em;
     }
-    .FirstRowMiddleLayout #wandVisuMagicTwo
+    #wandVisuMagicTwo 
     {
         display: none;
     }
-    .SecondRowFirstLayout 
+    .tileforPS .layer1,
+    .tileforPS .layer2,
+    .tileforPS .layer3,
+    .tileforPS .layer4 
     {
-        overflow-y: auto;
+        font-size: 12px;
     }
-    .SecondRowFirstLayout #wandVisuMagicOne
+    .spotlightSection 
     {
-        display: none;
+        height: 280vh;
     }
-    #tiles 
+    #wandVisuMagicThree 
     {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        left: 150px;
     }
-    .tile:nth-child(1)
+    #photoshopMockup > .descriptionText 
     {
-        margin-top: 20px
+        color: #fff;
+        margin-top: -5px;
     }
-    .tile
+    .tileforPSBacklit 
     {
-        transform: scale(1);
-        position: relative;
-        margin-bottom: 20px;
-        rotate: 0;
-    }
-    .tile:nth-child(2) > img,
-    .tile:nth-child(3) > img
-    {
-        filter: blur(0px);
         opacity: 1;
+    }
+    .tileforPSBacklitParticles 
+    {
+        opacity: 1;
+    }
+    #original
+    {
+        font-size: 5em;
+        top: 60%;
+    }
+    #other 
+    {
+        font-size: 5em;
+        width: 130px;
+    }
+    .mask 
+    {
+        top: 50%;
+        width: 170px;
+        height: 100px;
+        border-radius: 10px;
+    }
+    #starshine 
+    {
+        height: 100px;
+        top: 65%;
+    }
+    #wandVisuMagic
+    {
+        left: 170px;
+        width: 10vmin;
+        top: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .descriptionImage {
+        display: none;
+    }
+    .visuMagic {
+        font-size: 5em;
+    }
+    .visuMagicDesc {
+        top: 20px;
+        width: 100%;
+        font-size: 1.4em;
+    }
+    .magicTiles {
+        display: flex;
+        flex-direction: column;
+    }
+    #wand {
+        height: 550px;
+        left: 48%;
+        transform: translateX(-50%);
+        top: 3%;
+    }
+    #wand > .cap {
+        height: 22%;
+    }
+    .magicTile .headingText {
+        font-size: 1.3em;
+    }
+    .magicTile .descriptionText {
+        font-size: 1em;
+    }
+    #wandVisuMagicTwo {
+        display: block;
+    }
+    .tileforPS .layer1,
+    .tileforPS .layer2,
+    .tileforPS .layer3,
+    .tileforPS .layer4 {
+        font-size: 22px;
+    }
+    .spotlightSection {
+        height: 220vh;
+    }
+    #wandVisuMagicThree {
+        left: 50%;
+    }
+    #photoshopMockup > .descriptionText {
+        color: #fff;
+        margin-top: -3px;
+    }
+    .tileforPSBacklit {
+        opacity: 1;
+    }
+    .tileforPSBacklitParticles {
+        opacity: 1;
+    }
+    #original {
+        font-size: 10em;
+        top: 60%;
+    }
+    #other {
+        font-size: 8em;
+        width: 330px;
+    }
+    .mask {
+        top: 40%;
+        width: 350px;
+        height: 150px;
+        border-radius: 12px;
+    }
+    #starshine {
+        height: 120px;
+        top: 60%;
+    }
+    #wandVisuMagic {
+        left: 400px;
+        width:  8vmin;
+        top: 120px;
     }
 }
