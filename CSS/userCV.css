@@ -325,3 +325,26 @@ body
     transform: rotate(-90deg)  scale(2);
     filter: hue-rotate(90deg);
   }
+
+  .FooterSocials {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    font-size: 1.8rem;
+    color: #ffc;
+  }
+
+  .FooterSocials ion-icon {
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.3s;
+  }
+
+  .FooterSocials ion-icon:hover {
+    transform: scale(1.2);
+    color: var(--accent);
+  }
+
+
+  

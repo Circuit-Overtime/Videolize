@@ -7,46 +7,148 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
     <title>Curriculum.Vitae</title>
     <!-- <script src="../JS/checkforPhone.js" defer></script> -->
-    <script type="module" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule="" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="icon" type="image/x-icon" href="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/cvTabIcon.png?alt=media&token=7b2f3ec1-96af-4c32-b9cd-be0651066b4c">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <link rel="stylesheet" href="../CSS/userCV.css">
+    <link rel="stylesheet" href="../CSS/userCVpdf.css">
     <link rel="stylesheet" href="../CSS/userCV_mobile.css">
 </head>
 <body>
     <div class="ParticleContainer" id="bg"></div>
     <div class="blob1"></div>
     <div class="blob2"></div>
-    <div class="mainContainer" id="mainContainer">
-        <p class="sectionName"> Presenting My CV!</p>
-
-        <div class="cvMask"></div>
-        <div class="pdfContainerOne"><img class="slowLoadOne" src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/compressImages%2FcvCompOne.jpg?alt=media&token=4a6621a1-bba7-4963-9cc8-e1493ef1a35f"><img class="longLoad" src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/CVImagePartOne.jpg?alt=media&token=f4433535-a40f-4438-a97b-c395a557caa8"></div>
-        <div class="pdfContainerTwo"><img class="slowLoadTwo" src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/compressImages%2FcvCompTwo.jpg?alt=media&token=34d857f4-41e7-48b2-aace-9708b650fb70"><img class="longLoad" src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/CVImagePartTwo.jpg?alt=media&token=a5fe76ae-a8e1-44dd-9704-e2e4c9397ade"></div>
+    <div class="mainContainer">
+    
+        <div class="pdf-viewer-container">
+            <div id="pdf-loader">Loading CV...</div>
+            <div id="pdf-scroll-wrapper">
+              <canvas id="pdf-canvas"></canvas>
+            </div>
+          
+            <div id="pdf-controls">
+              <button id="prev-page">← Prev</button>
+              <span id="page-info"></span>
+              <button id="next-page">Next →</button>
+              <a href="../ayushman-bhattacharya.pdf" download>
+                <ion-icon name="download-outline"></ion-icon> Download PDF
+              </a>
+            </div>
+          </div>
+          
+    
+        <div class="FooterSocials">
+          <ion-icon name="logo-linkedin" id="linkedinRedirect"></ion-icon>
+          <ion-icon name="logo-instagram" id="instagramRedirect"></ion-icon>
+          <ion-icon name="logo-facebook" id="facebookRedirect"></ion-icon>
+        </div>
         
-        <div class="redirectWebsite" id="redirectWebsite">
-            <span class="redirectWebsiteLogoBtn"><ion-icon name="aperture"></ion-icon></span>
-            <span class="redirectWebsiteLogoTxt"> videolize.asm </span>
-            </div>
-   
-            <div class="redirectSocial" id="redirectSocial">
-                <span class="sparkleLogoBtn"><ion-icon name="sparkles"></ion-icon></span>
-                <span class="sparkleLogoTxt"> editor.design </span>
-                </div>
+      </div>
 
-            <div class="FooterSocials">
-                <ion-icon name="logo-linkedin"  style="--i:1;" id="linkedinRedirect"></ion-icon>
-                <ion-icon name="logo-instagram"  style="--i:2;" id="instagramRedirect"></ion-icon>
-                <ion-icon name="logo-facebook"  style="--i:3;" id="facebookRedirect"></ion-icon>
-            </div>
-    </div>
     <script src="../JS/linkRedirect.js"></script>
     <script src="../JS/particles.min.js"></script>
     <script src="../JS/particleEffectCV.js"></script>
-    <script src="../JS/userCV.js"></script>
-    <!-- <script src="../JS/PatchContextMenu.js"></script> -->
     
+    <script type="module">
+        // Import pdfjsLib from the ES module version
+        import * as pdfjsLib from 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.2.67/pdf.min.mjs';
+
+        // Set the worker source for pdf.js
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.2.67/pdf.worker.min.mjs';
+
+        const url = "../ayushman-bhattacharya.pdf"; // Correct path to your PDF
+        let pdfDoc = null, pageNum = 1, pageRendering = false, pageNumPending = null;
+        const scale = 1.2; // You can adjust this for zoom level
+        const canvas = document.getElementById('pdf-canvas');
+        const ctx = canvas.getContext('2d');
+        const pageInfoSpan = document.getElementById('page-info');
+        const pdfLoader = document.getElementById('pdf-loader');
+        const pdfControls = document.getElementById('pdf-controls');
+
+        // Render a given page number
+        function renderPage(num) {
+            pageRendering = true;
+            canvas.style.opacity = '0.5'; // Dim canvas during render
+            pdfLoader.style.display = 'block'; // Show loader during render
+            pdfLoader.textContent = 'Rendering page...';
+
+
+            pdfDoc.getPage(num).then((page) => {
+                const viewport = page.getViewport({ scale });
+
+                // Set canvas dimensions
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+
+                const renderContext = {
+                    canvasContext: ctx,
+                    viewport: viewport,
+                };
+
+                page.render(renderContext).promise.then(() => {
+                    pageRendering = false;
+                    pdfLoader.style.display = 'none'; // Hide loader
+                    canvas.style.display = 'block'; // Ensure canvas is visible
+                    canvas.style.opacity = '1'; // Restore full opacity
+                    pdfControls.style.display = 'flex'; // Ensure controls are visible
+                    pageInfoSpan.textContent = `Page ${pageNum} of ${pdfDoc.numPages}`;
+
+                    if (pageNumPending !== null) {
+                        // New page requested while rendering was in progress
+                        renderPage(pageNumPending);
+                        pageNumPending = null;
+                    }
+                });
+            }).catch(error => {
+                console.error("Error rendering page:", error);
+                pdfLoader.textContent = "Error rendering page.";
+                canvas.style.opacity = '1';
+                pageRendering = false;
+            });
+        }
+
+        // Queue render to handle page while another is rendering
+        function queueRenderPage(num) {
+            if (pageRendering) {
+                pageNumPending = num;
+            } else {
+                renderPage(num);
+            }
+        }
+
+        // Button listeners
+        document.getElementById('prev-page').addEventListener('click', () => {
+            if (pageNum <= 1) {
+                return; // Already on first page
+            }
+            pageNum--;
+            queueRenderPage(pageNum);
+        });
+
+        document.getElementById('next-page').addEventListener('click', () => {
+            if (pageNum >= pdfDoc.numPages) {
+                return; // Already on last page
+            }
+            pageNum++;
+            queueRenderPage(pageNum);
+        });
+
+        // Load the PDF
+        pdfjsLib.getDocument(url).promise
+            .then((loadedPdf) => {
+                pdfDoc = loadedPdf;
+                pdfLoader.textContent = 'PDF loaded, rendering page 1...';
+                renderPage(pageNum);
+            })
+            .catch((error) => {
+                console.error("Error loading PDF:", error);
+                pdfLoader.textContent = `Failed to load PDF. Error: ${error.message}. Please ensure 'ayushman-bhattacharya.pdf' is in the correct directory.`;
+                canvas.style.display = 'none'; // Hide canvas if PDF fails to load
+                pdfControls.style.display = 'none'; // Hide controls
+            });
+
+    </script>
 </body>
 </html>

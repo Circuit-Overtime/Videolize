@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <title>Curriculum.Vitae</title>
+
+  <!-- Icon Scripts -->
+  <script type="module" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.js"></script>
+  <link rel="icon" href="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/cvTabIcon.png?alt=media&token=7b2f3ec1-96af-4c32-b9cd-be0651066b4c" />
+
+  <!-- PDF.js & Fonts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.2.67/pdf.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+  <!-- jQuery & ScrollReveal -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+  <!-- Custom CSS -->
+  <style>
+    :root {
+      --background: #0f172a;
+      --card-bg: rgba(255, 255, 255, 0.05);
+      --card-glow: rgba(255, 255, 255, 0.15);
+      --text-light: #f1f5f9;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --btn-bg: #1e293b;
+      --btn-hover: #334155;
+      --border-radius: 16px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: var(--background);
+      color: var(--text-light);
+      overflow-x: hidden;
+    }
+
+    .mainContainer {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .sectionName {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: var(--accent);
+    }
+
+    .pdf-viewer-container {
+      margin: 0 auto;
+      max-width: 850px;
+      background: var(--card-bg);
+      border-radius: var(--border-radius);
+      box-shadow: 0 0 20px var(--card-glow);
+      overflow: hidden;
+      transition: 0.3s ease;
+    }
+
+    #pdf-loader {
+      padding: 30px;
+      font-size: 1.2em;
+      color: var(--text-muted);
+    }
+
+    #pdf-canvas {
+      width: 100%;
+      display: none;
+      background-color: #1e293b;
+      border-radius: 0 0 var(--border-radius) var(--border-radius);
+    }
+
+    #pdf-controls {
+      display: none;
+      padding: 12px;
+      background: var(--btn-bg);
+      color: var(--text-light);
+      border-top: 1px solid #334155;
+    }
+
+    #pdf-controls button {
+      background: var(--btn-bg);
+      color: var(--text-light);
+      padding: 6px 16px;
+      margin: 0 6px;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    #pdf-controls button:hover {
+      background: var(--btn-hover);
+    }
+
+    #pdf-controls a {
+      margin-left: 20px;
+      color: var(--accent);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-weight: 500;
+    }
+
+    .FooterSocials {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      font-size: 1.8rem;
+    }
+
+    .FooterSocials ion-icon {
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: transform 0.2s ease, color 0.3s;
+    }
+
+    .FooterSocials ion-icon:hover {
+      transform: scale(1.2);
+      color: var(--accent);
+    }
+
+    @media screen and (max-width: 768px) {
+      .sectionName {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="mainContainer">
+    <p class="sectionName">Presenting My CV!</p>
+
+    <div class="pdf-viewer-container">
+      <div id="pdf-loader">Loading CV...</div>
+      <canvas id="pdf-canvas"></canvas>
+      <div id="pdf-controls">
+        <button id="prev-page">&#8592; Prev</button>
+        <span id="page-info"></span>
+        <button id="next-page">Next &#8594;</button>
+        <a href="ayushman-bhattacharya.pdf" download>
+          <ion-icon name="download-outline"></ion-icon> Download PDF
+        </a>
+      </div>
+    </div>
+
+    <div class="FooterSocials">
+      <ion-icon name="logo-linkedin" id="linkedinRedirect"></ion-icon>
+      <ion-icon name="logo-instagram" id="instagramRedirect"></ion-icon>
+      <ion-icon name="logo-facebook" id="facebookRedirect"></ion-icon>
+    </div>
+  </div>
+
+  <!-- PDF Viewer Script -->
+  <script>
+    const url = "ayushman-bhattacharya.pdf";
+    const pdfjsLib = window['pdfjs-dist/build/pdf'];
+    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.2.67/pdf.worker.min.js';
+
+    let pdfDoc = null, pageNum = 1, pageRendering = false, pageNumPending = null;
+    const scale = 1.2, canvas = document.getElementById('pdf-canvas'), ctx = canvas.getContext('2d');
+
+    function renderPage(num) {
+      pageRendering = true;
+      pdfDoc.getPage(num).then(function (page) {
+        const viewport = page.getViewport({ scale: scale });
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        const renderContext = {
+          canvasContext: ctx,
+          viewport: viewport
+        };
+        const renderTask = page.render(renderContext);
+
+        renderTask.promise.then(function () {
+          pageRendering = false;
+          document.getElementById('pdf-loader').style.display = 'none';
+          canvas.style.display = 'block';
+          document.getElementById('pdf-controls').style.display = 'flex';
+          document.getElementById('page-info').textContent = `Page ${pageNum} of ${pdfDoc.numPages}`;
+
+          if (pageNumPending !== null) {
+            renderPage(pageNumPending);
+            pageNumPending = null;
+          }
+        });
+      });
+    }
+
+    function queueRenderPage(num) {
+      if (pageRendering) {
+        pageNumPending = num;
+      } else {
+        renderPage(num);
+      }
+    }
+
+    document.getElementById('prev-page').addEventListener('click', () => {
+      if (pageNum <= 1) return;
+      pageNum--;
+      queueRenderPage(pageNum);
+    });
+
+    document.getElementById('next-page').addEventListener('click', () => {
+      if (pageNum >= pdfDoc.numPages) return;
+      pageNum++;
+      queueRenderPage(pageNum);
+    });
+
+    pdfjsLib.getDocument(url).promise.then(function (pdfDoc_) {
+      pdfDoc = pdfDoc_;
+      renderPage(pageNum);
+    }).catch(function () {
+      document.getElementById('pdf-loader').textContent = "Failed to load PDF.";
+    });
+  </script>
+</body>
+</html>

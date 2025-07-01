@@ -2,12 +2,7 @@
 {
     --webkit-tap-highlight-color : transparent;
 }
-@media only screen and (max-width: 2560px) 
-{
-    .mainContainer {
-           transform: translate(-50%, -50%) scale(1.8);
-    }
-}
+
 @media only screen and (max-width: 1440px) 
 {
     .mainContainer {
@@ -235,7 +230,8 @@
         left: 4%;
     }
 
-    .FooterSocials ion-icon {
+    .FooterSocials i
+    ion-icon {
         font-size: 18px;
     }
 
@@ -254,5 +250,11 @@
     .FooterSocials ion-icon:nth-child(4) {
         transform: rotate(-5deg);
         color: #ffc;
+    }
+}
+@media only screen and (min-width: 2560px) 
+{
+    .mainContainer {
+           transform: translate(-50%, -50%) scale(1.8);
     }
 }
