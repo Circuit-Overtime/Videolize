@@ -8,7 +8,7 @@ const firebaseConfig = {
 };
 
 
-const app = firebase.initializeApp(firebaseConfig);
+// const app = firebase.initializeApp(firebaseConfig);
 
 function typeWriterEffectHTML(idOfTextHolder, textToType, speed) {
     var i = 0;
@@ -25,228 +25,228 @@ function typeWriterEffectHTML(idOfTextHolder, textToType, speed) {
     
 }
 
-document.getElementById("mainContainer").scrollTo({
-  top: 0,
-});
+// document.getElementById("mainContainer").scrollTo({
+//   top: 0,
+// });
 
-document.getElementById("mainContainer").addEventListener("scroll", (e) => {
-  const Scrollamount = document.getElementById("mainContainer").scrollTop;
-  if(Scrollamount >= 1000)
-  {
-    document.getElementById("navbar").style.transform = "translateX(-50%) translateY(0px)";
-  }
-  else
-  {
-    document.getElementById("navbar").style.transform = "translateX(-50%) translateY(-250px)";
-  }
-})
+// document.getElementById("mainContainer").addEventListener("scroll", (e) => {
+//   const Scrollamount = document.getElementById("mainContainer").scrollTop;
+//   if(Scrollamount >= 1000)
+//   {
+//     document.getElementById("navbar").style.transform = "translateX(-50%) translateY(0px)";
+//   }
+//   else
+//   {
+//     document.getElementById("navbar").style.transform = "translateX(-50%) translateY(-250px)";
+//   }
+// })
 
-document.getElementById("VisuMagic").addEventListener("click", () => {
-  document.getElementById("mainContainer").scrollTo({
-    top: 1417,
-    behavior: 'smooth'
-});
-})
-document.getElementById("InnoVista").addEventListener("click", () => {
-  document.getElementById("mainContainer").scrollTo({
-    top: 3023,
-    behavior: 'smooth'
-});
-})
-document.getElementById("AutoEdita").addEventListener("click", () => {
-  document.getElementById("mainContainer").scrollTo({
-    top: 4393,
-    behavior: 'smooth'
-});
-})
+// document.getElementById("VisuMagic").addEventListener("click", () => {
+//   document.getElementById("mainContainer").scrollTo({
+//     top: 1417,
+//     behavior: 'smooth'
+// });
+// })
+// document.getElementById("InnoVista").addEventListener("click", () => {
+//   document.getElementById("mainContainer").scrollTo({
+//     top: 3023,
+//     behavior: 'smooth'
+// });
+// })
+// document.getElementById("AutoEdita").addEventListener("click", () => {
+//   document.getElementById("mainContainer").scrollTo({
+//     top: 4393,
+//     behavior: 'smooth'
+// });
+// })
 
-document.getElementById("galleryImagesAutoEditaBtn").addEventListener("click", () => {
-  document.getElementById("mainContainer").scrollTo({
-    top: 5093,
-    behavior: 'smooth'
-});
-})
+// document.getElementById("galleryImagesAutoEditaBtn").addEventListener("click", () => {
+//   document.getElementById("mainContainer").scrollTo({
+//     top: 5093,
+//     behavior: 'smooth'
+// });
+// })
 
-document.getElementById("socialSectionAutoEditaBtn").addEventListener("click", () => {
-  document.getElementById("mainContainer").scrollTo({
-    top: 6893,
-    behavior: 'smooth'
-});
-})
-
-
-document.getElementById("DesignSage").addEventListener("click", () => {
-  document.getElementById("mainContainer").scrollTo({
-    top: 7493,
-    behavior: 'smooth'
-});
-})
+// document.getElementById("socialSectionAutoEditaBtn").addEventListener("click", () => {
+//   document.getElementById("mainContainer").scrollTo({
+//     top: 6893,
+//     behavior: 'smooth'
+// });
+// })
 
 
-document.getElementById("VisuMagicStatic").addEventListener("click", () => {
-  document.getElementById("mainContainer").scrollTo({
-    top: 1417,
-    behavior: 'smooth'
-});
-})
-document.getElementById("InnoVistaStatic").addEventListener("click", () => {
-  document.getElementById("mainContainer").scrollTo({
-    top: 3023,
-    behavior: 'smooth'
-});
-})
-document.getElementById("AutoEditaStatic").addEventListener("click", () => {
-  document.getElementById("mainContainer").scrollTo({
-    top: 4393,
-    behavior: 'smooth'
-});
-})
-document.getElementById("DesignSageStatic").addEventListener("click", () => {
-  document.getElementById("mainContainer").scrollTo({
-    top: 7493,
-    behavior: 'smooth'
-});
-})
-
-document.getElementById("exploreBtn").addEventListener("click", () => {
-  document.getElementById("mainContainer").scrollTo({
-    top: 1417,
-    behavior: 'smooth'
-});
-})
+// document.getElementById("DesignSage").addEventListener("click", () => {
+//   document.getElementById("mainContainer").scrollTo({
+//     top: 7493,
+//     behavior: 'smooth'
+// });
+// })
 
 
-document.getElementById("wand").addEventListener("click", () => {
-  document.getElementById("mainContainer").scrollTo({
-    top: 1837,
-    behavior: 'smooth'
-});
-})
+// document.getElementById("VisuMagicStatic").addEventListener("click", () => {
+//   document.getElementById("mainContainer").scrollTo({
+//     top: 1417,
+//     behavior: 'smooth'
+// });
+// })
+// document.getElementById("InnoVistaStatic").addEventListener("click", () => {
+//   document.getElementById("mainContainer").scrollTo({
+//     top: 3023,
+//     behavior: 'smooth'
+// });
+// })
+// document.getElementById("AutoEditaStatic").addEventListener("click", () => {
+//   document.getElementById("mainContainer").scrollTo({
+//     top: 4393,
+//     behavior: 'smooth'
+// });
+// })
+// document.getElementById("DesignSageStatic").addEventListener("click", () => {
+//   document.getElementById("mainContainer").scrollTo({
+//     top: 7493,
+//     behavior: 'smooth'
+// });
+// })
+
+// document.getElementById("exploreBtn").addEventListener("click", () => {
+//   document.getElementById("mainContainer").scrollTo({
+//     top: 1417,
+//     behavior: 'smooth'
+// });
+// })
 
 
-document.getElementById("linkedinRedirect").addEventListener("click", () => {
-  window.location.href = "https://www.linkedin.com/in/solankighoshvideoeditor/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-})
-
-document.getElementById("instagramRedirect").addEventListener("click", () => {
-  window.location.href = "https://www.instagram.com/a.creative_mess?igsh=MXkxdTU1ZDUxaG8wYQ%3D%3D"
-})
-
-
-document.getElementById("facebookRedirect").addEventListener("click", () => {
-  window.location.href = "https://www.facebook.com/solankighosh65?mibextid=ZbWKwL"
-})
+// document.getElementById("wand").addEventListener("click", () => {
+//   document.getElementById("mainContainer").scrollTo({
+//     top: 1837,
+//     behavior: 'smooth'
+// });
+// })
 
 
+// document.getElementById("linkedinRedirect").addEventListener("click", () => {
+//   window.location.href = "https://www.linkedin.com/in/solankighoshvideoeditor/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+// })
 
-document.getElementById("linkedInSocial").addEventListener("click", () => {
-  window.location.href = "https://www.linkedin.com/in/solankighoshvideoeditor/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-})
-
-document.getElementById("instagramSocial").addEventListener("click", () => {
-  window.location.href = "https://www.instagram.com/a.creative_mess?igsh=MXkxdTU1ZDUxaG8wYQ%3D%3D"
-})
+// document.getElementById("instagramRedirect").addEventListener("click", () => {
+//   window.location.href = "https://www.instagram.com/a.creative_mess?igsh=MXkxdTU1ZDUxaG8wYQ%3D%3D"
+// })
 
 
-document.getElementById("facebookSocial").addEventListener("click", () => {
-  window.location.href = "https://www.facebook.com/solankighosh65?mibextid=ZbWKwL"
-})
+// document.getElementById("facebookRedirect").addEventListener("click", () => {
+//   window.location.href = "https://www.facebook.com/solankighosh65?mibextid=ZbWKwL"
+// })
 
 
 
+// document.getElementById("linkedInSocial").addEventListener("click", () => {
+//   window.location.href = "https://www.linkedin.com/in/solankighoshvideoeditor/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+// })
 
-function checkCache()
-{
-  document.getElementById("mainContainer").style.opacity = "0";
-  const scrlHtRtr = sessionStorage.getItem("scrlHtDsgn");
-  const redirectRtr = sessionStorage.getItem("redirectDsgn");
-  // console.log(scrlHtRtr, redirectRtr)
-  if((scrlHtRtr != null) || (redirectRtr != null))
-  {
-    setTimeout(() => {
-      document.querySelector(".loadingOverlay").style.opacity = "0";
-    }, 900);
-    document.getElementById("mainContainer").style.opacity = "1";
-    sessionStorage.setItem("redirectDsgn", false);
-    document.getElementById("mainContainer").scrollTo({top:  sessionStorage.getItem("scrlHtDsgn"), behavior : "smooth"});
-    setTimeout(() => {
-      document.querySelector(".loadingOverlay").style.display = "none";
-    }, 200);
-  }
-  else if(scrlHtRtr == null)
-  {
-    sessionStorage.setItem("scrlHtDsgn", null);
-  }
-  else if(redirectRtr == null)
-  {
-    sessionStorage.setItem("redirectDsgn", null);
-  }
-
-}
+// document.getElementById("instagramSocial").addEventListener("click", () => {
+//   window.location.href = "https://www.instagram.com/a.creative_mess?igsh=MXkxdTU1ZDUxaG8wYQ%3D%3D"
+// })
 
 
-document.getElementById("redirectSocial").addEventListener("click", () => {
-  const windowHeihgt = document.getElementById("mainContainer").scrollTop;
-  sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
-  sessionStorage.setItem("redirectDsgn", true);
- redirectTo("me");
-})
-
-
-document.getElementById("iconforvisumagic").addEventListener("click", () => {
-  const windowHeihgt = document.getElementById("mainContainer").scrollTop;
-  sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
-  sessionStorage.setItem("redirectDsgn", true);
- redirectTo("me");
-})
+// document.getElementById("facebookSocial").addEventListener("click", () => {
+//   window.location.href = "https://www.facebook.com/solankighosh65?mibextid=ZbWKwL"
+// })
 
 
 
-document.getElementById("redirectSocialInnoVista").addEventListener("click", () => {
-  const windowHeihgt = document.getElementById("mainContainer").scrollTop;
-  sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
-  sessionStorage.setItem("redirectDsgn", true);
- redirectTo("skills");
-})
+
+// function checkCache()
+// {
+//   document.getElementById("mainContainer").style.opacity = "0";
+//   const scrlHtRtr = sessionStorage.getItem("scrlHtDsgn");
+//   const redirectRtr = sessionStorage.getItem("redirectDsgn");
+//   // console.log(scrlHtRtr, redirectRtr)
+//   if((scrlHtRtr != null) || (redirectRtr != null))
+//   {
+//     setTimeout(() => {
+//       document.querySelector(".loadingOverlay").style.opacity = "0";
+//     }, 900);
+//     document.getElementById("mainContainer").style.opacity = "1";
+//     sessionStorage.setItem("redirectDsgn", false);
+//     document.getElementById("mainContainer").scrollTo({top:  sessionStorage.getItem("scrlHtDsgn"), behavior : "smooth"});
+//     setTimeout(() => {
+//       document.querySelector(".loadingOverlay").style.display = "none";
+//     }, 200);
+//   }
+//   else if(scrlHtRtr == null)
+//   {
+//     sessionStorage.setItem("scrlHtDsgn", null);
+//   }
+//   else if(redirectRtr == null)
+//   {
+//     sessionStorage.setItem("redirectDsgn", null);
+//   }
+
+// }
 
 
-document.getElementById("iconforInnovista").addEventListener("click", () => {
-  const windowHeihgt = document.getElementById("mainContainer").scrollTop;
-  sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
-  sessionStorage.setItem("redirectDsgn", true);
-  redirectTo("skills");
+// document.getElementById("redirectSocial").addEventListener("click", () => {
+//   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
+//   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
+//   sessionStorage.setItem("redirectDsgn", true);
+//  redirectTo("me");
+// })
+
+
+// document.getElementById("iconforvisumagic").addEventListener("click", () => {
+//   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
+//   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
+//   sessionStorage.setItem("redirectDsgn", true);
+//  redirectTo("me");
+// })
+
+
+
+// document.getElementById("redirectSocialInnoVista").addEventListener("click", () => {
+//   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
+//   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
+//   sessionStorage.setItem("redirectDsgn", true);
+//  redirectTo("skills");
+// })
+
+
+// document.getElementById("iconforInnovista").addEventListener("click", () => {
+//   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
+//   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
+//   sessionStorage.setItem("redirectDsgn", true);
+//   redirectTo("skills");
  
-})
+// })
 
 
-document.getElementById("redirectSocialautoEdita").addEventListener("click", () => {
-  const windowHeihgt = document.getElementById("mainContainer").scrollTop;
-  sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
-  sessionStorage.setItem("redirectDsgn", true);
- redirectTo("gallery");
-})
+// document.getElementById("redirectSocialautoEdita").addEventListener("click", () => {
+//   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
+//   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
+//   sessionStorage.setItem("redirectDsgn", true);
+//  redirectTo("gallery");
+// })
 
-document.getElementById("iconforautoEdita").addEventListener("click", () => {
-  const windowHeihgt = document.getElementById("mainContainer").scrollTop;
-  sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
-  sessionStorage.setItem("redirectDsgn", true);
-  redirectTo("gallery");
-})
-
-
-
-//lazy loading on images!
-
-document.querySelectorAll(".image-container div img:not(.autoEditaLazyLoading)").forEach((elm, index) => {
-  elm.addEventListener("load", () => {
-      document.querySelectorAll(".image-container div img.autoEditaLazyLoading")[index].style.opacity = "0";
-  })
-})
+// document.getElementById("iconforautoEdita").addEventListener("click", () => {
+//   const windowHeihgt = document.getElementById("mainContainer").scrollTop;
+//   sessionStorage.setItem("scrlHtDsgn", windowHeihgt);
+//   sessionStorage.setItem("redirectDsgn", true);
+//   redirectTo("gallery");
+// })
 
 
-window.onload = e => {
+
+// //lazy loading on images!
+
+// document.querySelectorAll(".image-container div img:not(.autoEditaLazyLoading)").forEach((elm, index) => {
+//   elm.addEventListener("load", () => {
+//       document.querySelectorAll(".image-container div img.autoEditaLazyLoading")[index].style.opacity = "0";
+//   })
+// })
+
+
+// window.onload = e => {
   
-}
+// }
 //1417 visumagic
 //3123 innovista
 //4393 autoEdita

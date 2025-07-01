@@ -17,7 +17,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.38/build/spline-viewer.js"></script>
-    
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- <link rel="stylesheet" type="text/css" href="CSS/loadingAnimation.css"> -->
     <link rel="stylesheet" type="text/css" href="CSS/homePage.css">
     <link rel="stylesheet" type="text/css" href="CSS/heroSection.css">
@@ -25,11 +25,11 @@
     <link rel="stylesheet" type="text/css" href="CSS/visuMagic.css">
     <!-- <link rel="stylesheet" type="text/css" href="CSS/visuMagicMobile.css"> -->
     <link rel="stylesheet" type="text/css" href="CSS/innovista.css">
-    <link rel="stylesheet" type="text/css" href="CSS/innovistaMobile.css">
+    <!-- <link rel="stylesheet" type="text/css" href="CSS/innovistaMobile.css"> -->
     <link rel="stylesheet" type="text/css" href="CSS/autoEdita.css">
-    <link rel="stylesheet" type="text/css" href="CSS/autoEditaMobile.css">
+    <!-- <link rel="stylesheet" type="text/css" href="CSS/autoEditaMobile.css"> -->
     <link rel="stylesheet" type="text/css" href="CSS/designSage.css">
-    <link rel="stylesheet" type="text/css" href="CSS/designSageMobile.css">
+    <!-- <link rel="stylesheet" type="text/css" href="CSS/designSageMobile.css"> -->
     <link rel="stylesheet" type="text/css" href="CSS/footer.css">
     <link rel="icon" type="image/x-icon" href="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/website%20logo.png?alt=media&token=e3409e2d-d827-430d-b0b8-1345567525d5">
 
@@ -70,7 +70,7 @@
         </div>
       
           <p class="mainHeading mainHeadingSlow"> Revolutionize Your <br> Visual Storytelling. </p>
-          <p class="subHeading"> AI-Infused Editing, <br> Unleash Your Creativity! </p>
+          <p class="subHeading"> Welcome to the portfolio of <br> Editor, Solanki Ghosh </p>
 
           <div class="planetContainer">
             <div class="solarSystem">
@@ -132,22 +132,22 @@
                   </div>
                   
                   
-                 <!-- Magic Tiles Section -->
           <div class="magicTilesGrid">
 
-            <div class="magicTile wide">
+            <div class="magicTile wide" id="logosTileMove">
               <div class="headingText">Create Logos for anything</div>
               <div class="descriptionText">Powerful Logo Graphic Designs and Esteemed Softwares at use</div>
               <div id="wandVisuMagicTwo">
                   <div class="capVisuMagicTwo"></div>
                 </div>
-              <div class="tileIconSVG"></div>
+              <div class="tileIconSVG" id="tileIconSVG"></div>
             </div>
-            <div class="magicTile">
+            <div class="magicTile wide" id="rulerMapper">
               <div class="headingText">Create with AI wizardry</div>
               <div class="descriptionText">AI-powered video editing: Unleash creativity with automated magic touch</div>
-              <div class="Tilestars">
-                <div class="Tilestar1"></div>
+              <div class="ruler-wrapper">
+                <div class="ruler" id="ruler"></div>
+                <div class="marker" id="marker"></div>
               </div>
               <div class="iconTileSurf"></div>
             </div>
@@ -162,7 +162,7 @@
             </div>
 
 
-            <div class="magicTile wide">
+            <div class="magicTile wide" id="textMaskEffect">
               <div class="headingText">Wave Goodbye to Boring Edits.</div>
               <div class="descriptionText">With Powerful Softwares and Skill at hand, editing and creating videos are faster!</div>
                <div id="wandVisuMagic">
@@ -172,7 +172,7 @@
                 <div class="starshine" id="starshine"></div>
 
                 <p id="original"> Boring Edits </p>
-                <div class="mask"><p id="other">It's Magic!</p></div>
+                <div class="mask" id="mask"><p id="other">It's Magic! You know</p></div>
             </div>
 
 
@@ -183,7 +183,7 @@
                 <img src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/cover.jpg?alt=media&token=6ac2cf18-bc49-47db-888a-0fe7e19b7e4d" alt="">
               </div>
             </div>
-            <div class="magicTile">
+            <div class="magicTile wide" id="photoshopMockup">
              <div class="headingText">See a Photoshop Mockup!</div>
                 <div class="descriptionText">Loving Editing and Photography on the go!</div>
                 <div class="tileforPSBacklit" id="tileforPSBacklit"></div>
@@ -204,27 +204,72 @@
 
     </section>
 
+    <footer id="support" class="py-12 mt-8 px-6 border-t border-gray-700">
+      <div class="max-w-6xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+              <div>
+                  <div class="flex items-center gap-3 mb-4">
+                      <img src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/website%20logo.png?alt=media&token=e3409e2d-d827-430d-b0b8-1345567525d5" alt="Videolize Logo" class="w-8 h-8 rounded-full">
+                      <span class="text-xl font-bold text-white cursor-pointer" id="githubRedirect">Videolize</span>
+                  </div>
+                  <p class="text-gray-400 text-sm">The personal portfolio for Solanki Ghosh</p>
+              </div>
+              
+              <div>
+                  <h4 class="font-semibold mb-4">Product</h4>
+                  <ul class="space-y-2 text-gray-400 text-sm">
+                      <li><a href="#features" class="hover:text-white transition-colors">Features</a></li>
+                      <li><a href="#support" class="hover:text-white transition-colors">Support</a></li>
+                  </ul>
+              </div>
+              
+              <div>
+                  <h4 class="font-semibold mb-4">Support</h4>
+                  <ul class="space-y-2 text-gray-400 text-sm">
+                      <li><a href="#" class="hover:text-white transition-colors" id="discordRedirect">Discord Server</a></li>
+                      <li><a href="#" class="hover:text-white transition-colors" id="statusPageRedirect">Status Page</a></li>
+                  </ul>
+              </div>
+              
+              <div>
+                  <h4 class="font-semibold mb-4">Legal</h4>
+                  <ul class="space-y-2 text-gray-400 text-sm">
+                      <li><a id="privacyPage" class="hover:text-white transition-colors cursor-pointer">Privacy Policy</a></li>
+                      <li><a id="termsPage" class="hover:text-white transition-colors cursor-pointer">Terms of Service</a></li>
+                  </ul>
+              </div>
+          </div>
+          
+          <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+              <p>&copy; 2025 Jackey. All rights reserved. Made with ❤️ for Discord communities.</p>
+          </div>
+      </div>
+  </footer>
+
+
+  <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r17/Stats.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    
     <script src="JS/particles.min.js"></script>
     <script src="JS/particleEffect.js"></script>
-    <script src="JS/particleEffectMagicWand.js"></script>
     <script src="JS/linkRedirect.js"></script>
     <script src="JS/generalMaster.js"></script>
     <script src="JS/scrollRevealMaster.js"></script>
-    <script src="JS/particles.min.js"></script>
-    <script src="JS/particleEffect.js"></script>
-    <script src="JS/particleEffectLoader.js"></script>
+    <script src="JS/MagicWandVisuEdit.js"></script>
     <script src="JS/particleEffectMagicWand.js"></script>
     <script src="JS/particleEffectMagicWandPS.js"></script>
+    <script src="JS/rulerEffect.js"></script>
+    <script src="JS/MagicWandVisuTileRevealRemaster.js"></script>
+    <script src="JS/VisuPS.js"></script>
     <!-- <script src="JS/particleEffectInnovatePS.js"></script>
     <script src="JS/particleEffectInnovatePS_button.js"></script>
     <script src="JS/particleEffectInnovatePS_button_two.js"></script>
     <script src="JS/particleEffectInnovatePS_button_three.js"></script>
     <script src="JS/particleEffectInnovateAI_button_three.js"></script>
-    <script src="JS/MagicWandVisuEdit.js"></script>
+    
     <script src="JS/MagicWandVisuEditPictures.js"></script>
-    <script src="JS/MagicWandVisuTileRevealRemaster.js"></script>
+    
     <script src="JS/VisuFlipRotateTurn.js"></script>
      <script src="JS/importThree.js"></script>
     <script src="JS/VisuPS.js"></script>

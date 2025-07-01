@@ -1,6 +1,6 @@
 const wandTiles = document.getElementById("wandVisuMagicTwo"),
 tileIcons = document.getElementById("tileIconSVG"),
-tileContainer = document.getElementById("FirstRowMiddleLayout");
+tileContainer = document.getElementById("logosTileMove");
 
 tileContainer.onmousemove = e => {
     //console.log(e.clientX); //345 993

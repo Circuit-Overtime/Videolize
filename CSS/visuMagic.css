@@ -9,7 +9,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    min-height: 100vh;
+    min-height: 270vh;
     height: auto;
     position: relative;
     background: transparent;
@@ -133,7 +133,7 @@
     background-image: linear-gradient(90deg,#0c0c0c,#1d1a1f);
     opacity: 100%;
     left: 50%;
-    top: 60px;
+    top: 1%;
     rotate: 90deg;
     z-index: 100;
     border-radius : 10px;
@@ -223,6 +223,7 @@
   position: relative;
   min-height: 320px;
   overflow: hidden;
+  user-select: none;
 }
 
 
@@ -257,63 +258,69 @@
   z-index: 10;
 }
 
-.magicTile .Tilestars {
+
+.ruler-wrapper {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80px;
+  width: 90%;
+  background: #222;
+  border-radius: 20px;
   display: flex;
-  gap: 12px;
-  margin-bottom: 12px;
-}
-.magicTile .Tilestar1,
-.magicTile .Tilestar2 {
-  width: 48px;
-  height: 48px;
-  background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/bigstar.png?alt=media&token=53c5945b-2b37-4c3e-972c-7bd1b0b9e4f1) no-repeat center/cover;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
 }
 
-.Tilestars
- {
-   position: relative;
-   height: 100%;
-   width: 100%;
-   background-color: transparent;
-   z-index: 10;
- }
-.Tilestars .Tilestar1
- {
-   position: absolute;
-   top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(15deg);
-   text-outline: 0 0 #000;
-   height: 170px;
-   width: 170px;
-   background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/bigstar.png?alt=media&token=53c5945b-2b37-4c3e-972c-7bd1b0b9e4f1);
-   transition: 0.5s;
-  animation: hueRotate 2.5s linear infinite;
-   background-size: cover;
- }
+.ruler {
+  display: flex;
+  width: 90%;
+  height: 100%;
+  gap: 6px;
+  align-items: center;
+  justify-content: space-between;
+}
 
- @keyframes hueRotate {
-    0%,100% {
-      filter: hue-rotate(0deg);
-    }
-    50% {
-      filter: hue-rotate(180deg);
-    }
-  }
-.iconTileSurf
- {
-   position: absolute;
-   left: 0;
-   top: 0;
-   height: 100%;
-   width: 100%;
-   background: url(./preTimeline.png);
-   background-size: cover;
-   z-index: 1;
-   filter: blur(20px) brightness(0.3);
-   transition: 0.5s;
- }
+.tick {
+  flex: 0 0 2px;
+  height: 20px;
+  background: #888;
+  opacity: 0.4;
+}
 
+.tick.strong {
+  height: 40px;
+  background: #aaa;
+  opacity: 0.8;
+}
+
+.marker {
+  position: absolute;
+  width: 6px;
+  height: 50px;
+  background: #ff4d4d;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 3px;
+  box-shadow: 0 0 10px #ff4d4d88;
+  z-index: 10;
+}
+
+.time-pop {
+    position: absolute;
+    color: #fff;
+    padding: 4px 10px;
+    font-size: 1.3em;
+    border-radius: 6px;
+    pointer-events: none;
+    transform: translateY(0) scale(0.8) rotate(-20deg);
+    font-family: 'Courier New', Courier, monospace;
+    opacity: 1;
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1), opacity 1s ease-out;
+    z-index: 20;
+}   
  
 .tileIconSVG {
  position: absolute;
@@ -440,7 +447,8 @@
    position: absolute;
    left: 5%;
    right: 0;
-   top: 0px;
+   top: 50%;
+   transform: translateY(-50%);
    white-space: nowrap;
    overflow: hidden;    
    font-family: 'Dosis', sans-serif;
@@ -461,7 +469,8 @@
   background-position: left top;
   -webkit-transition: width .2s;
   transform-origin: left;
-  top: -140px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 6px;
   filter: drop-shadow(0 0 10px #000);
   white-space: nowrap;
@@ -490,7 +499,7 @@
 
  #wandVisuMagic {
    width: 7vmin;
-   aspect-ratio: 1 / 10;
+   aspect-ratio: 1 /10;
    background: linear-gradient(
      to right, 
      rgb(26 24 28) 10%, 
@@ -524,15 +533,18 @@
 
   #starshine {
    position: absolute;
-   top: 45%;
+   top: 50%;
+   transform: translateY(-50%);
    left: 5%;
    width: 90%;
-   height: 100px;
+   height: 150px;
    z-index: 1;
    overflow: hidden;
  
    background: transparent;
  }    
+
+ 
 .book
 {
    position: relative;
@@ -545,6 +557,7 @@
    transform-style: preserve-3d;
    user-select: none;
    transition: 0.5s;
+   overflow: visible;
    transform: translateX(-50%) scale(0.8) rotateY(35deg);
 }
 
@@ -556,60 +569,69 @@
    height: 100%;
    transform-origin: left;
    background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/side.jpg?alt=media&token=4e396096-5b4e-4802-9907-9a414ad61282);
+   background-repeat: no-repeat;
    background-position: center;
    transform: rotateY(90deg);
 }
 
-.book::after
-{
-   content: '';
-   position: absolute;
-   width: 177px;
-   height: 260px;
-   transform-origin: left;
-   background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/back.jpg?alt=media&token=48cbbdd7-015a-4230-a2e6-8738504657b3);
-   background-position: center;
-   transform: rotateY(180deg) translateZ(50px);
+.book::after {
+  content: '';
+  position: absolute;
+  width: 177px;
+  height: 260px;
+  left: 0;
+  top: 0;
+  transform-origin: center;
+  background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/back.jpg?alt=media&token=48cbbdd7-015a-4230-a2e6-8738504657b3);
+  background-repeat: no-repeat;
+  background-position: center;
+  backface-visibility: hidden;
+  transform: rotateY(180deg) translateZ(0px);
 }
 
  .book:hover
 {
   transform: translateX(-50%) scale(1) rotateY(180deg);
 }
-.book img
-{
-   position: relative;
-   height: 100%;
-   width: 100%;
-   top: 0;
-   left: 0;
-   object-fit: cover;
-   background-size: cover;
-
+.book img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  transform: rotateY(0deg);
 }
 
   .tileforPSBacklit
  {
   position: absolute;
-  height: 290px;
-  filter: blur(45px);
+  height: 100%;
+  filter: blur(45px) brightness(0.5) saturate(2);
   width: 100%;
   background: #5411da;
-  top: 25%;
-  left: 5%;
+  top: 0%;
+  left: 0%;
   border-radius: 30px;
+  box-shadow: inset 0 0 5px #111, 
+  inset 0 0 20px #222,
+  inset 0 0 40px #333;
   overflow: hidden;
   transition: 0.5s;
   opacity: 0;
+  border: 2px solid #111;
  }
   .tileforPSBacklitParticles
  {
   position: absolute;
-  height: 290px;
+  height: 100%;
   width: 100%;
   background: transparent;
-  top: 25%;
-  left: 5%;
+  top: 0%;
+  left: 0%;
   border-radius: 30px;
   overflow: hidden;
   transition: 0.5s;
@@ -724,11 +746,14 @@
  {
   position: absolute;
   height: 170px;
-  width: 170px;
-  top: 20%;
-  left: 55%;
+  width: 40%;
+  top: 25%;
+  left: 60%;
   background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/psMoonTmp.png?alt=media&token=a3a2ca90-61a6-41bc-8780-882ef4fc23b5);
   background-size: cover;
+  border: 2px solid #ffc;
+  border-radius: 10px;
+  background-repeat: no-repeat;
  }
   #wandVisuMagicThree {
   width: 7vmin;
