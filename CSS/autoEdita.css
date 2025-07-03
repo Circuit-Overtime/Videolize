@@ -1,20 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Sevillana&family=Style+Script&display=swap');
-
+body 
+{
+  overflow: hidden;
+}
+.ParticleContainer
+{
+  background: #18181B;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
 
 
 .autoEditaSection 
 {
+  position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    top: 20%;
+    top: 0%;
     height: 100%;
-    position: relative;
     background: transparent; 
     box-sizing: border-box;
     overflow-x: hidden;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    transform: scale(0.9);
 }
 .autoEditaSection::-webkit-scrollbar
 {
@@ -311,7 +325,8 @@
 	-moz-column-gap: 24px;
 	column-gap: 24px;
 	padding: 0 40px;
-  margin-bottom: 2px;
+    /* Adjusted margin-bottom for gap */
+    margin-bottom: 80px; /* Increased from 2px to create a decent gap */
 
 }
 .image-container div {
@@ -388,19 +403,21 @@
 
 
 .FirstRowSecondLayoutEdita
-
 {
-   position: relative;
+   position: relative; /* Keep relative, or consider removing if not needed for positioning context */
    height: 350px;
+   top: -200px;
    left: 50%;
-   top: -100px;
    transform: translateX(-50%);
    width: 60%;
    background-color: #1D1C20;
-   margin-top: 0px;
+   margin-top: 0px; /* Adjusted margin-top to create a gap after the image container */
    border-radius: 25px;
    border: 1px solid #413e47;
-  overflow: hidden;  
+   overflow: hidden;  
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 40px; /* Keep this to ensure a gap below this section */
 
 }
 
@@ -475,66 +492,49 @@
     z-index: 2;
     backdrop-filter: blur(45px);
   }
-  .FirstRowSecondLayoutEdita .profileCardContainer
-  {
-    position: absolute;
-    transition: left 250ms ease-in;
-    top: 2%;
-   left: 0;
-  }
-  .FirstRowSecondLayoutEdita #linkedInSocial
-  {
-    position: absolute;
-    height: 230px;
-    width: 230px;
-    background: #121213;
-    box-shadow: -10px 5px 20px #0a0909;
-    border: 2px solid #413e47;
-    margin-left: 25px;
-    border-radius: 25px;
-    top: 100px;
-    z-index: 5;
-    transition : 0.25s;
-    user-select: none;
-    cursor: pointer;
-  }
-  .FirstRowSecondLayoutEdita #instagramSocial
-  {
-    position: absolute;
-    height: 230px;
-    width: 230px;
-    transform: translateX(250px);
-    background: #121213;
-    box-shadow: -10px 5px 20px #0a0909;
-    border: 2px solid #413e47;
-    margin-left: 25px;
-    border-radius: 25px;
-    top: 100px;
-    z-index: 5;
-    transition : 0.25s;
-    user-select: none;
-    cursor: pointer;
-  }
-  .FirstRowSecondLayoutEdita #facebookSocial
-  {
-    position: absolute;
-    height: 230px;
-    width: 230px;
-    background: #121213;
-    transform: translateX(500px);
-    box-shadow: -10px 5px 20px #0a0909;
-    border: 2px solid #413e47;
-    margin-left: 25px;
-    border-radius: 25px;
-    top: 100px;
-    z-index: 5; 
-    transition : 0.25s;
-    user-select: none;
-    cursor: pointer;
-  }
 
-  .FirstRowSecondLayoutEdita .profileCards .profileImage
-  {
+
+  .FirstRowSecondLayoutEdita .socialMediaTileContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    width: 100%;
+    top: 4%;
+    left: 0;
+    transition: none;
+    height: auto;
+    min-height: 230px;
+    
+}
+
+.socialMediaTile {
+  position: relative;
+  height: 230px;
+  width: 230px;
+  background: #121213;
+  box-shadow: -10px 5px 20px #0a0909;
+  border: 2px solid #413e47;
+  border-radius: 25px;
+  z-index: 5;
+  transition: 0.25s;
+  user-select: none;
+  cursor: pointer;
+  margin-left: 0;
+  top: 0;
+  left: 0;
+}
+  
+#linkedInSocial,
+#instagramSocial,
+#facebookSocial {
+    left: unset;
+}
+
+  /* Profile image */
+  .socialMediaTile .profileImage {
     position: absolute;
     top: 25px;
     left: 25px;
@@ -545,8 +545,9 @@
     background-size: cover;
     background-image: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/compressImages%2FSolankiProfile.jpeg?alt=media&token=7a1fdc0d-6391-47c3-beee-7299816b3b66);
   }
-  .FirstRowSecondLayoutEdita .profileCards .profileTag
-  {
+  
+  /* Tag Pill */
+  .socialMediaTile .profileTag {
     position: absolute;
     top: 30px;
     left: 85px;
@@ -555,33 +556,30 @@
     border-radius: 15px;
     background: #2c90fc;
   }
-  #linkedInSocial .profileTag
-  {
+  
+  #linkedInSocial .profileTag {
     background: #F34822;
   }
-  #linkedInSocial:hover
-  {
+  #linkedInSocial:hover {
     border: 2px solid #F34822;
   }
-  #instagramSocial .profileTag
-  {
+  
+  #instagramSocial .profileTag {
     background: #8a21f2;
   }
-  #instagramSocial:hover
-  {
+  #instagramSocial:hover {
     border: 2px solid #8a21f2;
   }
-  #facebookSocial .profileTag
-  {
+  
+  #facebookSocial .profileTag {
     background: #034b66;
   }
-  #facebookSocial:hover
-  {
+  #facebookSocial:hover {
     border: 2px solid #034b66;
   }
-
-  .FirstRowSecondLayoutEdita .profileCards .profileTag p
-  {
+  
+  /* Tag Text */
+  .socialMediaTile .profileTag p {
     position: absolute;
     top: 0%;
     left: 50%;
@@ -591,41 +589,42 @@
     color: #fff;
   }
   
-.FirstRowSecondLayoutEdita .profileCards .profileHeading
-{
-  position: relative;
-  font-size: 25px;
-  top: 50px;
-  left: 15px;
-  font-family: 'Source Code Pro', monospace;
-  width: inherit;
-  font-weight: 700;
-  letter-spacing: 2px;
-  margin-top: 25px ;
-  margin-left: 25px;  /* Top and bottom margins are 45px, left and right margins are 35px */
-  word-wrap: break-word;
-  flex-wrap: wrap;
-  color: #fff;
-  z-index: 5;
-}
 
-.FirstRowSecondLayoutEdita .profileCards .profileHeadingDesc
-{
-  position: relative;
-  font-size: 12px;
-  flex-wrap: wrap;
-  top: 50px;
-  left: 15px;
-  font-family: 'Source Code Pro', monospace;
-  width: inherit;
-  letter-spacing: 2px;
-  margin-top: 25px ;
-  margin-left: 25px;  /* Top and bottom margins are 45px, left and right margins are 35px */
-  padding-right: 25px;
-   box-sizing: border-box;
-   word-wrap: break-word;
-   text-align: left;
-   flex-wrap: wrap;
-  color: #9b94a8;
-  z-index: 5;
-}
+  .socialMediaTile .profileHeading {
+    position: relative;
+    font-size: 25px;
+    top: 50px;
+    left: 15px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 25px 0 0 25px;
+    word-wrap: break-word;
+    color: #fff;
+    z-index: 5;
+  }
+  
+  /* Description */
+  .socialMediaTile .profileHeadingDesc {
+    position: relative;
+    font-size: 12px;
+    top: 50px;
+    left: 15px;
+    font-family: 'Source Code Pro', monospace;
+    letter-spacing: 2px;
+    margin: 25px 0 0 25px;
+    padding-right: 25px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    text-align: left;
+    color: #9b94a8;
+    z-index: 5;
+  }
+
+  .autoEditaFadeIn {
+    opacity: 0;
+    transition: opacity 0.7s cubic-bezier(.4,0,.2,1);
+  }
+  .autoEditaFadeIn.visible {
+    opacity: 1;
+  }
