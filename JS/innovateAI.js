@@ -39,12 +39,12 @@ document.getElementById("searchButton").addEventListener("click", () => {
   document.getElementById("lowerTileImageAI").style.opacity = "1";
   document.getElementById("lowerTileImageAI").style.animation = "none";
   void document.getElementById("lowerTileImageAI").offsetWidth;
-  document.getElementById("lowerTileImageAI").style.animation = "imageTileLowerAppear 2s ease forwards";
+  document.getElementById("lowerTileImageAI").style.animation = "imageTileAppear 2s ease forwards";
 
   document.getElementById("upperTileImageAI").style.opacity = "1";
   document.getElementById("upperTileImageAI").style.animation = "none";
   void document.getElementById("upperTileImageAI").offsetWidth;
-  document.getElementById("upperTileImageAI").style.animation = "imageTileUpperAppear 2s ease forwards";
+  document.getElementById("upperTileImageAI").style.animation = "imageTileAppear 2s ease forwards";
 
   document.getElementById("headingText").style.opacity = "0";
   document.getElementById("descriptionText").style.opacity = "0";
@@ -97,15 +97,15 @@ console.log(parseInt(randomPrompt[0]))
   
   document.getElementById("lowerTileImageAI").style.animation = "none";
   void document.getElementById("lowerTileImageAI").offsetWidth;
-  document.getElementById("lowerTileImageAI").style.animation = "imageTileLowerAppear 2s reverse forwards";
-  document.getElementById("lowerTileImageAI").style.opacity = "1";
+  document.getElementById("lowerTileImageAI").style.animation = "imageTileAppear 2s reverse forwards";
+  document.getElementById("lowerTileImageAI").style.opacity = "0";
 
 
   
   document.getElementById("upperTileImageAI").style.animation = "none";
   void document.getElementById("upperTileImageAI").offsetWidth;
-  document.getElementById("upperTileImageAI").style.animation = "imageTileUpperAppear 2s reverse forwards";
-  document.getElementById("upperTileImageAI").style.opacity = "1";
+  document.getElementById("upperTileImageAI").style.animation = "imageTileAppear 2s reverse forwards";
+  document.getElementById("upperTileImageAI").style.opacity = "0";
 
   document.getElementById("headingText").style.opacity = "1";
   document.getElementById("descriptionText").style.opacity = "1";
