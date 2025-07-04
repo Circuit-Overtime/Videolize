@@ -97,6 +97,7 @@
     border: 1px solid #474646;
     cursor: pointer;
     z-index: 12;
+    transform-origin: center;
     border-radius: 25px;
 
 }

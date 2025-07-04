@@ -1,103 +1,270 @@
-@media screen and (max-width: 600px) {
-    .descriptionImage 
-    {
+
+/* 
+
+@media screen and (max-width: 2560px) {
+    .descriptionImage {
         display: none;
     }
-    .visuMagic
+    .visuMagicText
     {
-        font-size: 4em;
+        font-size: 12em;
     }
-    .visuMagicDesc 
-    {
-        top: 15px;
+    .visuMagic {
+        font-size: 10em;
+    }
+    .visuMagicDesc {
+        top: 10px;
         width: 100%;
-        font-size: 1.2em;
+        font-size: 5em;
     }
-    .magicTiles
+    .magicTilesGrid
     {
+        top: 250px;
+        grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+        grid-auto-rows: minmax(520px, auto);
+    }
+    .magicTiles {
         display: flex;
         flex-direction: column;
     }
-    #wand
+    .magicTile.wide
     {
-        height: 250px;
-        left: 45%;
+        grid-column: span 3;
+    }
+    .redirectSocial 
+    {
+        scale: 2.5;
+        top: 100px;
+        left: 55%;
+        
+        transform-origin: center;
+    }
+    .wandparticleBackdrop 
+    {
+        top: 100px;
+        scale: 5;
+    }
+    #wand {
+        height: 60%;
+        width: 120px;
+        left: 50%;
         transform: translateX(-50%);
-        top: 10%;
+        top: -8%;
     }
-    #wand > .cap
-    {
-        height: 30%;
+    #wand > .cap {
+        height: 18%;
     }
-    .magicTile .headingText
+    #wand .wand-streak
     {
-        font-size: 1.1em;
+        width: 500px;
     }
-    .magicTile .descriptionText 
-    {
-        font-size: 0.8em;
+    .magicTile .headingText {
+        font-size: 4em;
     }
-    #wandVisuMagicTwo 
-    {
+    .magicTile .descriptionText {
+        font-size: 2.5em;
+    }
+    #wandVisuMagicTwo {
         display: none;
+    }
+    .tileIconSVG 
+    {
+        height: 260px;
+        scale: 1.5;
+        width: 500px;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .ruler-wrapper
+    {
+        height: 150px;
+        scale: 2;
+    }
+    .tick
+    {
+        height: 80px;
+    }
+    .tick.strong
+    {
+        height: 100px;
+    }
+    .marker
+    {
+        height: 100px;
+        width: 100px;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .time-pop 
+    {
+        font-size: 5em;
+    }
+    .tileforPS
+    {
+     position: absolute;
+     height: 550px;
     }
     .tileforPS .layer1,
     .tileforPS .layer2,
     .tileforPS .layer3,
-    .tileforPS .layer4 
-    {
-        font-size: 12px;
+    .tileforPS .layer4 {
+        font-size: 3em;
+        width: 80%;
     }
-    .spotlightSection 
+    .layerTranslate 
     {
-        height: 280vh;
+        height: 400px;
     }
-    #wandVisuMagicThree 
-    {
-        left: 150px;
+    .spotlightSection {
+        min-height: 100vh;
     }
-    #photoshopMockup > .descriptionText 
-    {
+    #wandVisuMagicThree {
+        left: 50%;
+    }
+    #photoshopMockup > .descriptionText {
         color: #fff;
-        margin-top: -5px;
+        margin-top: -3px;
     }
-    .tileforPSBacklit 
-    {
+    .tileforPSBacklit {
         opacity: 1;
     }
-    .tileforPSBacklitParticles 
-    {
+    .tileforPSBacklitParticles {
         opacity: 1;
     }
-    #original
-    {
-        font-size: 5em;
+    #original {
+        font-size: 25em;
         top: 60%;
     }
-    #other 
+    #textMaskEffect 
     {
-        font-size: 5em;
-        width: 130px;
+        pointer-events: none;
     }
-    .mask 
-    {
-        top: 50%;
-        width: 170px;
-        height: 100px;
-        border-radius: 10px;
+    #other {
+        font-size: 20em;
+        width: 700px;
     }
-    #starshine 
-    {
-        height: 100px;
-        top: 65%;
+    .mask {
+        top: 40%;
+        width: 700px;
+        height: 300px;
+        border-radius: 12px;
     }
-    #wandVisuMagic
+    #starshine {
+        height: 120px;
+        top: 60%;
+    }
+    #wandVisuMagic {
+        left: 750px;
+        width:  8vmin;
+        top: 200px;
+    }
+    .book 
     {
-        left: 170px;
-        width: 10vmin;
-        top: 150px;
+        scale: 2.5;
+        left: 75%;
+        z-index: 10;
+    }
+    
+
+   
+}  */
+
+
+
+
+
+
+@media screen and (max-width: 1440px) {
+    .spotlightSection 
+    {
+        min-height: 100vh;
     }
 }
+
+
+@media screen and (max-width: 1024px) {
+    .descriptionImage {
+        display: none;
+    }
+    .visuMagic {
+        font-size: 5em;
+    }
+    .visuMagicDesc {
+        top: 20px;
+        width: 100%;
+        font-size: 1.4em;
+    }
+    .magicTiles {
+        display: flex;
+        flex-direction: column;
+    }
+    #wand {
+        height: 550px;
+        left: 48%;
+        transform: translateX(-50%);
+        top: 3%;
+    }
+    #wand > .cap {
+        height: 22%;
+    }
+    .magicTile .headingText {
+        font-size: 1.3em;
+    }
+    .magicTile .descriptionText {
+        font-size: 1em;
+    }
+    #wandVisuMagicTwo {
+        display: block;
+    }
+    .tileforPS .layer1,
+    .tileforPS .layer2,
+    .tileforPS .layer3,
+    .tileforPS .layer4 {
+        font-size: 22px;
+    }
+    .spotlightSection {
+        height: 220vh;
+    }
+    #wandVisuMagicThree {
+        left: 50%;
+    }
+    #photoshopMockup > .descriptionText {
+        color: #fff;
+        margin-top: -3px;
+    }
+    .tileforPSBacklit {
+        opacity: 1;
+    }
+    .tileforPSBacklitParticles {
+        opacity: 1;
+    }
+    #original {
+        font-size: 10em;
+        top: 60%;
+    }
+    #other {
+        font-size: 8em;
+        width: 330px;
+    }
+    .mask {
+        top: 40%;
+        width: 350px;
+        height: 150px;
+        border-radius: 12px;
+    }
+    #starshine {
+        height: 120px;
+        top: 60%;
+    }
+    #wandVisuMagic {
+        left: 400px;
+        width:  8vmin;
+        top: 120px;
+    }
+   
+} 
 
 @media screen and (max-width: 768px) {
     .descriptionImage {
@@ -178,4 +345,110 @@
         width:  8vmin;
         top: 120px;
     }
+} 
+
+@media screen and (max-width: 600px) {
+    .descriptionImage 
+    {
+        display: none;
+    }
+    .visuMagic
+    {
+        font-size: 4em;
+    }
+    .visuMagicDesc 
+    {
+        top: 15px;
+        width: 100%;
+        font-size: 1.2em;
+    }
+    .magicTiles
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    #wand
+    {
+        height: 250px;
+        left: 45%;
+        transform: translateX(-50%);
+        top: 10%;
+    }
+    .ruler-wrapper 
+    {
+        top: 40%;
+    }
+    #wand > .cap
+    {
+        height: 30%;
+    }
+    .magicTile .headingText
+    {
+        font-size: 1em;
+    }
+    .magicTile .descriptionText 
+    {
+        font-size: 0.8em;
+    }
+    #wandVisuMagicTwo 
+    {
+        display: none;
+    }
+    .tileforPS .layer1,
+    .tileforPS .layer2,
+    .tileforPS .layer3,
+    .tileforPS .layer4 
+    {
+        font-size: 12px;
+    }
+    .spotlightSection 
+    {
+        height: 280vh;
+    }
+    #wandVisuMagicThree 
+    {
+        left: 150px;
+    }
+    #photoshopMockup > .descriptionText 
+    {
+        color: #fff;
+        margin-top: -5px;
+    }
+    .tileforPSBacklit 
+    {
+        opacity: 1;
+    }
+    .tileforPSBacklitParticles 
+    {
+        opacity: 1;
+    }
+    #original
+    {
+        font-size: 5em;
+        top: 60%;
+    }
+    #other 
+    {
+        font-size: 5em;
+        width: 130px;
+    }
+    .mask 
+    {
+        top: 50%;
+        width: 170px;
+        height: 100px;
+        border-radius: 10px;
+    }
+    #starshine 
+    {
+        height: 100px;
+        top: 65%;
+    }
+    #wandVisuMagic
+    {
+        left: 170px;
+        width: 10vmin;
+        top: 150px;
+    }
 }
+

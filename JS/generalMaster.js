@@ -36,7 +36,9 @@ document.getElementById('iconforvisumagic').addEventListener('click', function (
     redirectTo("me")
 });
 
-document.getElementById("InnoVistaStatic").addEventListener("click", () => {
+
+    
+document.getElementById("iconforInnovista").addEventListener("click", () => {
     redirectTo("skills")
 })
 

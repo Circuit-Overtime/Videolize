@@ -94,3 +94,7 @@ pdfjsLib.getDocument(url).promise
         canvas.style.display = 'none'; 
         pdfControls.style.display = 'none'; 
     });
+
+document.getElementById("rootRedirect").addEventListener("click", () => {
+    redirectTo("")
+});
