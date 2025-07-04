@@ -4,7 +4,7 @@ import * as pdfjsLib from 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.2.67/
 // Set the worker source for pdf.js
 pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.2.67/pdf.worker.min.mjs';
 
-const url = "../ayushman-bhattacharya.pdf"; // Correct path to your PDF
+const url = "../SOLANKI GHOSH CV.pdf"; // Correct path to your PDF
 let pdfDoc = null, pageNum = 1, pageRendering = false, pageNumPending = null;
 const scale = 1.2; // You can adjust this for zoom level
 const canvas = document.getElementById('pdf-canvas');
@@ -90,7 +90,7 @@ pdfjsLib.getDocument(url).promise
     })
     .catch((error) => {
         console.error("Error loading PDF:", error);
-        pdfLoader.textContent = `Failed to load PDF. Error: ${error.message}. Please ensure 'ayushman-bhattacharya.pdf' is in the correct directory.`;
-        canvas.style.display = 'none'; // Hide canvas if PDF fails to load
-        pdfControls.style.display = 'none'; // Hide controls
+        pdfLoader.textContent = `Failed to load PDF. Error`;
+        canvas.style.display = 'none'; 
+        pdfControls.style.display = 'none'; 
     });
