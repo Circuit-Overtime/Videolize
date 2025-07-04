@@ -1,0 +1,167 @@
+@media screen and (min-width: 2560px) {
+  .magicTilesGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 4rem;
+    max-width: 2400px;
+    margin: 0 auto;
+    padding: 0 60px;
+  }
+
+  .magicTile {
+    height: 500px;
+    padding: 50px;
+    border-radius: 30px;
+  }
+
+  .magicTile .headingText {
+    font-size: 2.2em;
+    margin-bottom: 25px;
+  }
+
+  .magicTile .descriptionText {
+    font-size: 1.3em;
+    line-height: 1.7;
+  }
+
+  #logosTileMove.magicTile {
+    grid-column: span 3;
+    grid-row: 1;
+  }
+
+  #rulerMapper.magicTile {
+    grid-column: span 3;
+    grid-row: 1;
+  }
+
+  .magicTile.photography-editing-tile {
+    grid-column: span 3;
+    grid-row: 2;
+  }
+
+  #textMaskEffect.magicTile {
+    grid-column: span 3;
+    grid-row: 2;
+  }
+
+  #photoshopMockup.magicTile {
+    grid-column: span 6;
+    grid-row: 3;
+    height: 600px;
+  }
+
+  .magicTile .tilesImages .tile:nth-child(2),
+  .magicTile .tilesImages .tile:nth-child(3) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 3440px) {
+  .magicTilesGrid {
+    grid-template-columns: repeat(8, 1fr);
+    gap: 5rem;
+    max-width: 2800px;
+    padding: 0 80px;
+  }
+
+  .magicTile {
+    height: 550px;
+    padding: 60px;
+  }
+
+  .magicTile .headingText {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+
+  .magicTile .descriptionText {
+    font-size: 1.4em;
+    line-height: 1.8;
+  }
+
+  #logosTileMove.magicTile {
+    grid-column: span 4;
+    grid-row: 1;
+  }
+
+  #rulerMapper.magicTile {
+    grid-column: span 4;
+    grid-row: 1;
+  }
+
+  .magicTile.photography-editing-tile {
+    grid-column: span 4;
+    grid-row: 2;
+  }
+
+  #textMaskEffect.magicTile {
+    grid-column: span 4;
+    grid-row: 2;
+  }
+
+  #photoshopMockup.magicTile {
+    grid-column: span 8;
+    grid-row: 3;
+    height: 650px;
+  }
+
+  .magicTile .tilesImages .tile:nth-child(2),
+  .magicTile .tilesImages .tile:nth-child(3) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 7680px) {
+  .magicTilesGrid {
+    grid-template-columns: repeat(10, 1fr);
+    gap: 6rem;
+    max-width: 3200px;
+    padding: 0 100px;
+  }
+
+  .magicTile {
+    height: 600px;
+    padding: 70px;
+  }
+
+  .magicTile .headingText {
+    font-size: 2.8em;
+    margin-bottom: 35px;
+  }
+
+  .magicTile .descriptionText {
+    font-size: 1.5em;
+    line-height: 1.9;
+  }
+
+  #logosTileMove.magicTile {
+    grid-column: span 5;
+    grid-row: 1;
+  }
+
+  #rulerMapper.magicTile {
+    grid-column: span 5;
+    grid-row: 1;
+  }
+
+  .magicTile.photography-editing-tile {
+    grid-column: span 5;
+    grid-row: 2;
+  }
+
+  #textMaskEffect.magicTile {
+    grid-column: span 5;
+    grid-row: 2;
+  }
+
+  #photoshopMockup.magicTile {
+    grid-column: span 10;
+    grid-row: 3;
+    height: 700px;
+  }
+
+  .magicTile .tilesImages .tile:nth-child(2),
+  .magicTile .tilesImages .tile:nth-child(3) {
+    display: none;
+  }
+} 

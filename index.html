@@ -26,6 +26,7 @@
   <link rel="stylesheet" type="text/css" href="CSS/designSage.css">
   <!-- <link rel="stylesheet" type="text/css" href="CSS/designSageMobile.css"> -->
   <link rel="stylesheet" type="text/css" href="CSS/footer.css">
+  <link rel="stylesheet" type="text/css" href="CSS/4kResponsive.css">
   <link rel="icon" type="image/x-icon"
     href="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/website%20logo.png?alt=media&token=e3409e2d-d827-430d-b0b8-1345567525d5">
 
@@ -321,21 +322,5 @@
     #photoshopMockup.magicTile {
       grid-column: span 3;
     }
-  }
-
-  @media (min-width: 2560px) {
-    .magicTilesGrid {
-      grid-template-columns: repeat(5, 1fr);
-      gap: 3rem;
-    }
-
-    .magicTile.photography-editing-tile {
-      grid-column: span 2;
-    }
-
-    #photoshopMockup.magicTile {
-      grid-column: span 5;
-      height: 520px;
-    }
-  }
+  }/* 4K responsive styles are now handled in CSS/4kResponsive.css */
 </style>
