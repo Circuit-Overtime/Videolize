@@ -20,3 +20,18 @@ document.getElementById('exploreBtn').addEventListener('click', function () {
         spotlightSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 });
+
+document.getElementById('VisuMagicStatic').addEventListener('click', function () {
+    const spotlightSection = document.getElementById('spotlightSection');
+    if (spotlightSection) {
+        spotlightSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+});
+
+document.getElementById('redirectSocial').addEventListener('click', function () { 
+    redirectTo("me")
+});
+
+document.getElementById('iconforvisumagic').addEventListener('click', function () { 
+    redirectTo("me")
+});

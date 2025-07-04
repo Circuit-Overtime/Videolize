@@ -12,9 +12,22 @@
     overflow-x: hidden;
     padding-bottom: 10px;
     padding-top: 20px;
-    scroll-behavior: smooth;
 }
-
+.hero::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: #111;
+    background-size: cover;
+    background-position: center;
+    filter: blur(50px);
+    z-index: -1;
+    display: none;
+}
 .hero::-webkit-scrollbar
 {
     display: none;
@@ -119,6 +132,7 @@
     animation: slowRotate 2s linear infinite;
     background: url(https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/bigstar.png?alt=media&token=53c5945b-2b37-4c3e-972c-7bd1b0b9e4f1);
     background-size: cover;
+    z-index: 10;
 }
 
 .textforPortfolio { top: 51%; left: 8%; }
@@ -200,12 +214,11 @@
 /* ========== 9. PLANETARY SOLAR SYSTEM ========== */
 .planetContainer {
     position: relative;
-    margin-top: -350px; 
-    opacity: 0.8;
+    margin-top: -200px; /* Instead of top: -200px */
     /* Remove top: -200px; */
     margin-bottom: 0;
     width: 100%;
-    height: 800px;
+    height: 600px;
     overflow: hidden;
     scale: 0.8;
     display: block;
