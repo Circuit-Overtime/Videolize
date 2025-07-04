@@ -35,3 +35,19 @@ document.getElementById('redirectSocial').addEventListener('click', function () 
 document.getElementById('iconforvisumagic').addEventListener('click', function () { 
     redirectTo("me")
 });
+
+document.getElementById("InnoVistaStatic").addEventListener("click", () => {
+    redirectTo("skills")
+})
+
+document.getElementById("AutoEditaStatic").addEventListener("click", () => {
+    redirectTo("projects")
+})
+
+document.getElementById("DesignSageStatic").addEventListener("click", () => {
+    redirectTo("contacts")
+})
+
+
+
+
