@@ -1,212 +1,687 @@
+@media (max-width: 768px) {
+    .innovistaSection {
+        position: relative;
+        min-height: 100vh;
+        height: auto;
+        padding: 0 10px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
 
-/* Medium screens (e.g., 1024px) */
-@media (min-width: 1025px) and (max-width: 1440px) {
-    .sectionName {
+    .ParticleContainer {
+        position: fixed;
+        min-height: 100vh;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .innoVistaLogo {
+        width: 280px;
+        height: 120px;
+        top: 40px;
+    }
+
+    .innoVista {
         font-size: 3.5em;
-        margin-bottom: 25px;
-        
+        top: 100px;
+        width: 100%;
+        max-width: 350px;
     }
 
-    .redirectWebsite {
-        scale: 1.2;
-        margin-top: 15px;
+    .innoVistaDesc {
+        font-size: 1.4em;
+        top: 100px;
+        width: 100%;
+        max-width: 350px;
     }
 
-    .softwareGrid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Smaller min-width */
-        width: 90vw; /* Increased width */
-        gap: 25px; /* Smaller gap */
-        padding: 15px 0;
+    .redirectSocialInnoVista {
+        width: 160px;
+        height: 35px;
+        top: 15px;
+        padding-left: 20px;
     }
 
-    .softwareTile {
-        padding: 25px 15px; /* Smaller padding */
-        font-size: 1em; /* Base font size */
+    .redirectSocialInnoVista span:nth-child(2) {
+        font-size: 14px;
+        left: 30%;
     }
 
-    .softwareLogo {
-        width: 90px; /* Smaller logo */
-        height: 90px;
-        margin-bottom: 18px;
+    .innoVistaContainer .descriptionImage {
+        width: 400px;
+        height: 100px;
+        top: 5%;
+        left: -10%;
+        transform: scale(0.6) rotate(-5deg);
     }
 
-    .softwareName {
-        font-size: 1.6em; /* Smaller font size */
+    /* Innovate Tiles Grid Mobile */
+    .innovateTilesGrid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 10px;
+        margin: 20px 0;
     }
 
-    .softwareDescription {
-        font-size: 0.9em; /* Smaller font size */
+    .innovateTile {
+        min-height: 300px;
+        padding: 20px 15px;
+        border-radius: 20px;
     }
 
-    .FooterSocials {
-        margin-top: 30px;
+    .innovateTile.wide {
+        grid-column: span 1;
     }
 
-    .FooterSocials ion-icon {
-        font-size: 2em; /* Smaller icon size */
-        margin: 0 10px; /* Smaller margin */
-    }
-}
-
-
-/* Small screens (e.g., 768px - kept your existing query) */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .sectionName {
-        font-size: 28px;
+    .innovateTile .headingText {
+        font-size: 1.2em;
     }
 
-    .FooterSocials {
-      margin-top: 15px;
+    .innovateTile .descriptionText {
+        font-size: 0.9em;
     }
 
-    .softwareGrid {
-        max-height: none; /* Remove max-height if it causes issues */
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Smaller min width for smaller screens */
-        width: 95vw; /* Even wider for small screens */
-        gap: 15px; /* Smaller gap */
+    /* Photoshop Tile Mobile */
+    .imageContainer {
+        width: 280px;
+        height: 350px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 40%;
     }
 
-    .softwareTile {
-        padding: 20px;
-    }
-
-    .softwareLogo {
-        width: 60px;
-        height: 60px;
-    }
-
-    .softwareName {
+    .buttonGrayScale,
+    .buttonInvert,
+    .buttonSaturate {
+        width: 200px;
+        height: 45px;
         font-size: 18px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
-    .softwareDescription {
+    .buttonGrayScale {
+        top: 25%;
+    }
+
+    .buttonInvert {
+        top: 45%;
+    }
+
+    .buttonSaturate {
+        top: 65%;
+    }
+
+    .maskGrayscale,
+    .maskInvert,
+    .maskSaturate {
+        width: 200px;
+        height: 45px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .maskGrayscale {
+        top: 25%;
+    }
+
+    .maskInvert {
+        top: 45%;
+    }
+
+    .maskSaturate {
+        top: 65%;
+    }
+
+    /* Premiere Pro Tile Mobile */
+    .btnWrapper {
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        gap: 8px;
+    }
+
+    .cutBtn,
+    .litBtn,
+    .setBtn {
+        width: 50px;
+        height: 35px;
+        font-size: 0.9em;
+    }
+
+    .imageTilePremiere {
+        top: 35%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 160px;
+    }
+
+    .Colorgrade {
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+    }
+
+    .exportTile,
+    .exportTileSteps {
+        display: none;
+        /* Hide on mobile for space */
+    }
+
+    /* AI Tile Mobile */
+    .searchBar {
+        width: 90%;
+        height: 50px;
+        top: 60%;
+        left: 5%;
+        padding: 0 15px;
+    }
+
+    .searchText {
         font-size: 14px;
     }
 
-    .FooterSocials ion-icon {
-        font-size: 24px;
-        margin: 0 10px;
-    }
-
-    .redirectWebsite {
-        width: 200px;
+    .searchButton {
+        width: 100px;
         height: 40px;
-        margin-top: 0px;
     }
 
-    .redirectWebsite span:nth-child(1) {
-        font-size: 20px;
+    .searchButtonText {
+        font-size: 16px;
     }
 
-    .redirectWebsite span:nth-child(2) {
+    .upperTileImageAI,
+    .lowerTileImageAI {
+        width: 200px;
+        height: 200px;
+        top: 200px;
+    }
+
+    .upperTileImageAI {
+        left: 5%;
+    }
+
+    .lowerTileImageAI {
+        left: 55%;
+    }
+
+    /* Software Grid Mobile */
+    .softwareGrid {
+        padding: 15px 5px;
+        gap: 20px;
+    }
+
+    .softwareTile {
+        min-width: 180px;
+        max-width: 200px;
+        height: 45px;
+        padding: 6px 12px;
+    }
+
+    .softwareLogo {
+        width: 32px;
+        height: 32px;
+    }
+
+    .softwareName {
+        font-size: 12px;
+    }
+
+    /* Footer Mobile */
+    footer {
+        padding: 20px 15px;
+        margin-top: 60px;
+        position: relative;
+        z-index: 1;
+    }
+
+    footer .grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Ensure background covers all content */
+    .innoVistaContainer {
+        position: relative;
+        min-height: 100vh;
+        width: 100%;
+        background-color: transparent;
+    }
+
+    /* Fix for any content that might extend beyond viewport */
+    .innovateTilesGrid {
+        position: relative;
+        z-index: 1;
+    }
+
+    .softwareGrid {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+/* Tablet styles (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .innovistaSection {
+        position: relative;
+        min-height: 100vh;
+        height: auto;
+    }
+
+    .ParticleContainer {
+        position: fixed;
+        min-height: 100vh;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .innoVistaLogo {
+        width: 380px;
+        height: 160px;
+        top: 50px;
+    }
+
+    .innoVista {
+        font-size: 4.5em;
+        top: 120px;
+    }
+
+    .innoVistaDesc {
+        font-size: 1.6em;
+        top: 120px;
+    }
+
+    .innovateTilesGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        padding: 0 20px;
+    }
+
+    .innovateTile.wide {
+        grid-column: span 2;
+    }
+
+    .softwareGrid {
+        gap: 25px;
+        padding: 20px 15px;
+    }
+
+    .softwareTile {
+        min-width: 200px;
+        max-width: 220px;
+    }
+}
+
+/* Desktop styles (1025px - 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .innoVistaLogo {
+        width: 420px;
+        height: 180px;
+    }
+
+    .innoVista {
+        font-size: 5.5em;
+    }
+
+    .innoVistaDesc {
+        font-size: 1.8em;
+    }
+
+    .innovateTilesGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 0 30px;
+    }
+}
+
+/* 2K displays (1441px - 2560px) */
+@media (min-width: 1441px) and (max-width: 2560px) {
+    .innoVistaLogo {
+        width: 520px;
+        height: 220px;
+        top: 80px;
+    }
+
+    .innoVista {
+        font-size: 7em;
+        top: 180px;
+    }
+
+    .innoVistaDesc {
+        font-size: 2.2em;
+        top: 180px;
+    }
+
+    .redirectSocialInnoVista {
+        width: 240px;
+        height: 50px;
+        top: 30px;
+        padding-left: 40px;
+    }
+
+    .redirectSocialInnoVista span:nth-child(2) {
+        font-size: 18px;
+        left: 28%;
+    }
+
+    .innoVistaContainer .descriptionImage {
+        width: 800px;
+        height: 200px;
+        top: 15%;
+        left: -5%;
+    }
+
+    .innovateTilesGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        padding: 0 40px;
+        margin: 40px 0;
+    }
+
+    .innovateTile {
+        min-height: 450px;
+        padding: 40px 30px;
+        border-radius: 30px;
+    }
+
+    .innovateTile .headingText {
+        font-size: 1.8em;
+    }
+
+    .innovateTile .descriptionText {
+        font-size: 1.2em;
+    }
+
+    /* Photoshop Tile 2K */
+    .imageContainer {
+        width: 450px;
+        height: 550px;
+        left: 8%;
+        top: 35%;
+    }
+
+    .buttonGrayScale,
+    .buttonInvert,
+    .buttonSaturate {
+        width: 300px;
+        height: 60px;
+        font-size: 28px;
+        left: 75%;
+    }
+
+    .buttonGrayScale {
+        top: 25%;
+    }
+
+    .buttonInvert {
+        top: 45%;
+    }
+
+    .buttonSaturate {
+        top: 65%;
+    }
+
+    .maskGrayscale,
+    .maskInvert,
+    .maskSaturate {
+        width: 300px;
+        height: 60px;
+        left: 75%;
+    }
+
+    .maskGrayscale {
+        top: 25%;
+    }
+
+    .maskInvert {
+        top: 45%;
+    }
+
+    .maskSaturate {
+        top: 65%;
+    }
+
+    /* Software Grid 2K */
+    .softwareGrid {
+        gap: 40px;
+        padding: 30px 20px;
+    }
+
+    .softwareTile {
+        min-width: 280px;
+        max-width: 300px;
+        height: 60px;
+        padding: 10px 20px;
+    }
+
+    .softwareLogo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .softwareName {
         font-size: 16px;
     }
 }
 
-/* Extra small screens (e.g., 600px) */
-@media (max-width: 768px) {
-    .sectionName {
-        font-size: 2em; /* Even smaller font size */
-        margin-bottom: 20px;
+/* 4K displays (2561px and above) */
+@media (min-width: 2561px) {
+    .innoVistaLogo {
+        width: 720px;
+        height: 300px;
+        top: 100px;
     }
 
-    .redirectWebsite {
-        scale: 1; /* Default scale */
-        width: 180px; /* Smaller width */
-        height: 35px; /* Smaller height */
-        margin-top: 5px;
+    .innoVista {
+        font-size: 10em;
+        top: 250px;
     }
 
-    .redirectWebsite span:nth-child(1) {
-        font-size: 18px; /* Smaller icon size */
+    .innoVistaDesc {
+        font-size: 3em;
+        top: 250px;
     }
 
-    .redirectWebsite span:nth-child(2) {
-        font-size: 14px; /* Smaller text size */
+    .redirectSocialInnoVista {
+        width: 320px;
+        height: 65px;
+        top: 40px;
+        padding-left: 50px;
     }
 
+    .redirectSocialInnoVista span:nth-child(2) {
+        font-size: 22px;
+        left: 30%;
+    }
+
+    .innoVistaContainer .descriptionImage {
+        width: 1200px;
+        height: 300px;
+        top: 20%;
+        left: -10%;
+    }
+
+    .innovateTilesGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+        padding: 0 60px;
+        margin: 60px 0;
+    }
+
+    .innovateTile {
+        min-height: 600px;
+        padding: 60px 45px;
+        border-radius: 40px;
+    }
+
+    .innovateTile .headingText {
+        font-size: 2.5em;
+    }
+
+    .innovateTile .descriptionText {
+        font-size: 1.6em;
+    }
+
+    /* Photoshop Tile 4K */
+    .imageContainer {
+        width: 600px;
+        height: 750px;
+        left: 10%;
+        top: 40%;
+    }
+
+    .buttonGrayScale,
+    .buttonInvert,
+    .buttonSaturate {
+        width: 400px;
+        height: 80px;
+        font-size: 36px;
+        left: 80%;
+    }
+
+    .buttonGrayScale {
+        top: 20%;
+    }
+
+    .buttonInvert {
+        top: 45%;
+    }
+
+    .buttonSaturate {
+        top: 70%;
+    }
+
+    .maskGrayscale,
+    .maskInvert,
+    .maskSaturate {
+        width: 400px;
+        height: 80px;
+        left: 80%;
+    }
+
+    .maskGrayscale {
+        top: 20%;
+    }
+
+    .maskInvert {
+        top: 45%;
+    }
+
+    .maskSaturate {
+        top: 70%;
+    }
+
+    /* Software Grid 4K */
     .softwareGrid {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Smallest min-width */
-        width: 90vw; /* Almost full width */
-        gap: 10px; /* Smallest gap */
-        padding: 10px 0;
+        gap: 60px;
+        padding: 40px 30px;
     }
 
     .softwareTile {
-        padding: 15px; /* Smallest padding */
-        font-size: 0.9em; /* Smallest base font size */
+        min-width: 400px;
+        max-width: 420px;
+        height: 80px;
+        padding: 15px 30px;
     }
 
     .softwareLogo {
-        width: 50px; /* Smallest logo */
-        height: 50px;
-        margin-bottom: 10px;
+        width: 64px;
+        height: 64px;
     }
 
     .softwareName {
-        font-size: 1.4em; /* Smallest font size */
+        font-size: 20px;
     }
 
-    .softwareDescription {
-        font-size: 0.8em; /* Smallest font size */
+    /* Footer 4K */
+    footer {
+        padding: 40px 30px;
+        margin-top: 100px;
     }
 
-    .FooterSocials {
-        margin-top: 20px;
+    footer .max-w-6xl {
+        max-width: 1400px;
     }
 
-    .FooterSocials ion-icon {
-        font-size: 1.8em; /* Smallest icon size */
-        margin: 0 8px; /* Smallest margin */
+    footer .text-xl {
+        font-size: 1.5rem;
+    }
+
+    footer .text-sm {
+        font-size: 1rem;
     }
 }
 
-
-/* Large screens (e.g., 1440px) */
-@media (min-width: 1500px) and (max-width: 1920px) {
-    .sectionName {
-        font-size: 4em; /* Adjusted font size */
-        margin-bottom: 30px;
-    }
-
-    .redirectWebsite {
-        scale: 1.5; /* Slightly smaller scale */
-        margin-top: 20px;
-    }
-
-    .softwareGrid {
-        max-height: none; /* Remove max-height if it causes issues */
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Smaller min-width */
-        width: 80vw; /* Increased width */
-        gap: 30px; /* Smaller gap */
-        padding: 20px 0;
-    }
-
-    .softwareTile {
-        padding: 30px 20px; /* Smaller padding */
-        font-size: 1.1em; /* Smaller base font size */
-    }
-
-    .softwareLogo {
-        width: 100px; /* Smaller logo */
+/* Landscape orientation adjustments for mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .innoVistaLogo {
+        width: 240px;
         height: 100px;
-        margin-bottom: 20px;
+        top: 20px;
     }
 
-    .softwareName {
-        font-size: 1.8em; /* Smaller font size */
+    .innoVista {
+        font-size: 3em;
+        top: 80px;
     }
 
-    .softwareDescription {
-        font-size: 1em; /* Smaller font size */
+    .innoVistaDesc {
+        font-size: 1.2em;
+        top: 80px;
     }
 
-    .FooterSocials {
-        margin-top: 40px;
+    .innovateTilesGrid {
+        margin: 10px 0;
     }
 
-    .FooterSocials ion-icon {
-        font-size: 2.5em; /* Smaller icon size */
-        margin: 0 12px; /* Smaller margin */
+    .innovateTile {
+        min-height: 250px;
+        padding: 15px 12px;
+    }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .softwareLogo {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+
+    .innovateTile,
+    .softwareTile,
+    .buttonGrayScale,
+    .buttonInvert,
+    .buttonSaturate {
+        transition: none;
+    }
+
+    .ring1Innovate,
+    .ring2Innovate,
+    .ring3Innovate {
+        animation: none;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .softwareTile {
+        background: #1a1a1c;
+    }
+
+    .softwareTile::before {
+        background: linear-gradient(90deg,
+                #6a11cb 0%,
+                #2575fc var(--proficiency-level, 80%),
+                #1a1a1c var(--proficiency-level, 80%),
+                #1a1a1c 100%);
     }
 }

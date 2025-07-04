@@ -164,4 +164,402 @@
   .magicTile .tilesImages .tile:nth-child(3) {
     display: none;
   }
+}
+
+/* 4K and Ultra-High Resolution Display Styles */
+
+/* 4K displays (2560px and above) */
+@media (min-width: 2560px) {
+  :root {
+    --card-size: 720px;
+    --font-size: 1.2rem;
+    --logo-size: calc(var(--card-size) * 0.4);
+  }
+
+  /* Enhanced typography scaling */
+  .innoVista {
+    font-size: 12em;
+    top: 300px;
+    text-shadow: 0 -30px 30px #000,
+    0 -40px 40px #202020,
+    -30px -30px 30px #0a0909,
+    30px -30px 30px #0a0909;
+  }
+
+  .innoVistaDesc {
+    font-size: 3.5em;
+    top: 300px;
+    width: 600px;
+  }
+
+  /* Logo and branding elements */
+  .innoVistaLogo {
+    width: 800px;
+    height: 350px;
+    top: 120px;
+  }
+
+  .innoVistaLogoSmall {
+    transform: scale(0.12);
+  }
+
+  .redirectSocialInnoVista {
+    width: 400px;
+    height: 80px;
+    top: 50px;
+    padding-left: 60px;
+    border-radius: 40px;
+  }
+
+  .redirectSocialInnoVista span:nth-child(2) {
+    font-size: 24px;
+    left: 32%;
+  }
+
+  /* Background elements */
+  .innoVistaContainer .descriptionImage {
+    width: 1500px;
+    height: 400px;
+    top: 25%;
+    left: -15%;
+    transform: scale(1) rotate(-5deg);
+  }
+
+  /* Grid layout for 4K */
+  .innovateTilesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    padding: 0 80px;
+    margin: 80px 0;
+  }
+
+  .innovateTile {
+    min-height: 700px;
+    padding: 80px 60px;
+    border-radius: 50px;
+    border: 2px solid #413e47;
+  }
+
+  .innovateTile .headingText {
+    font-size: 3em;
+    margin-bottom: 15px;
+  }
+
+  .innovateTile .descriptionText {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  /* Photoshop tile 4K enhancements */
+  .imageContainer {
+    width: 700px;
+    height: 900px;
+    left: 12%;
+    top: 45%;
+    border-radius: 35px;
+    box-shadow: -30px 0 60px #080808,  
+    inset -5px -3px 10px #6d6c6e;
+  }
+
+  .buttonGrayScale,
+  .buttonInvert,
+  .buttonSaturate {
+    width: 500px;
+    height: 100px;
+    font-size: 42px;
+    left: 85%;
+    border-radius: 30px;
+  }
+
+  .buttonGrayScale { top: 15%; }
+  .buttonInvert { top: 40%; }
+  .buttonSaturate { top: 65%; }
+
+  .maskGrayscale,
+  .maskInvert,
+  .maskSaturate {
+    width: 500px;
+    height: 100px;
+    left: 85%;
+    border-radius: 30px;
+  }
+
+  .maskGrayscale { top: 15%; }
+  .maskInvert { top: 40%; }
+  .maskSaturate { top: 65%; }
+
+  /* Premiere Pro tile 4K */
+  .btnWrapper {
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 15px;
+  }
+
+  .cutBtn,
+  .litBtn,
+  .setBtn {
+    width: 80px;
+    height: 60px;
+    font-size: 1.4em;
+    border-radius: 8px;
+  }
+
+  .imageTilePremiere {
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 280px;
+    border-radius: 15px;
+  }
+
+  .imageTilePremiereImage {
+    height: 150px;
+    border-radius: 15px;
+  }
+
+  .textPronounce {
+    font-size: 18px;
+    top: 55%;
+  }
+
+  .textMeaning {
+    font-size: 16px;
+    top: 70%;
+  }
+
+  .Colorgrade {
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+    height: 60px;
+    border-radius: 8px;
+  }
+
+  .ColorgradeText {
+    font-size: 18px;
+  }
+
+  .colorGradeOrb {
+    height: 30px;
+    width: 30px;
+  }
+
+  #ColorgradeShuffle {
+    font-size: 28px;
+  }
+
+  .exportTile {
+    top: 45%;
+    left: -15%;
+    height: 350px;
+    width: 350px;
+    border-radius: 35px;
+  }
+
+  .exportTileSteps {
+    top: 20%;
+    left: 85%;
+    height: 500px;
+    width: 350px;
+    border-radius: 35px;
+  }
+
+  /* AI tile 4K */
+  .searchBar {
+    width: 85%;
+    height: 80px;
+    top: 75%;
+    left: 7.5%;
+    border-radius: 40px;
+    padding: 0 30px;
+    gap: 30px;
+  }
+
+  #iconSearchText {
+    font-size: 40px;
+  }
+
+  .searchText {
+    font-size: 20px;
+  }
+
+  .searchButton {
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+  }
+
+  .searchButtonText {
+    font-size: 24px;
+  }
+
+  .upperTileImageAI,
+  .lowerTileImageAI {
+    width: 300px;
+    height: 300px;
+    top: 250px;
+    border-radius: 35px;
+  }
+
+  .upperTileImageAI { left: 8%; }
+  .lowerTileImageAI { left: 60%; }
+
+  #reloadAnimation {
+    font-size: 32px;
+    top: 110%;
+  }
+
+  /* Software grid 4K */
+  .softwareGrid {
+    gap: 80px;
+    padding: 60px 40px;
+  }
+
+  .softwareTile {
+    min-width: 500px;
+    max-width: 520px;
+    height: 100px;
+    padding: 20px 40px;
+    border-radius: 40px;
+  }
+
+  .softwareLogo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .softwareName {
+    font-size: 24px;
+  }
+
+  /* Footer 4K */
+  footer {
+    padding: 60px 40px;
+    margin-top: 120px;
+  }
+
+  footer .max-w-6xl {
+    max-width: 1600px;
+  }
+
+  footer .text-xl {
+    font-size: 2rem;
+  }
+
+  footer .text-sm {
+    font-size: 1.2rem;
+  }
+
+  footer h4 {
+    font-size: 1.5rem;
+  }
+
+  /* Three.js container 4K */
+  #Three_container {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* 5K displays (5120px and above) */
+@media (min-width: 5120px) {
+  .innoVista {
+    font-size: 16em;
+    top: 400px;
+  }
+
+  .innoVistaDesc {
+    font-size: 4.5em;
+    top: 400px;
+    width: 800px;
+  }
+
+  .innoVistaLogo {
+    width: 1000px;
+    height: 450px;
+    top: 150px;
+  }
+
+  .innovateTilesGrid {
+    gap: 100px;
+    padding: 0 100px;
+  }
+
+  .innovateTile {
+    min-height: 900px;
+    padding: 100px 80px;
+  }
+
+  .innovateTile .headingText {
+    font-size: 4em;
+  }
+
+  .innovateTile .descriptionText {
+    font-size: 2.5em;
+  }
+
+  .softwareGrid {
+    gap: 100px;
+    padding: 80px 60px;
+  }
+
+  .softwareTile {
+    min-width: 600px;
+    max-width: 620px;
+    height: 120px;
+    padding: 25px 50px;
+  }
+
+  .softwareLogo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .softwareName {
+    font-size: 28px;
+  }
+}
+
+/* Ultra-wide aspect ratio support */
+@media (min-width: 2560px) and (max-aspect-ratio: 21/9) {
+  .innovateTilesGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 2560px) and (min-aspect-ratio: 21/9) {
+  .innovateTilesGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .innovateTile.wide {
+    grid-column: span 2;
+  }
+}
+
+/* High refresh rate displays */
+@media (min-width: 2560px) and (prefers-reduced-motion: no-preference) {
+  .innovateTile {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .softwareTile {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+}
+
+/* HDR display support */
+@media (min-width: 2560px) and (color-gamut: p3) {
+  .softwareTile::before {
+    background: linear-gradient(
+      90deg,
+      color(display-p3 0.4 0.1 0.8) 0%,
+      color(display-p3 0.1 0.5 1.0) var(--proficiency-level, 80%),
+      #2e2e2e var(--proficiency-level, 80%),
+      #2e2e2e 100%
+    );
+  }
 } 
