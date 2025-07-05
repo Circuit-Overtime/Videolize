@@ -29,6 +29,10 @@ function createScene() {
 		HEIGHT = 350;
 		WIDTH = 850;
 	}
+	else if (window.innerWidth >= 2560) {
+		HEIGHT = 350;
+		WIDTH = 1000;
+	}
 	else {
 		HEIGHT = 350;
 		WIDTH = 650;

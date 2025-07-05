@@ -112,17 +112,7 @@
     color: #ededed;
   }
   
-
-  
-  @media screen and (max-width: 768px) {
-    .footer-badge img {
-      width: 100px;
-      height: auto;
-    }
-    
-  }
-
-  /* @media screen and (max-width: 2560px) {
+  @media only screen and (min-width: 2560px) {
     footer 
     {
       top: 10%;
@@ -130,4 +120,15 @@
       scale: 2;
       font-size: 1.2em;
     }
-  } */
+  }
+
+  
+  @media only screen and (max-width: 768px) {
+    .footer-badge img {
+      width: 100px;
+      height: auto;
+    }
+    
+  }
+
+

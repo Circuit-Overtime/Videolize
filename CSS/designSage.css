@@ -129,7 +129,7 @@ body
 {
     position: absolute;
     width: 70px;
-    height: 80%;
+    height: 80% !important;
     left: 100px;
     top: 50px;
     opacity: 0.4;

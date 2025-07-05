@@ -1,6 +1,57 @@
 
 
-@media  screen and (max-width: 1440px) { 
+
+@media only screen and (min-width: 2560px) { 
+    * 
+    {
+        overflow-x: visible;
+    }
+    .designSageLogo 
+    {
+        scale: 2;
+        top: 200px;
+    }
+    .designSageText 
+    {
+        font-size: 15em;
+        top: 200px;
+    }
+    .designSageDesc
+    {
+        font-size: 4em;
+        width: 100%;
+        left: 50%;
+        transform: 0;
+        margin: auto 0;
+        color: rgba(238, 238, 160, 0.933);
+    }
+    .designSageLogo .lightRayOne  
+    {
+        height: 100%;
+    }
+    .redirectSocialdesignSage 
+    {
+        top: 80%;
+        scale: 2;
+    }
+    .redirectSocialdesignSage::before  
+    {
+        left: 15%;
+    }
+    .inProgressText 
+    {
+        top: 75%;
+        font-size: 2em;
+    }
+    footer 
+    {
+        top: 80px;
+        scale: 2;
+    }
+}
+
+
+@media only screen and (min-width: 1440px) { 
     .designSageLogo 
     {
         scale: 1.2;
@@ -21,12 +72,13 @@
     }
     .designSageLogo .lightRayOne  
     {
-        height: 100%;
+        height: 60%;
+        transform: rotate(-20deg) !important;
     }
     .redirectSocialdesignSage 
     {
-        top: 90%;
-        scale: 1.5;
+        top: 80% !important;
+        scale: 1;
     }
     .redirectSocialdesignSage::before  
     {
@@ -34,8 +86,8 @@
     }
     .inProgressText 
     {
-        top: 80%;
-        font-size: 2em;
+        top: 75% !important;
+        font-size: 1em;
     }
     footer 
     {
@@ -44,10 +96,15 @@
 }
 
 
-@media  screen and (max-width: 1024px) { 
+@media only screen and (max-width: 1024px) { 
     .designSageLogo .lightRayOne  
     {
-        height: 80%;
+        height: 63% !important;
+        transform: rotate(-26deg) !important;
+    }
+    .redirectSocialdesignSage 
+    {
+        scale: 1 !important;
     }
     .redirectSocialdesignSage::before  
     {
@@ -65,11 +122,11 @@
 }
 
 
-@media  screen and (max-width: 768px) { 
+@media only screen and (min-width: 768px) { 
     .designSageLogo .lightRayOne  
     {
-        height: 62%;
-        transform: rotate(-26deg);
+        height: 80% !important;
+        transform: rotate(-20deg) !important;
     }
     footer 
     {
@@ -90,16 +147,20 @@
     }
 }
 
-
-@media  screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .designSageMask
     {
         justify-content: center;
         align-items: center;
     }
+    .designSageLogo 
+    {
+        scale: 1;
+        top: 00px;
+    }
     .designSageText 
     {
-        font-size: 4em;
+        font-size: 4em !important;
     }
     .designSageDesc
     {
@@ -118,7 +179,8 @@
     {
         left: 50px;
         top: 40px;
-        height: 60%;
+        height: 70% !important;
+        transform: rotate(-15deg) !important;
     }
     .designSageLogo .lightRayTwo 
     {
@@ -131,7 +193,7 @@
     }
     .inProgressText 
     {
-        top: 80%;
+        top: 75%;
         font-size: 0.8em;
     }
     footer 

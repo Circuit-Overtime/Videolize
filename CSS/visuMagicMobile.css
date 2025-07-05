@@ -1,7 +1,7 @@
 
-/* 
 
-@media screen and (max-width: 2560px) {
+
+@media only screen and (min-width: 2560px) {
     .descriptionImage {
         display: none;
     }
@@ -169,14 +169,12 @@
     
 
    
-}  */
+}  
 
 
 
 
-
-
-@media screen and (max-width: 1440px) {
+@media only screen and (max-width: 1440px) {
     .spotlightSection 
     {
         min-height: 100vh;
@@ -266,7 +264,7 @@
    
 } 
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .descriptionImage {
         display: none;
     }
@@ -347,7 +345,7 @@
     }
 } 
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .descriptionImage 
     {
         display: none;
