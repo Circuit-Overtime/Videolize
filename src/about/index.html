@@ -47,38 +47,37 @@
     <div class="blob2"></div>
     <div class="mainContainer">
     
+        <div class="ParticleContainer" id="bg"></div>
+    <div class="blob1"></div>
+    <div class="blob2"></div>
+    <div class="mainContainer">
+    
         <div class="pdf-viewer-container">
-            <p id="pdf-loader">Loading Curriculum Vitae...</p> <!-- Changed to p for semantic meaning -->
+            <div id="pdf-loader">Loading CV...</div>
             <div id="pdf-scroll-wrapper">
-              <canvas id="pdf-canvas" aria-label="Solanki Ghosh's Curriculum Vitae"></canvas>
+              <canvas id="pdf-canvas"></canvas>
             </div>
           
-            <div id="pdf-controls" role="navigation" aria-label="PDF navigation and download controls">
-              <button id="prev-page" aria-label="Previous page">← <span>Prev</span></button>
-              <span id="page-info" aria-live="polite"></span> <!-- aria-live for dynamic page updates -->
-              <button id="next-page" aria-label="Next page"><span>Next</span> →</button>
-              <a href="../CSS/ASSESTS/SOLANKI GHOSH CV.pdf" download="Solanki_Ghosh_CV.pdf" aria-label="Download Solanki Ghosh's CV in PDF format">
+            <div id="pdf-controls">
+              <button id="prev-page">← <span>Prev</span></button>
+              <span id="page-info"></span>
+              <button id="next-page"><span>Next</span> →</button>
+              <a href=".CSS/ASSESTS/SOLANKI GHOSH CV.pdf" download>
                 <ion-icon name="download-outline"></ion-icon> <span>Download PDF</span>
               </a>
             </div>
           </div>
           
-        <div class="FooterSocials" role="navigation" aria-label="Social media and home page links">
-          <a href="https://linkedin.com/in/solankighosh" target="_blank" rel="noopener noreferrer" aria-label="Connect on LinkedIn">
-            <ion-icon name="logo-linkedin" id="linkedinRedirect"></ion-icon>
-          </a>
-          <a href="https://instagram.com/solankighosh" target="_blank" rel="noopener noreferrer" aria-label="Follow on Instagram">
-            <ion-icon name="logo-instagram" id="instagramRedirect"></ion-icon>
-          </a>
-          <a href="https://facebook.com/solankighosh" target="_blank" rel="noopener noreferrer" aria-label="Connect on Facebook">
-            <ion-icon name="logo-facebook" id="facebookRedirect"></ion-icon>
-          </a>
-          <a href="/index.html" aria-label="Go to Home Page">
-            <ion-icon name="home" id="rootRedirect"></ion-icon>
-          </a>
+    
+        <div class="FooterSocials">
+          <ion-icon name="logo-linkedin" id="linkedinRedirect"></ion-icon>
+          <ion-icon name="logo-instagram" id="instagramRedirect"></ion-icon>
+          <ion-icon name="logo-facebook" id="facebookRedirect"></ion-icon>
+          <ion-icon name="home" id="rootRedirect"></ion-icon>
         </div>
         
       </div>
+
 
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>

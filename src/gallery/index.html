@@ -44,36 +44,22 @@
   <div class="blob2"></div>
   <div class="maskGradient"></div>
 
-  <!-- Main content area for the photography gallery -->
-  <main class="mainContainer" id="mainContainer">
-    <h1 class="sr-only">Solanki Ghosh's Photography Archive</h1> <!-- Hidden H1 for SEO -->
-    <div class="grid-wrapper" id="imageGallery" role="region" aria-label="Photography Gallery">
-      <!-- Images will be dynamically loaded here by legacyasm.js -->
-      <!-- Ensure legacyasm.js adds images with proper alt attributes -->
-      <noscript>
-        <p>Please enable JavaScript to view the full photography gallery. You can still download the main portfolio PDF from the home page.</p>
-        <!-- Optionally, you can add static image fallbacks here if crucial for users without JS -->
-        <!-- <img src="path/to/some/important-image.jpg" alt="Description of image for non-JS users"> -->
-      </noscript>
-    </div>
-  </main>
   
-  <a href="/index.html" class="redirectWebsite" id="redirectWebsite" aria-label="Go to Solanki Ghosh's Portfolio Home Page">
+
+  <!-- Main scrollable container -->
+  <div class="mainContainer" id="mainContainer">
+    <div class="grid-wrapper" id="imageGallery"></div>
+  </div>
+  <div class="redirectWebsite" id="redirectWebsite">
     <span class="redirectWebsiteLogoBtn"><ion-icon name="aperture"></ion-icon></span>
     <span class="redirectWebsiteLogoTxt"> Portfolio Here! </span>
-  </a>
+  </div>
 
-  <footer class="FooterSocials" role="contentinfo" aria-label="Social media links">
-    <a href="https://linkedin.com/in/solankighosh" target="_blank" rel="noopener noreferrer" aria-label="Connect on LinkedIn">
-      <ion-icon name="logo-linkedin" style="--i:1;" id="linkedinRedirect"></ion-icon>
-    </a>
-    <a href="https://instagram.com/solankighosh" target="_blank" rel="noopener noreferrer" aria-label="Follow on Instagram">
-      <ion-icon name="logo-instagram" style="--i:2;" id="instagramRedirect"></ion-icon>
-    </a>
-    <a href="https://facebook.com/solankighosh" target="_blank" rel="noopener noreferrer" aria-label="Connect on Facebook">
-      <ion-icon name="logo-facebook" style="--i:3;" id="facebookRedirect"></ion-icon>
-    </a>
-  </footer>
+  <div class="FooterSocials">
+    <ion-icon name="logo-linkedin" style="--i:1;" id="linkedinRedirect"></ion-icon>
+    <ion-icon name="logo-instagram" style="--i:2;" id="instagramRedirect"></ion-icon>
+    <ion-icon name="logo-facebook" style="--i:3;" id="facebookRedirect"></ion-icon>
+  </div>
 
   <!-- Scripts - Deferred loading for better performance -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>

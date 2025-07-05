@@ -36,19 +36,19 @@
 </head>
 <body>
     <div class="ParticleContainer ParticleContainerSlow" id="bg"></div>
-    <div class="mainContainer" role="main">
-        <div class="error-logo" role="img" aria-label="Videolize logo pulsating with a red glow, indicating an error"></div>
-        <h1 class="error-heading">404</h1>
-        <p class="error-subheading">Page Not Found</p>
-        <p class="error-desc">
+    <div class="mainContainer">
+        <div class="error-logo"></div>
+        <div class="error-heading">404</div>
+        <div class="error-subheading">Page Not Found</div>
+        <div class="error-desc">
             Cut! Looks like this scene doesn’t exist in our timeline.<br>
             Maybe the footage was deleted, or you’ve jumped to an empty frame.<br>
             Let’s rewind you back to where the action happens!
-        </p>
-        <a href="../index.html" class="back-home-btn" aria-label="Go back to the Videolize home page">
-            <i class="fa fa-arrow-left" aria-hidden="true"></i> Back to Home
+        </div>
+        <a href="../index.html" class="back-home-btn">
+            <i class="fa fa-arrow-left"></i> Back to Home
         </a>
-        <div class="planetContainer" style="pointer-events:none;" aria-hidden="true">
+        <div class="planetContainer" style="pointer-events:none;">
             <div class="solarSystem">
                 <div class="centerLogo"></div>
                 <div class="ring1 ring1Slow"><div class="planet1"></div></div>
@@ -73,7 +73,6 @@
             </div>
         </div>
     </div>
-    
     <script src="../JS/particles.min.js" defer></script>
     <script src="../JS/particleEffect.js" defer></script>
 </body>
