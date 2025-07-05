@@ -21,8 +21,18 @@ function createScene() {
 	// Get the width and height of the screen
 	// and use them to setup the aspect ratio
 	// of the camera and the size of the renderer.
-	HEIGHT = 350;
-	WIDTH = 650;
+	if (window.innerWidth <= 480) {
+		HEIGHT = 350;
+		WIDTH = 300;
+	}
+	else if (window.innerWidth <= 1440) {
+		HEIGHT = 350;
+		WIDTH = 850;
+	}
+	else {
+		HEIGHT = 350;
+		WIDTH = 650;
+	}
 
 	// Create the scene.
 	scene = new THREE.Scene();
