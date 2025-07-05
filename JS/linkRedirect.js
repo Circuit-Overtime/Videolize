@@ -20,5 +20,5 @@ function getBasePath() {
   function redirectTo(path) {
     // Redirect to the given path, prepended with the base path
     const basePath = getBasePath();
-    location.replace(`${basePath}/${path}`);
+    location.replace(`${basePath}/public/${path}`);
   }

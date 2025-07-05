@@ -25,16 +25,15 @@ body
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 641px;
-  width: 1349px;
+  height: 100%;
+  width: 100%;
   z-index: 1;
-  /* box-shadow: 0 0 40px #D62929; */
   background: transparent;
   overflow-x: hidden;
   overflow-y: auto;
   transition: 0.5s;
   transform-origin: center;
-  opacity: 1; /*change to zero*/
+  opacity: 1; 
   transform: translateX(-50%) translateY(-50%);
 }
 
