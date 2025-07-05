@@ -1,0 +1,163 @@
+
+
+
+@media only screen and (max-width: 1440px) {
+    .redirectSocialautoEdita 
+    {
+        scale: 1.2;
+    }
+    .redirectBtnHolder  
+    {
+        scale: 1.2;
+    }
+    .FirstRowSecondLayoutEdita .headingText
+    {   
+        font-size: 2em;
+        margin-bottom: 20px;
+        
+    }
+    .FirstRowSecondLayoutEdita .descriptionText 
+    {
+        font-size: 1.5em;
+    }
+    .FirstRowSecondLayoutEdita 
+    {
+        width: 100%;
+        height: 450px;
+        margin-bottom: 20px;
+    }
+    .FirstRowSecondLayoutEdita .socialMediaTileContainer 
+    {
+        top: 10%;
+        gap: 100px;
+    }
+    .socialMediaTile
+    {
+        scale: 1.2;
+    }
+    footer 
+    {
+        scale: 1.3;
+    }
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    .FirstRowSecondLayoutEdita .headingText
+    {   
+        font-size: 2em;
+        margin-bottom: 20px;
+        
+    }
+    .FirstRowSecondLayoutEdita .descriptionText 
+    {
+        font-size: 1.2em;
+    }
+    .FirstRowSecondLayoutEdita 
+    {
+        width: 100%;
+        height: 450px;
+        margin-bottom: 20px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 768px) {
+    .FirstRowSecondLayoutEdita 
+    {
+        width: 100%;
+    }
+    
+}
+
+
+@media only screen and (max-width: 600px) {
+    .autoEditaText 
+    {
+        font-size: 4em;
+        top: 150px;
+    }
+    .autoEdita .autoEditaDesc 
+    {
+        font-size: 1.3em;
+        top: 180px;
+    }
+    .redirectSocialautoEdita 
+    {
+        top: 200px;
+    }
+    .redirectBtnHolder  
+    {
+        top: 200px;
+        text-align: left;
+        padding-right: 10px;
+        margin-bottom: 100px;
+    }
+    
+    .galleryImagesAutoEditaBtn .galleryImagesAutoEditaBtnText,
+    .socialSectionAutoEditaBtn .socialSectionAutoEditaBtnText
+    {
+        font-size: 0.8em;
+        width: 50%;
+        flex-wrap: wrap;
+    }
+    .autoEdita .image-container 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 150px;
+        width: 100%;
+        transform: scale(1);
+        min-height: 100vh;
+        gap: 10px;
+        background-color: #fff;
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        padding: 0 5px;
+        margin-top: 120px;
+    }
+    .image-container div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .image-container img,
+    .image-container .autoEditaLazyLoading {
+        width: 100%;
+        height: auto;
+        max-height: 350px;
+        object-fit: cover;
+        object-position: top;
+    }
+    .FirstRowSecondLayoutEdita 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0 10px;
+        top: 100px;
+        height: 850px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        z-index: 100;
+    }
+    .FirstRowSecondLayoutEdita .socialMediaTileContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        min-height: unset;
+        width: 100%;
+    }
+    .socialMediaTile {
+        width: 95vw;
+        max-width: 350px;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+}     

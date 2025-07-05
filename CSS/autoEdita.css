@@ -222,6 +222,15 @@ body
     background-size: cover;
 }
 
+.autoEditaLazyLoading {
+  filter: blur(10px);
+  transition: opacity 0.3s ease;
+}
+
+img.unblur {
+  filter: blur(0);
+}
+
 .redirectBtnHolder 
 {
   position: relative;
