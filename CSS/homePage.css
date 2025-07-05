@@ -28,6 +28,15 @@ html, body {
 .reveal 
 {
     opacity: 0;
+    filter: blur(10px);
+    animation: revealFadeIn 1s forwards;
+}
+
+@keyframes revealFadeIn {
+    to {
+        opacity: 1;
+        filter: blur(0);
+    }
 }
 
 

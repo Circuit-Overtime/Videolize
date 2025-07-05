@@ -606,6 +606,110 @@
   backface-visibility: hidden;
   transform: rotateY(0deg);
 }
+.timeline {
+  height: 500px;
+  left: 0;                
+  overflow-y: auto;            
+  overflow-x: hidden;
+  padding-left: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;                    /* Vertical gap between timeline items */
+  z-index: 2;
+  scroll-behavior: smooth;
+  top: 80px;
+}
+.timeline {
+  scrollbar-width: thin;
+  scrollbar-color: #7B61FF #232228;
+}
+
+/* Webkit browsers */
+.timeline::-webkit-scrollbar {
+  width: 10px;
+  background: #232228;
+  border-radius: 8px;
+}
+
+.timeline::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #7B61FF 60%, #413e47 100%);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #7B61FF33;
+}
+
+.timeline::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #a18aff 60%, #7B61FF 100%);
+}
+
+.timeline::-webkit-scrollbar-track {
+  background: #232228;
+  border-radius: 8px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, #7B61FF 0%, #413e47 100%);
+  border-radius: 2px;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+.timeline-dot {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: 6px;
+  background: linear-gradient(135deg, #7B61FF 60%, #fff 100%);
+  border: 3px solid #1D1C20;
+  border-radius: 50%;
+  box-shadow: 0 0 12px #7B61FF88, 0 2px 8px #0004;
+  z-index: 2;
+}
+
+.timeline-content {
+  background: #232228;
+  border-radius: 14px;
+  padding: 16px 22px;
+  box-shadow: 0 2px 12px #0002;
+  border: 1px solid #413e47;
+  min-width: 220px;
+  max-width: 420px;
+  z-index: 1;
+}
+
+.timeline-title {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.3em;
+  font-weight: 800;
+  color: #ffc;
+  margin-bottom: 4px;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px #7B61FF33;
+}
+
+.timeline-content p {
+  font-family: 'Source Code Pro', monospace;
+  color: #A4A4A4;
+  font-size: 1em;
+  margin: 0;
+  line-height: 1.5;
+}
+
 
   .tileforPSBacklit
  {
