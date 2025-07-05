@@ -1,3 +1,4 @@
+const linkedinURL = "https://www.linkedin.com/in/solankighoshvideoeditor"
 document.querySelectorAll("#image-container > div").forEach(div => {
   const lazyImg = div.querySelector(".autoEditaLazyLoading"); // blurred placeholder
   const fullImg = div.querySelector('img[loading="lazy"]');   // actual image
@@ -24,3 +25,21 @@ document.querySelectorAll("#image-container > div").forEach(div => {
 });
 
 
+document.getElementById("linkedInSocial").addEventListener("click", function() {
+  location.href = linkedinURL;
+});
+
+document.getElementById("galleryImagesAutoEditaBtn").addEventListener("click", function() {
+  redirectTo("gallery"); 
+});
+document.getElementById("socialSectionAutoEditaBtn").addEventListener("click", function() {
+  const section = document.getElementById("autoEditaSection");
+  const target = document.getElementById("FirstRowSecondLayoutEdita");
+  if (section && target) {
+    const sectionRect = section.getBoundingClientRect();
+    const targetRect = target.getBoundingClientRect();
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const offset = targetRect.top - sectionRect.top + scrollTop;
+    section.scrollTo({ top: offset, behavior: "smooth" });
+  }
+});

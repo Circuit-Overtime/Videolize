@@ -1,6 +1,65 @@
 
 
 
+@media only screen and (min-width: 2560px) {
+    .autoEditaText 
+    {
+        font-size: 8em;
+    }
+    .autoEdita .autoEditaDesc 
+    {
+        font-size: 4em;
+        top: 200px;
+    }
+    .autoEdita .descriptionImage{
+        transform: scale(2) rotate(-5deg);
+        left: 75%;
+    }
+    .redirectSocialautoEdita 
+    {
+        scale: 2.5 !important;
+        top: 150px;
+        left: 55%;
+    }
+    .redirectBtnHolder  
+    {
+        scale: 2.5;
+        display: none;
+    }
+    .FirstRowSecondLayoutEdita .headingText
+    {   
+        font-size: 4em !important;
+        margin-bottom: 20px;
+        
+    }
+    .FirstRowSecondLayoutEdita .descriptionText 
+    {
+        font-size: 2.5em !important;
+    }
+    .FirstRowSecondLayoutEdita 
+    {
+        width: 100%;
+        height: 850px !important;
+        margin-bottom: 20px;
+    }
+    .FirstRowSecondLayoutEdita .socialMediaTileContainer 
+    {
+        top: 25% !important;
+        gap: 400px !important;
+    }
+    .socialMediaTile
+    {
+        scale: 2.5 !important;
+    }
+    footer 
+    {
+        scale: 2 !important;
+        font-size: 1.5em !important;
+    }
+}
+
+
+
 @media only screen and (min-width: 1440px) {
     .redirectSocialautoEdita 
     {

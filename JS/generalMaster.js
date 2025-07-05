@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     }, {
-      threshold: 0.0005
+      threshold: 0.00005
     });
   
     revealElements.forEach(el => {

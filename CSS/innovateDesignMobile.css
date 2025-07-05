@@ -110,7 +110,7 @@
     #reloadAnimation 
     {
         position: absolute;
-        top: 10px;
+        bottom: 10px;
         left: 30px;
     }
 }

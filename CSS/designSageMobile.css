@@ -1,67 +1,4 @@
-@media  screen and (max-width: 600px) {
-    .designSageMask
-    {
-        justify-content: center;
-        align-items: center;
-    }
-    .designSageText 
-    {
-        font-size: 4em;
-    }
-    .designSageDesc
-    {
-        font-size: 1em;
-        width: 80%;
-        left: 40%;
-        transform: 0;
-        margin: auto 0;
-        color: rgba(238, 238, 160, 0.933);
-    }
-    .designSageLogo
-    {
-        width: 100%;
-    }
-    .designSageLogo .lightRayOne 
-    {
-        left: 50px;
-        top: 40px;
-        height: 70%;
-    }
-    .designSageLogo .lightRayTwo 
-    {
-        left: 80px;
-    }
-    .redirectSocialdesignSage::before  
-    {
-        left: 35%;
-    }
-    .inProgressText 
-    {
-        top: 80%;
-        font-size: 0.8em;
-    }
-}
-@media  screen and (max-width: 768px) { 
-    .designSageLogo .lightRayOne  
-    {
-        height: 70%;
-    }
-}
-@media  screen and (max-width: 1024px) { 
-    .designSageLogo .lightRayOne  
-    {
-        height: 95%;
-    }
-    .redirectSocialdesignSage::before  
-    {
-        left: 15%;
-    }
-    .inProgressText 
-    {
-        top: 80%;
-        font-size: 1.2em;
-    }
-}
+
 
 @media  screen and (max-width: 1440px) { 
     .designSageLogo 
@@ -103,5 +40,107 @@
     footer 
     {
         scale: 1.2;
+    }
+}
+
+
+@media  screen and (max-width: 1024px) { 
+    .designSageLogo .lightRayOne  
+    {
+        height: 80%;
+    }
+    .redirectSocialdesignSage::before  
+    {
+        left: 15%;
+    }
+    .inProgressText 
+    {
+        top: 80%;
+        font-size: 1.2em;
+    }
+    footer 
+    {
+        scale: 1;
+    }
+}
+
+
+@media  screen and (max-width: 768px) { 
+    .designSageLogo .lightRayOne  
+    {
+        height: 62%;
+        transform: rotate(-26deg);
+    }
+    footer 
+    {
+        scale: 1;
+    }
+    .redirectSocialdesignSage 
+    {
+        top: 90%;
+        scale: 1;
+    }
+    .designSageText 
+    {
+        font-size: 6em;
+    }
+    .designSageDesc
+    {
+        font-size: 1.5em;
+    }
+}
+
+
+@media  screen and (max-width: 600px) {
+    .designSageMask
+    {
+        justify-content: center;
+        align-items: center;
+    }
+    .designSageText 
+    {
+        font-size: 4em;
+    }
+    .designSageDesc
+    {
+        font-size: 1em;
+        width: 80%;
+        left: 40%;
+        transform: 0;
+        margin: auto 0;
+        color: rgba(238, 238, 160, 0.933);
+    }
+    .designSageLogo
+    {
+        width: 100%;
+    }
+    .designSageLogo .lightRayOne 
+    {
+        left: 50px;
+        top: 40px;
+        height: 60%;
+    }
+    .designSageLogo .lightRayTwo 
+    {
+        left: 80px;
+        height: 60%;
+    }
+    .redirectSocialdesignSage::before  
+    {
+        left: 35%;
+    }
+    .inProgressText 
+    {
+        top: 80%;
+        font-size: 0.8em;
+    }
+    footer 
+    {
+        scale: 1;
+    }
+    .redirectSocialdesignSage 
+    {
+        top: 90%;
+        scale: 1;
     }
 }

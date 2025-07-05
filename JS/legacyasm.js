@@ -1,175 +1,70 @@
+const imageUrls = [
+  'https://images.unsplash.com/photo-1588282322673-c31965a75c3e',
+  'https://images.unsplash.com/photo-1588117472013-59bb13edafec',
+  'https://images.unsplash.com/photo-1588499756884-d72584d84df5',
+  'https://images.unsplash.com/photo-1588492885706-b8917f06df77',
+  'https://images.unsplash.com/photo-1588247866001-68fa8c438dd7',
+  'https://images.unsplash.com/photo-1586521995568-39abaa0c2311',
+  'https://images.unsplash.com/photo-1572914857229-37bf6ee8101c',
+  'https://images.unsplash.com/photo-1588453862014-cd1a9ad06a12',
+  'https://images.unsplash.com/photo-1588414734732-660b07304ddb',
+  'https://images.unsplash.com/photo-1587732608058-5ccfedd3ea63',
+  'https://images.unsplash.com/photo-1506744038136-46273834b3fb',
+  'https://images.unsplash.com/photo-1465101046530-73398c7f28ca',
+  'https://images.unsplash.com/photo-1519125323398-675f0ddb6308',
+  'https://images.unsplash.com/photo-1465101178521-c1a9136a3b99',
+  'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429',
+  'https://images.unsplash.com/photo-1465101046530-73398c7f28ca',
+  'https://images.unsplash.com/photo-1465101178521-c1a9136a3b99',
+  'https://images.unsplash.com/photo-1506744038136-46273834b3fb',
+  'https://images.unsplash.com/photo-1519125323398-675f0ddb6308',
+  'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429',
+  'https://images.unsplash.com/photo-1465101046530-73398c7f28ca',
+  'https://images.unsplash.com/photo-1465101178521-c1a9136a3b99',
+  'https://images.unsplash.com/photo-1506744038136-46273834b3fb',
+  'https://images.unsplash.com/photo-1519125323398-675f0ddb6308',
+  'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429',
+  'https://images.unsplash.com/photo-1465101046530-73398c7f28ca',
+  'https://images.unsplash.com/photo-1465101178521-c1a9136a3b99',
+  'https://images.unsplash.com/photo-1506744038136-46273834b3fb',
+  'https://images.unsplash.com/photo-1519125323398-675f0ddb6308',
+  'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429'
+];
 
+const gallery = document.getElementById('imageGallery');
 
+imageUrls.forEach((url, i) => {
+  const wrapper = document.createElement('div');
+  wrapper.className = 'grid-item';
 
+  const img = document.createElement('img');
+  img.src = `${url}?auto=format&fit=crop&w=800&q=80`;
+  img.alt = `gallery-image-${i}`;
+  img.style.opacity = 0;
+  img.style.transform = 'translateY(30px)';
 
-globalThis.imageChooseCounter = -1;
-document.getElementById("linkedinRedirect").addEventListener("click", () => {
-    window.open("https://www.linkedin.com/in/solankighoshvideoeditor/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", "_blank")
-  })
-  
-  document.getElementById("instagramRedirect").addEventListener("click", () => {
-    window.open("https://www.instagram.com/a.creative_mess?igsh=MXkxdTU1ZDUxaG8wYQ%3D%3D", "_blank")
-  })
-  
-  
-  document.getElementById("facebookRedirect").addEventListener("click", () => {
-    window.open("https://www.facebook.com/solankighosh65?mibextid=ZbWKwL", "_blank")
-  })
-  
+  img.onload = () => {
+    observer.observe(img);
+  };
 
-  document.getElementById("redirectWebsite").addEventListener("click", () => {
-    redirectTo("")
-  }) //feature for website link
-
-  document.getElementById("mainContainer").addEventListener("scroll", (e) => {
-    if(document.getElementById("mainContainer").scrollTop > 127)
-    {
-        document.querySelector(".maskGradient").style.transform = "translateY(0px)";
-    }
-    else
-    {
-        document.querySelector(".maskGradient").style.transform = "translateY(-250px)";
-    }
-  })
-
-  var s = Snap('#svg'), circles = [],
-    bg = s.rect(0, 0, 800, 200);
-
-bg.attr({
-  'fill': '#fff'
+  wrapper.appendChild(img);
+  gallery.appendChild(wrapper);
 });
 
-var circleGroup = s.group(bg);
-
-// create 200 circles
-for(var i=0; i<400; i++) {
-  var size = Math.random()*5 + 3,
-      cx = Math.random()*800,
-      cy = Math.random()*200,
-      opacity = Math.random(),
-      fill = '#9d77da',
-      counter = Math.random()*360;
-      circ = s.circle(cx, cy, size);
-  circ.attr({
-    'fill': fill,
-    'fill-opacity': opacity
+const observer = new IntersectionObserver((entries, obs) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      anime({
+        targets: entry.target,
+        opacity: [0, 1],
+        translateY: [30, 0],
+        delay: anime.random(100, 500),
+        duration: 900,
+        easing: 'easeOutExpo'
+      });
+      obs.unobserve(entry.target);
+    }
   });
-  circ.data('xOffset', cx); 
-  circ.data('cx', cx);
-  circ.data('yOffset', cy); 
-  circ.data('cy', cy);
-  circ.data('counter', counter); 
-  circles.push(circ);
-  circleGroup.add(circ);
-  
-}
-
-var increase = Math.PI * 2 /80,
-    text = s.text(70, 120, "LEGACY");
-
-
-
-circleGroup.attr({
-  mask: text
+}, {
+  threshold: 0.2
 });
-
-function draw() {
-  for(var i=0, l=circles.length; i<l; i++) {
-    var circ = circles[i];
-    
-    if(circ.data('cy') < 0) {
-      circ.data('cy', 200);
-    } else {
-      circ.data('cy', (circ.data('cy')-2));
-    }
-    circ.data('cx', (circ.data('xOffset') + (50*(Math.sin( circ.data('counter')) / 5))));
-    circ.attr({
-      cx: circ.data('cx'),
-      cy: circ.data('cy')
-    });
-    
-    circ.data('counter',      circ.data('counter')+increase);
-  }  
-  
-}
-
-function animate() {
-  draw();
-  window.requestAnimationFrame(animate);
-}
-
-animate();
-
-// console.log(document.querySelectorAll(".grid-wrapper > .big"))
-const allChildrenImages = document.querySelectorAll(".grid-wrapper > div");
-
-document.getElementById("svg").addEventListener("click", () => {
-    chooseLst = ["normal", "big", "tall", "wide"];
-
-    if(imageChooseCounter == 3)
-    {
-      imageChooseCounter = -1;
-    }
-    else
-    {
-      imageChooseCounter += 1;
-      console.log(imageChooseCounter)
-        if(imageChooseCounter == 0)
-        {
-          
-          allChildrenImages.forEach(element => {
-            document.querySelector(".grid-wrapper > ."+element.classList[0]).style.opacity = "1";
-            document.querySelector(".grid-wrapper > ."+element.classList[0]).style.filter = "blur(0px)";
-          });
-        }
-        else if(imageChooseCounter == 1)
-        {
-          allChildrenImages.forEach(element => {
-            if(element.classList[0] == chooseLst[1])
-            {
-              document.querySelector(".grid-wrapper > ."+element.classList[0]).style.opacity = "1";
-              document.querySelector(".grid-wrapper > ."+element.classList[0]).style.filter = "blur(0px)";
-            }
-            else
-            {
-              document.querySelector(".grid-wrapper > ."+element.classList[0]).style.opacity = "0.5";
-              document.querySelector(".grid-wrapper > ."+element.classList[0]).style.filter = "blur(5px)";
-            }
-            
-          });
-        }
-        else if(imageChooseCounter == 2)
-        {
-          allChildrenImages.forEach(element => {
-            if(element.classList[0] == chooseLst[2])
-            {
-              document.querySelector(".grid-wrapper > ."+element.classList[0]).style.opacity = "1";
-              document.querySelector(".grid-wrapper > ."+element.classList[0]).style.filter = "blur(0px)";
-            }
-            else
-            {
-              document.querySelector(".grid-wrapper > ."+element.classList[0]).style.opacity = "0.5";
-              document.querySelector(".grid-wrapper > ."+element.classList[0]).style.filter = "blur(5px)";
-            }
-            
-          });
-        }
-        else if(imageChooseCounter == 3)
-        {
-           
-          allChildrenImages.forEach(element => {
-            if(element.classList[0] == chooseLst[3])
-            {
-              document.querySelector(".grid-wrapper > ."+element.classList[0]).style.opacity = "1";
-              document.querySelector(".grid-wrapper > ."+element.classList[0]).style.filter = "blur(0px)";
-            }
-            else
-            {
-              document.querySelector(".grid-wrapper > ."+element.classList[0]).style.opacity = "0.5";
-              document.querySelector(".grid-wrapper > ."+element.classList[0]).style.filter = "blur(5px)";
-            }
-            
-          });
-        }    
-    }
-})

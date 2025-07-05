@@ -3,7 +3,7 @@ import * as pdfjsLib from 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.2.67/
 
 // Set the worker source for pdf.js
 pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.2.67/pdf.worker.min.mjs';
-
+const linkedinURL = "https://www.linkedin.com/in/solankighoshvideoeditor"
 const url = "../SOLANKI GHOSH CV.pdf"; // Correct path to your PDF
 let pdfDoc = null, pageNum = 1, pageRendering = false, pageNumPending = null;
 const scale = 1.2; // You can adjust this for zoom level
@@ -98,3 +98,7 @@ pdfjsLib.getDocument(url).promise
 document.getElementById("rootRedirect").addEventListener("click", () => {
     redirectTo("")
 });
+
+document.getElementById("linkedinRedirect").addEventListener("click", () => {
+    location.href = linkedinURL;
+})

@@ -1,13 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&family=Orbitron:wght@500&family=Sevillana&family=Style+Script&display=swap');
-body 
-{
-    box-sizing: border-box;
-    overflow: hidden;
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 100%;
+  font-family: 'Josefin Sans', sans-serif;
 }
-*
-{
-    user-select: none;
+
+* {
+  user-select: none;
 }
+
+.mainContainer {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: calc(95vh - 100px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1;
+  background: transparent;
+  padding-top: 100px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+/* Scrollbar Styles */
+.mainContainer::-webkit-scrollbar {
+  width: 12px;
+}
+.mainContainer::-webkit-scrollbar-track {
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+.mainContainer::-webkit-scrollbar-thumb {
+  background-color: #D62929;
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}
+
 
 .ParticleContainer
 {
@@ -19,46 +52,6 @@ body
   width: 100%;
   z-index: -1;
 }
-
-.mainContainer
-{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  height: 641px;
-  width: 1349px;
-  z-index: 1;
-  /* box-shadow: 0 0 40px #D62929; */
-  background: transparent;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  transition: 0.5s;
-  transform-origin: center;
-  opacity: 1; /*change to zero*/
-  transform: translateX(-50%) translateY(-50%);
-}
-
-.mainContainer::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius: 10px;
-	background-color: #F5F5F5;
-}
-
-.mainContainer::-webkit-scrollbar
-{
-	width: 12px;
-	background-color: #F5F5F5;
-}
-
-.mainContainer::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #D62929;
-}
-
-
 .blob1
 {
     position: absolute;
@@ -209,64 +202,35 @@ svg {
     transform-origin: center;
     z-index: -1;
  }
-
-
-
-
-
-
-
-
-
-
-
  
-  
-img {
-	max-width: 100%;
-	height: auto;
-	vertical-align: middle;
-	display: inline-block;
+ .grid-wrapper {
+  position: absolute;
+  top: 0px;
+  column-count: 4;
+  column-gap: 5px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-/* Main CSS */
-.grid-wrapper > div {
-    display: flex;
-	justify-content: center;
-	align-items: center;
-  transition: 0.5s;
-}
-.grid-wrapper > div > img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	border-radius: 5px;
+.grid-item {
+  break-inside: avoid;
+  margin-bottom: 5px;
 }
 
-.grid-wrapper {
-	display: grid;
-    position: absolute;
-	grid-gap: 10px;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	grid-auto-rows: 200px;
-	grid-auto-flow: dense;
-    top: 150px;
-    left: 2%;
-    width: 96%;
-    padding-bottom: 80px;
-
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.4s ease;
 }
-.grid-wrapper .wide {
-	grid-column: span 2;
-}
-.grid-wrapper .tall {
-	grid-row: span 2;
-}
-.grid-wrapper .big {
-	grid-column: span 2;
-	grid-row: span 2;
-}
-
 
 
 
@@ -327,7 +291,7 @@ img {
   }
   .FooterSocials ion-icon
   {
-    color: #5146A1;
+    color: #e4e4e4;
     font-size: 24px;
     margin-left: 15px;
     cursor: pointer;
