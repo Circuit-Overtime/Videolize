@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Salsa&display=swap');
 body {
     box-sizing: border-box;
     overflow: hidden;
@@ -9,6 +10,7 @@ html, body {
     height: 100vh;
     overflow: hidden;
     margin: 0;
+    background: #111;
     padding: 0;
 }
 .mainContainer {
