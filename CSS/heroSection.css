@@ -178,7 +178,7 @@
 .curlyNavArrowTwo,
 .curlyNavArrowThree {
     position: absolute;
-    background: url(curlyArrow.png);
+    background: url(./IMAGES/curlyArrow.png);
     height: 150px;
     width: 320px;
     background-size: cover;
