@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found | Videolize</title>
+    <link rel="stylesheet" href="../CSS/homePage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/website%20logo.png?alt=media&token=e3409e2d-d827-430d-b0b8-1345567525d5">
+    <style>
+        body {
+            background: #0a0a0a;
+            color: #fff;
+            min-height: 100vh;
+            font-family: 'Salsa', cursive, sans-serif;
+        }
+        .mainContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: transparent;
+        }
+        .error-logo {
+            width: 80px;
+            height: 80px;
+            background: url('https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/website%20logo.png?alt=media&token=e3409e2d-d827-430d-b0b8-1345567525d5') no-repeat center/cover;
+            border-radius: 50%;
+            margin-bottom: 24px;
+            box-shadow: 0 0 32px 0 #d62929a0;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 32px 0 #d62929a0; }
+            50% { box-shadow: 0 0 64px 8px #d62929a0; }
+            100% { box-shadow: 0 0 32px 0 #d62929a0; }
+        }
+        .error-heading {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #d62929;
+            text-shadow: 0 2px 16px #d6292970;
+            letter-spacing: 2px;
+        }
+        .error-subheading {
+            font-size: 1.5rem;
+            margin-bottom: 32px;
+            color: #fff;
+            opacity: 0.85;
+        }
+        .error-desc {
+            font-size: 1.1rem;
+            color: #f5f5f5;
+            margin-bottom: 40px;
+            text-align: center;
+            max-width: 600px;
+        }
+        .back-home-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #d62929;
+            color: #fff;
+            font-size: 1.1rem;
+            padding: 12px 32px;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 2px 16px #d6292970;
+            transition: background 0.2s, transform 0.2s;
+            text-decoration: none;
+        }
+        .back-home-btn:hover {
+            background: #a31b1b;
+            transform: translateY(-2px) scale(1.04);
+        }
+        .planetContainer {
+            margin: 48px 0 0 0;
+            opacity: 0.7;
+            pointer-events: none;
+        }
+        @media (max-width: 600px) {
+            .error-heading { font-size: 2.5rem; }
+            .error-subheading { font-size: 1.1rem; }
+            .error-desc { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="ParticleContainer ParticleContainerSlow" id="bg"></div>
+    <div class="mainContainer">
+        <div class="error-logo"></div>
+        <div class="error-heading">404</div>
+        <div class="error-subheading">Page Not Found</div>
+        <div class="error-desc">
+            Cut! Looks like this scene doesn’t exist in our timeline.<br>
+            Maybe the footage was deleted, or you’ve jumped to an empty frame.<br>
+            Let’s rewind you back to where the action happens!
+        </div>
+        <a href="../index.html" class="back-home-btn">
+            <i class="fa fa-arrow-left"></i> Back to Home
+        </a>
+        <div class="planetContainer" style="pointer-events:none;">
+            <div class="solarSystem">
+                <div class="centerLogo"></div>
+                <div class="ring1 ring1Slow"><div class="planet1"></div></div>
+                <div class="ring2 ring2Slow"><div class="planet2"></div></div>
+                <div class="ring3 ring3Slow"><div class="planet3"></div></div>
+                <div class="ring4 ring4Slow">
+                    <div class="planet4"></div>
+                    <div class="Planet4ring1"></div>
+                    <div class="Planet4ring2"></div>
+                </div>
+                <div class="ring5 ring5Slow">
+                    <div class="planet5"></div>
+                    <div class="Planet5ring1"></div>
+                    <div class="Planet5ring2"></div>
+                </div>
+                <div class="ring6 ring6Slow">
+                    <div class="planet6"></div>
+                    <div class="Planet6ring1"></div>
+                    <div class="Planet6ring2"></div>
+                </div>
+                <div class="ring7 ring7Slow"><div class="planet7"></div></div>
+            </div>
+        </div>
+    </div>
+    <script src="../JS/particles.min.js"></script>
+    <script src="../JS/particleEffect.js"></script>
+</body>
+</html>

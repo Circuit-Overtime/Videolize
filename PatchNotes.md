@@ -20,3 +20,13 @@
 - Scroll reveal changed
 - Description and text writings updated
 - Added navigation text
+
+
+
+ME
+ABOUT
+GALLERY
+PROJECTS
+CONTACT 
+SKILLS 
+ROOT 

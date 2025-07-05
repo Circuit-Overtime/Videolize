@@ -1,4 +1,4 @@
-document.getElementById("ThirdRowMiddleLayout").addEventListener("click", (e) => {
+document.getElementById("photoshopMockup").addEventListener("click", (e) => {
     console.log(e.target.id)
     if(e.target.id == "colorChange1")
     {

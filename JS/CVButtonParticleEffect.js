@@ -1,4 +1,4 @@
-particlesJS("maskCVButton", {
+particlesJS("redirectWebsite", {
     particles: {
       number: { value: 3000, density: { enable: true, value_area: 400 } },
       color: { value: "#ffaa00" },

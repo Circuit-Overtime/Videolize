@@ -1,8 +1,8 @@
 const wand = document.getElementById("wandVisuMagic"),
-container = document.getElementById("SecondRowSecondLayout"),
+container = document.getElementById("textMaskEffect"),
 originaltext = document.getElementById("original"),
 other = document.getElementById("other"),
-mask = document.querySelector(".mask");
+mask = document.getElementById("mask");
 
 const containerLeft = container.getBoundingClientRect().left;
 const containerRight = container.getBoundingClientRect().right;
@@ -20,28 +20,31 @@ const xy = (x, y) => ({ x, y }),
 
 
 container.onmousemove = e => {
+  const rect = container.getBoundingClientRect();
+  const left = rect.left;
+  const right = rect.right;
+  const top = rect.top;
+  const bottom = rect.bottom;
 
-    if((e.clientX >= containerLeft) && (e.clientX <= containerRight))
-    {
-        const wandStyles = {
-            left: px(mapRange(e.clientX, containerLeft, containerRight, 50, 570)),
-            top: px(mapRange(e.clientY-300, containerTop, containerBottom, 150,160 )),
-            rotate : deg((mapRange(e.clientX, containerLeft, containerRight, 50, 570)) * 0.01)
-        }
-        wand.animate(wandStyles, { duration: 400, fill: "forwards" });
-        percentage_moved = parseInt(mapRange((((containerRight - containerLeft + 10) / wand.getBoundingClientRect().x)*100), 78,50,0,100));
-        new_width = px(parseInt(mapRange(percentage_moved, 0 ,100, 0, originaltext.getBoundingClientRect().width + 6)))
-        other.animate({width: [new_width]}, { duration: 350, fill: "forwards" });
-        mask.animate({width: [new_width]}, { duration: 350, fill: "forwards" });
-    }
+  if (e.clientX >= left && e.clientX <= right && e.clientY >= top && e.clientY <= bottom) {
+    const wandLeft = mapRange(e.clientX, left, right, 50, 800);
+    const wandTop = mapRange(e.clientY, top, bottom, 150, 160);
+    const wandRotate = mapRange(e.clientX, left, right, -3, 3);
 
-else if(((e.clientX <= containerLeft) && (e.clientX >= containerRight)) || ((e.clientY <= 105) && (e.clientY >= 455)))
-{
-    other.animate({width: ["0px"]}, { duration: 300, fill: "forwards" });
-    mask.animate({width: ["0px"]}, { duration: 300, fill: "forwards" });
-}   
+    wand.animate({
+      left: px(wandLeft),
+      top: px(wandTop),
+      rotate: deg(wandRotate)
+    }, { duration: 400, fill: "forwards" });
 
-}
+    const revealWidth = mapRange(e.clientX, left, right, 0, originaltext.offsetWidth + 6);
+    other.animate({ width: [px(revealWidth)] }, { duration: 350, fill: "forwards" });
+    mask.animate({ width: [px(revealWidth)] }, { duration: 350, fill: "forwards" });
+  } else {
+    other.animate({ width: ["0px"] }, { duration: 300, fill: "forwards" });
+    mask.animate({ width: ["0px"] }, { duration: 300, fill: "forwards" });
+  }
+};
 container.onmouseleave = e => {
   const wandStyles = {
     left: px(450),
@@ -109,21 +112,26 @@ particlesJS("starshine", {
     },
     retina_detect: true
   });
-  var count_particles, stats, update;
-  stats = new Stats();
-  stats.setMode(0);
-  stats.domElement.style.position = "absolute";
-  stats.domElement.style.left = "0px";
-  stats.domElement.style.top = "0px";
-  document.body.appendChild(stats.domElement);
-  count_particles = document.querySelector(".js-count-particles");
-  update = function () {
-    stats.begin();
-    stats.end();
-    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-    }
-    requestAnimationFrame(update);
-  };
-  requestAnimationFrame(update);
+  var count_particles;
+  var update = function () {};
+  if (typeof Stats !== 'undefined') {
+    let stats = new Stats();
+    document.body.appendChild(stats.dom);
+    stats.setMode(0);
+    stats.domElement.style.position = "absolute";
+    stats.domElement.style.left = "0px";
+    stats.domElement.style.top = "0px";
+    document.body.appendChild(stats.domElement);
+  
+    count_particles = document.querySelector(".js-count-particles");
+    update = function () {
+      stats.begin();
+      stats.end();
+      if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+      }
+      requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update); // only call if defined
+  }
   
