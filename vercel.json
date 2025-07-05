@@ -1,5 +1,4 @@
 {
-    "rootDirectory": "src",
     "rewrites": [
       { "source": "/me", "destination": "/me/index.html" },
       { "source": "/about", "destination": "/about/index.html" },
