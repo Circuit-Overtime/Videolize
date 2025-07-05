@@ -117,6 +117,7 @@
     background-color: transparent;
     box-sizing: border-box;
     display: block;
+    z-index: 10;
 }
 
 .iconforvisumagic {
@@ -148,6 +149,7 @@
     background-color: transparent;
     box-sizing: border-box;
     display: block;
+    z-index: 10;
     
 }
 

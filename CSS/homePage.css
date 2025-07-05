@@ -25,7 +25,10 @@ html, body {
     transform-origin: center;
     opacity: 1;
 }
-
+.reveal 
+{
+    opacity: 0;
+}
 
 
 .mainContainer::-webkit-scrollbar-track

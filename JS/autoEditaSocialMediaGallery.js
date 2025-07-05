@@ -22,3 +22,5 @@ document.querySelectorAll("#image-container > div").forEach(div => {
     }
   }
 });
+
+

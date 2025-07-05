@@ -9,12 +9,11 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
     <title>Videolize</title>
     
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.38/build/spline-viewer.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- <link rel="stylesheet" type="text/css" href="CSS/loadingAnimation.css"> -->
     <link rel="stylesheet" type="text/css" href="CSS/homePage.css">
@@ -29,42 +28,42 @@
 <body>
     <div class="ParticleContainer ParticleContainerSlow" id="bg">  </div>
 
-<div class="mainContainer">
+<div class="mainContainer" data-scroll-container>
 
 
-    <section id="hero" class="hero">
-        <div class="navbar" id="navbar">
+    <section id="hero " class="hero" data-scroll-section>
+        <div class="navbar reveal" id="navbar">
             <span id="VisuMagicStatic"> <p>Spotlight</p> <ion-icon name="color-filter"></ion-icon></span>
             <span id="InnoVistaStatic"> <p>Softwares</p> <ion-icon name="construct"></ion-icon>  </span>
             <span id="AutoEditaStatic"> <p>Projects</p><ion-icon name="color-palette"></ion-icon>  </span>
             <span id="DesignSageStatic"> <p>Contact</p> <ion-icon name="person"></ion-icon> </span>
         </div>
 
-        <div class="appNameLogoWrapper">
+        <div class="appNameLogoWrapper reveal">
             <div class="logo"></div><p class="appName"> Videolize </p>
           </div>
           
-          <div class="visuMagicRedirect">
+          <div class="visuMagicRedirect reveal">
             <div class="curlyNavArrowOne"></div>
             <div class="textforPortfolio">About Me</div>
             <div class="iconforvisumagic" id="iconforvisumagic"></div>
           </div>
-          <div class="innovistaRedirect">
+          <div class="innovistaRedirect reveal">
             <div class="curlyNavArrowTwo"></div>
             <div class="textforsoftwares">My Skills</div>
           <div class="iconforInnovista" id="iconforInnovista"></div>
           </div>
           
           
-          <div class="exploreBtn exploreBtnSlow" id="exploreBtn">
+          <div class="exploreBtn reveal" id="exploreBtn">
         <span class="webLogoBtn" id="webLogoBtn"></span>
         <span class="webLogoTxt" id="webLogoTxt"> Edit the Future </span>
         </div>
       
-          <p class="mainHeading mainHeadingSlow"> Revolutionize Your <br> Visual Storytelling. </p>
-          <p class="subHeading"> Welcome to the portfolio of <br> Editor, Solanki Ghosh </p>
+          <p class="mainHeading reveal"> Revolutionize Your <br> Visual Storytelling. </p>
+          <p class="subHeading reveal"> Welcome to the portfolio of <br> Editor, Solanki Ghosh </p>
 
-          <div class="planetContainer">
+          <div class="planetContainer reveal">
             <div class="solarSystem">
                 <div class="centerLogo"></div>
                 <div class="ring1 ring1Slow">
@@ -105,7 +104,7 @@
     </section>
 
 
-        <section class="spotlightSection" id="spotlightSection">
+        <section class="spotlightSection reveal" id="spotlightSection">
 
         <div class="visuMagicContainer">
           <div class="descriptionImage"></div>
@@ -124,9 +123,9 @@
                   </div>
                   
                   
-          <div class="magicTilesGrid">
+          <div class="magicTilesGrid reveal">
 
-            <div class="magicTile wide" id="logosTileMove">
+            <div class="magicTile wide reveal" id="logosTileMove">
               <div class="headingText">Create Logos for anything</div>
               <div class="descriptionText">Powerful Logo Graphic Designs and Esteemed Softwares at use</div>
               <div id="wandVisuMagicTwo">
@@ -134,7 +133,7 @@
                 </div>
               <div class="tileIconSVG" id="tileIconSVG"></div>
             </div>
-            <div class="magicTile wide" id="rulerMapper">
+            <div class="magicTile wide reveal" id="rulerMapper">
               <div class="headingText">Create with AI wizardry</div>
               <div class="descriptionText">AI-powered video editing: Unleash creativity with automated magic touch</div>
               <div class="ruler-wrapper">
@@ -143,7 +142,7 @@
               </div>
               <div class="iconTileSurf"></div>
             </div>
-            <div class="magicTile tall">
+            <div class="magicTile tall reveal">
               <div class="headingText">Capture Beautiful Moments with Creativity.</div>
               <div class="descriptionText">Watch the world through your lens, enjoy the environment to the apex.</div>
               <div class="tilesImages">
@@ -154,7 +153,7 @@
             </div>
 
 
-            <div class="magicTile wide" id="textMaskEffect">
+            <div class="magicTile wide reveal" id="textMaskEffect">
               <div class="headingText">Wave Goodbye to Boring Edits.</div>
               <div class="descriptionText">With Powerful Softwares and Skill at hand, editing and creating videos are faster!</div>
                <div id="wandVisuMagic">
@@ -168,14 +167,14 @@
             </div>
 
 
-            <div class="magicTile">
+            <div class="magicTile reveal">
               <div class="headingText">Photography and Editing!</div>
               <div class="descriptionText">In Love with Creating Picture Frames and Motion Graphics</div>
               <div class="book">
                 <img src="https://firebasestorage.googleapis.com/v0/b/videolize-3563f.appspot.com/o/cover.jpg?alt=media&token=6ac2cf18-bc49-47db-888a-0fe7e19b7e4d" alt="">
               </div>
             </div>
-            <div class="magicTile wide" id="photoshopMockup">
+            <div class="magicTile wide reveal" id="photoshopMockup">
              <div class="headingText">See a Photoshop Mockup!</div>
                 <div class="descriptionText">Loving Editing and Photography on the go!</div>
                 <div class="tileforPSBacklit" id="tileforPSBacklit"></div>
@@ -240,9 +239,10 @@
 
 
   <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r17/Stats.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
     <script src="JS/particles.min.js"></script>
     <script src="JS/particleEffect.js"></script>
     <script src="JS/linkRedirect.js"></script>
