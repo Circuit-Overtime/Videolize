@@ -160,7 +160,7 @@ Videolize/
 ## Usage
 
 Visit the live portfolio:  
-[https://circuit-overtime.github.io/Videolize/designer.html](https://circuit-overtime.github.io/Videolize/designer.html)
+[Solanki Ghosh Portfolio](https://solanki.elixpo.com)
 
 ---
 
