@@ -58,6 +58,7 @@
     .pdf-viewer-container
     {
         margin: 5px auto;
+        height: 80%;
         padding: 10px;
         width: 95%;
     }
@@ -70,7 +71,7 @@
     #pdf-controls 
     {
         flex-direction: row;
-        width: 80%;
+        width: 70% !important;
         gap: 5px;
         white-space: nowrap;
         flex-wrap: nowrap;
@@ -93,7 +94,9 @@
     }
     .FooterSocials
     {
-        margin-top: 10px;
+       position: absolute;
+       top: 78%;
+       left: 10%;
     }
 }
 
