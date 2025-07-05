@@ -96,3 +96,12 @@
         margin-top: 10px;
     }
 }
+
+@media screen and  (max-width: 2560px) {
+    #pdf-controls 
+    {
+        flex-direction: row;
+        width: 90%;
+        background: #313030d5;
+    }
+}

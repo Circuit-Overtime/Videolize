@@ -1,212 +1,137 @@
-
-/* Medium screens (e.g., 1024px) */
-@media (min-width: 1025px) and (max-width: 1440px) {
-    .sectionName {
-        font-size: 3.5em;
-        margin-bottom: 25px;
-        
+@media screen and (max-width: 600px) {
+    .innoVistaLogo 
+    {
+        top: 40px;
+        scale: 0.7;
+        left: 30%;
     }
-
-    .redirectWebsite {
-        scale: 1.2;
-        margin-top: 15px;
+    .innoVista 
+    {
+        font-size: 4em;
     }
-
-    .softwareGrid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Smaller min-width */
-        width: 90vw; /* Increased width */
-        gap: 25px; /* Smaller gap */
-        padding: 15px 0;
+    .innoVistaContainer .descriptionImage
+    {
+        width: 400px;
+        display: none;
     }
-
-    .softwareTile {
-        padding: 25px 15px; /* Smaller padding */
-        font-size: 1em; /* Base font size */
+    .innovateTile .headingText 
+    {
+        font-size: 1em;
     }
-
-    .softwareLogo {
-        width: 90px; /* Smaller logo */
-        height: 90px;
-        margin-bottom: 18px;
+    .innovateTile .descriptionText 
+    {
+        font-size: 0.8em    ;
     }
-
-    .softwareName {
-        font-size: 1.6em; /* Smaller font size */
+    .imageContainer 
+    {
+        top: 40%;
+        height: 250px;
     }
-
-    .softwareDescription {
-        font-size: 0.9em; /* Smaller font size */
+    .buttonGrayScale,
+    .maskGrayscale,
+    .buttonInvert 
+    {
+        display: none;
     }
-
-    .FooterSocials {
-        margin-top: 30px;
+    .exportTile 
+    {
+        top: 70%;
+        left: -22%;
+        height: 150px;
+        width: 150px;
     }
-
-    .FooterSocials ion-icon {
-        font-size: 2em; /* Smaller icon size */
-        margin: 0 10px; /* Smaller margin */
+    .Colorgrade 
+    {
+        width: 180px;
+        top: 55%;
+        z-index: 10;
     }
-}
-
-
-/* Small screens (e.g., 768px - kept your existing query) */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .sectionName {
-        font-size: 28px;
+    .moveTool 
+    {
+        top: 40%;
+        left: 3%;
     }
-
-    .FooterSocials {
-      margin-top: 15px;
+    .textTool 
+    {
+        top: 40%;
+        left: 25%;
     }
-
-    .softwareGrid {
-        max-height: none; /* Remove max-height if it causes issues */
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Smaller min width for smaller screens */
-        width: 95vw; /* Even wider for small screens */
-        gap: 15px; /* Smaller gap */
+    .exportTileSteps 
+    {
+        display: none;
     }
+    .imageTilePremiere 
+    {
+        top: 50%;
+        left: 41%;
 
-    .softwareTile {
-        padding: 20px;
     }
-
-    .softwareLogo {
-        width: 60px;
-        height: 60px;
+    .textPronounce 
+    {
+        top: 55%;
     }
-
-    .softwareName {
-        font-size: 18px;
+    .btnWrapper  
+    {
+        gap: 2px;
+        left: 40%;
+        top: 35%;
     }
-
-    .softwareDescription {
-        font-size: 14px;
+    .searchText 
+    {
+        left: 2px;
     }
-
-    .FooterSocials ion-icon {
-        font-size: 24px;
-        margin: 0 10px;
+    #iconSearchText  
+    {
+        font-size: 3em;
     }
-
-    .redirectWebsite {
-        width: 200px;
-        height: 40px;
-        margin-top: 0px;
+    .searchButton 
+    {
+        width: 250px;
     }
-
-    .redirectWebsite span:nth-child(1) {
-        font-size: 20px;
+    .searchButtonText 
+    {
+        font-size: 0.8em;
     }
-
-    .redirectWebsite span:nth-child(2) {
-        font-size: 16px;
+    .upperTileImageAI,
+    .lowerTileImageAI
+    {
+        width: 150px;
+        height: 150px;
     }
-}
-
-/* Extra small screens (e.g., 600px) */
-@media (max-width: 768px) {
-    .sectionName {
-        font-size: 2em; /* Even smaller font size */
-        margin-bottom: 20px;
+    .upperTileImageAI 
+    {
+        top: 100px;
     }
-
-    .redirectWebsite {
-        scale: 1; /* Default scale */
-        width: 180px; /* Smaller width */
-        height: 35px; /* Smaller height */
-        margin-top: 5px;
+    .lowerTileImageAI 
+    {
+        left: 40%;
+        top: 260px;
     }
-
-    .redirectWebsite span:nth-child(1) {
-        font-size: 18px; /* Smaller icon size */
-    }
-
-    .redirectWebsite span:nth-child(2) {
-        font-size: 14px; /* Smaller text size */
-    }
-
-    .softwareGrid {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Smallest min-width */
-        width: 90vw; /* Almost full width */
-        gap: 10px; /* Smallest gap */
-        padding: 10px 0;
-    }
-
-    .softwareTile {
-        padding: 15px; /* Smallest padding */
-        font-size: 0.9em; /* Smallest base font size */
-    }
-
-    .softwareLogo {
-        width: 50px; /* Smallest logo */
-        height: 50px;
-        margin-bottom: 10px;
-    }
-
-    .softwareName {
-        font-size: 1.4em; /* Smallest font size */
-    }
-
-    .softwareDescription {
-        font-size: 0.8em; /* Smallest font size */
-    }
-
-    .FooterSocials {
-        margin-top: 20px;
-    }
-
-    .FooterSocials ion-icon {
-        font-size: 1.8em; /* Smallest icon size */
-        margin: 0 8px; /* Smallest margin */
+    #reloadAnimation 
+    {
+        position: absolute;
+        top: 10px;
+        left: 30px;
     }
 }
 
-
-/* Large screens (e.g., 1440px) */
-@media (min-width: 1500px) and (max-width: 1920px) {
-    .sectionName {
-        font-size: 4em; /* Adjusted font size */
-        margin-bottom: 30px;
-    }
-
-    .redirectWebsite {
-        scale: 1.5; /* Slightly smaller scale */
-        margin-top: 20px;
-    }
-
-    .softwareGrid {
-        max-height: none; /* Remove max-height if it causes issues */
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Smaller min-width */
-        width: 80vw; /* Increased width */
-        gap: 30px; /* Smaller gap */
-        padding: 20px 0;
-    }
-
-    .softwareTile {
-        padding: 30px 20px; /* Smaller padding */
-        font-size: 1.1em; /* Smaller base font size */
-    }
-
-    .softwareLogo {
-        width: 100px; /* Smaller logo */
-        height: 100px;
-        margin-bottom: 20px;
-    }
-
-    .softwareName {
-        font-size: 1.8em; /* Smaller font size */
-    }
-
-    .softwareDescription {
-        font-size: 1em; /* Smaller font size */
-    }
-
-    .FooterSocials {
-        margin-top: 40px;
-    }
-
-    .FooterSocials ion-icon {
-        font-size: 2.5em; /* Smaller icon size */
-        margin: 0 12px; /* Smaller margin */
+@media screen and (max-width: 768px) {
+    .innoVistaContainer .descriptionImage
+    {
+        display: none;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .innoVistaContainer .descriptionImage
+    {
+        top: 10px;
+        left: -2%;
+    }
+    .imageContainer  
+    {
+        width: 500px;
+        left: 3%;
+    }
+}
+
