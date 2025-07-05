@@ -1,3 +1,5 @@
+
+const linkedinURL = "https://www.linkedin.com/in/solankighoshvideoeditor"
 const imageUrls = [
   'https://images.unsplash.com/photo-1588282322673-c31965a75c3e',
   'https://images.unsplash.com/photo-1588117472013-59bb13edafec',
@@ -68,3 +70,14 @@ const observer = new IntersectionObserver((entries, obs) => {
 }, {
   threshold: 0.2
 });
+
+document.getElementById("redirectWebsite").addEventListener("click", () => {
+  redirectTo("");
+})
+
+
+
+
+document.getElementById("linkedinRedirect").addEventListener("click", () => {
+  location.href = linkedinURL;
+})
