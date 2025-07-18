@@ -23,7 +23,7 @@
 
 ## Demo
 
-Visit the live site: [https://circuit-overtime.github.io/Videolize/designer.html](https://circuit-overtime.github.io/Videolize/designer.html)
+Visit the live site: [https://solanki.elixpo.com](https://solanki.elixpo.com)
 
 ---
 
